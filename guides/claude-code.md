@@ -8,6 +8,13 @@
 
 [← 返回教程目录](../README.md)
 
+> [!TIP]
+> **想直接测试 Claude Code，又不想折腾海外支付？**
+>
+> **[纽智中转站](https://www.nexotoken.net/?ref=github)** 提供 Claude Code 兼容模型，每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。注册后创建 Key，再按本文配置 `ANTHROPIC_BASE_URL` 即可。
+>
+> **[👉 立即注册并测试 Claude Code](https://www.nexotoken.net/?ref=github)**
+
 ## 1. 先弄清楚：Claude Code 不是聊天客户端
 
 Claude Code 是在终端中运行的编程代理。它可以读取和修改项目文件、运行命令、执行测试，因此比普通聊天窗口拥有更高权限。

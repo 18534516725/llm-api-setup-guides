@@ -8,6 +8,13 @@
 
 [← 返回教程目录](../README.md)
 
+> [!TIP]
+> **还没有可用的 API Key？**
+>
+> 本教程可直接配合 **[纽智中转站](https://www.nexotoken.net/?ref=github)** 使用：每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。注册后复制 Base URL、API Key 和模型 ID，按本文填写即可。
+>
+> **[👉 立即注册并开始配置](https://www.nexotoken.net/?ref=github)**
+
 ## 1. Cherry Studio 适合谁
 
 Cherry Studio 是一款跨平台 AI 桌面客户端。它把多个模型服务集中在一个界面中，适合不想反复打开网页、希望统一管理模型和对话的人。

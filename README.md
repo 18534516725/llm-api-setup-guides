@@ -19,6 +19,27 @@
 
 ---
 
+# AI 客户端自定义 API / 中转 API 接入教程
+
+<div align="center">
+
+## 🚀 教程配套 API：纽智中转站
+
+**Claude Code · Codex CLI · Cherry Studio · Chatbox · Open WebUI 一把 Key 接入**
+
+**每天 20 次免费额度 · 新人 ¥1 得 300 积分 · 支付宝 / 微信直充 · 无需外币卡**
+
+**Claude Opus 4.8 ¥0.9/M · Claude Sonnet 5 ¥0.36/M · GPT-5.6 ¥0.5/M**
+
+[![立即注册](https://img.shields.io/badge/%E2%9A%A1_%E7%AB%8B%E5%8D%B3%E6%B3%A8%E5%86%8C-%E9%A2%86%E5%8F%96%E6%AF%8F%E6%97%A5%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6-6C5CE7?style=for-the-badge)](https://www.nexotoken.net/?ref=github)
+[![查看模型](https://img.shields.io/badge/%F0%9F%A4%96_130%2B_%E6%A8%A1%E5%9E%8B-Claude_%C2%B7_GPT_%C2%B7_DeepSeek-00B894?style=for-the-badge)](https://www.nexotoken.net/?ref=github)
+
+<sub>价格与活动核验于 2026-07-14，后续以模型广场和控制台实时展示为准。</sub>
+
+</div>
+
+---
+
 ## 💡 这个仓库解决什么问题
 
 你是否遇到过:

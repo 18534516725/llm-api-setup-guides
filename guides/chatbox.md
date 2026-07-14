@@ -8,6 +8,13 @@
 
 [← 返回教程目录](../README.md)
 
+> [!TIP]
+> **还没有可用的 API Key？**
+>
+> 本教程可直接配合 **[纽智中转站](https://www.nexotoken.net/?ref=github)** 使用：每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。注册后复制 API Host、API Key 和模型 ID，按本文填写即可。
+>
+> **[👉 立即注册并开始配置](https://www.nexotoken.net/?ref=github)**
+
 ## 1. 为什么选择 Chatbox
 
 Chatbox 是本地优先的跨平台 AI 客户端，支持 Windows、macOS、Linux、iOS、Android 和 Web。它适合希望界面简单、对话记录保存在本机，并能自由填写 API Key 的用户。

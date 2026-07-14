@@ -8,6 +8,13 @@
 
 [← 返回教程目录](../README.md)
 
+> [!TIP]
+> **想直接测试 Codex CLI，又不想准备外币卡？**
+>
+> **[纽智中转站](https://www.nexotoken.net/?ref=github)** 提供 Codex / Responses 兼容模型，每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。注册后创建 Key，再按本文配置 `model_providers` 即可。
+>
+> **[👉 立即注册并测试 Codex CLI](https://www.nexotoken.net/?ref=github)**
+
 ## 1. Codex CLI 是什么
 
 Codex CLI 是在终端中工作的编程代理，可以检查代码、修改文件、运行命令、执行测试和做代码审查。

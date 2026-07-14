@@ -8,6 +8,13 @@
 
 [← 返回教程目录](../README.md)
 
+> [!TIP]
+> **还没有可接入 Open WebUI 的 API？**
+>
+> 本教程可直接配合 **[纽智中转站](https://www.nexotoken.net/?ref=github)** 使用：一把 Key 可配置多个模型，每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。
+>
+> **[👉 立即注册并获取 API Key](https://www.nexotoken.net/?ref=github)**
+
 ## 1. Open WebUI 适合什么场景
 
 Open WebUI 是可自部署的 AI Web 界面，支持多用户、多个模型连接、知识库和权限管理。它比单机聊天客户端更适合：
