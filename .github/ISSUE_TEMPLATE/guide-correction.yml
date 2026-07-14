@@ -1,0 +1,50 @@
+name: 教程纠错
+description: 报告界面变化、失效链接、错误参数或过期步骤
+title: "[教程纠错] "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢帮助更新教程。请完整遮住 API Key、Cookie、账户信息、私人域名和原始日志中的敏感字段。
+  - type: input
+    id: guide
+    attributes:
+      label: 教程文件或链接
+      placeholder: guides/coding-tools/aider.md
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 产品版本与操作系统
+      placeholder: 例如 v1.2.3 / Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 哪一步已经不准确
+      placeholder: 请写标题、步骤编号、预期界面和实际界面。
+    validations:
+      required: true
+  - type: input
+    id: official_source
+    attributes:
+      label: 支持修正结论的官方资料
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_error
+    attributes:
+      label: 脱敏后的错误摘要（可选）
+      description: 只保留状态码和通用错误，不要粘贴认证头、完整响应或内部渠道信息。
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 安全确认
+      options:
+        - label: 我已删除 API Key、Cookie、私人数据、内部供应商和内部渠道信息
+          required: true

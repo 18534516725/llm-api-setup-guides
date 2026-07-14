@@ -2,11 +2,11 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=700&lines=20+%E7%AF%87%E4%B8%BB%E6%B5%81+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;Claude+Code+%2F+Codex+%2F+Cursor+%2F+Dify+%2F+Cherry+Studio;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=40+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+RAG+%2F+%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
 
 <br/>
 
-[![GitHub stars](https://img.shields.io/github/stars/18534516725/llm-api-setup-guides?style=for-the-badge&logo=github&color=FFD700)](https://github.com/18534516725/llm-api-setup-guides/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/18534516725/llm-api-setup-guides?style=for-the-badge&logo=github&color=FFD700)](https://github.com/18534516725/llm-api-setup-guides)
 [![Last commit](https://img.shields.io/github/last-commit/18534516725/llm-api-setup-guides?style=for-the-badge&color=32CD32)](https://github.com/18534516725/llm-api-setup-guides/commits)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)](https://github.com/18534516725/llm-api-setup-guides/pulls)
@@ -25,7 +25,7 @@
 
 ## 🚀 教程配套 API：纽智中转站
 
-**Claude Code · Codex CLI · Cursor · Cline · Cherry Studio · Dify 等主流工具一把 Key 接入**
+**Claude Code · Codex CLI · Aider · Cherry Studio · n8n · Dify · LangChain 等工具一把 Key 接入**
 
 **每天 20 次免费额度 · 新人 ¥1 得 300 积分 · 支付宝 / 微信直充 · 无需外币卡**
 
@@ -58,7 +58,7 @@
 
 ## 📖 教程目录
 
-> 不知道选哪个？先看 **[17 款工具兼容性总表](./guides/basics/compatibility-matrix.md)**。第一次接 API，建议先读 **[Base URL、API Key、模型 ID 与协议基础](./guides/basics/api-basics.md)**。
+> 当前共 **40 篇中文文档，覆盖 37 款工具、平台与开发框架**。不知道选哪个？先看 **[完整中文教程总目录](./guides/README.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 
@@ -68,6 +68,10 @@
 | **[Chatbox](./guides/chat-clients/chatbox.md)** | 轻量、本地优先，适合第一次接 API | ⭐ | ✅ 已发布 |
 | **[LobeChat](./guides/chat-clients/lobechat.md)** | Web / PWA / Docker，多服务商与扩展能力 | ⭐⭐ | ✅ 已发布 |
 | **[NextChat](./guides/chat-clients/nextchat.md)** | 轻量 Web 客户端，适合快速私有部署 | ⭐⭐ | ✅ 已发布 |
+| **[Jan 本地 AI 客户端](./guides/chat-clients/jan.md)** | 自定义端点、本地模型与远程兼容接口 | ⭐⭐ | ✅ 已发布 |
+| **[Msty Studio AI 工作台](./guides/chat-clients/msty.md)** | 自带 Provider、多模型与知识管理 | ⭐⭐ | ✅ 已发布 |
+| **[TypingMind 网页客户端](./guides/chat-clients/typingmind.md)** | 自定义完整 Endpoint 与 Web 配置 | ⭐⭐ | ✅ 已发布 |
+| **[BoltAI macOS 客户端](./guides/chat-clients/boltai.md)** | 自定义 OpenAI-compatible Server | ⭐⭐ | ✅ 已发布 |
 
 ### ⌨️ AI 编程工具 `guides/coding-tools/`
 
@@ -80,6 +84,11 @@
 | **[Roo Code（历史资料）](./guides/coding-tools/roo-code.md)** | 已停止运营；仅供存量用户迁移与排错 | — | ⚠️ 已停运 |
 | **[Continue](./guides/coding-tools/continue.md)** | Chat、Agent、补全、Embedding 分角色配置 | ⭐⭐⭐ | ✅ 已发布 |
 | **[CC Switch](./guides/coding-tools/cc-switch.md)** | Claude / Codex 等 CLI 配置管理与切换 | ⭐⭐ | ✅ 已发布 |
+| **[Aider 终端编程助手](./guides/coding-tools/aider.md)** | Git 驱动的代码编辑与 Chat Completions | ⭐⭐ | ✅ 已发布 |
+| **[OpenCode 终端编程代理](./guides/coding-tools/opencode.md)** | Chat Completions / Responses 分协议配置 | ⭐⭐⭐ | ✅ 已发布 |
+| **[Kilo Code 编程代理](./guides/coding-tools/kilo-code.md)** | VS Code、CLI 与自定义 Provider | ⭐⭐ | ✅ 已发布 |
+| **[Zed 编辑器 AI 助手](./guides/coding-tools/zed.md)** | Agent、模型能力与协议切换 | ⭐⭐ | ✅ 已发布 |
+| **[goose 开源编程代理](./guides/coding-tools/goose.md)** | 声明式 Provider 与完整聊天端点 | ⭐⭐⭐ | ✅ 已发布 |
 
 ### 🏠 自部署与知识库 `guides/self-hosted/`
 
@@ -90,12 +99,33 @@
 | **[AnythingLLM](./guides/self-hosted/anythingllm.md)** | 本地文档、工作区与 RAG 完整链路 | ⭐⭐ | ✅ 已发布 |
 | **[Dify](./guides/self-hosted/dify.md)** | 模型插件、知识库、工作流与应用发布 | ⭐⭐⭐ | ✅ 已发布 |
 | **[FastGPT](./guides/self-hosted/fastgpt.md)** | 模型渠道、Embedding、知识库与应用 API | ⭐⭐⭐ | ✅ 已发布 |
+| **[RAGFlow 文档知识库](./guides/self-hosted/ragflow.md)** | 模型、数据集、检索与 Agent | ⭐⭐⭐ | ✅ 已发布 |
+| **[MaxKB 企业知识库](./guides/self-hosted/maxkb.md)** | 模型、知识库、智能体与应用发布 | ⭐⭐⭐ | ✅ 已发布 |
+
+### 🔄 自动化与工作流 `guides/automation-platforms/`
+
+| 工具 | 中文用途 | 难度 | 状态 |
+|:---|:---|:---:|:---:|
+| **[n8n 自动化工作流](./guides/automation-platforms/n8n.md)** | AI 节点、RAG、Webhook 与凭据管理 | ⭐⭐⭐ | ✅ 已发布 |
+| **[Flowise 可视化 AI 编排](./guides/automation-platforms/flowise.md)** | Chatflow、Agentflow、RAG 与 API 发布 | ⭐⭐⭐ | ✅ 已发布 |
+| **[Langflow 可视化工作流](./guides/automation-platforms/langflow.md)** | Flow、组件、RAG 与 Webhook | ⭐⭐⭐ | ✅ 已发布 |
 
 ### 🧩 效率工具 `guides/productivity-tools/`
 
 | 工具 | 说明 | 难度 | 状态 |
 |:---|:---|:---:|:---:|
 | **[沉浸式翻译](./guides/productivity-tools/immersive-translate.md)** | 网页、PDF、字幕翻译与自定义 API | ⭐ | ✅ 已发布 |
+| **[Obsidian Copilot 知识库助手](./guides/productivity-tools/obsidian-copilot.md)** | 自定义模型、Vault QA 与 CORS | ⭐⭐ | ✅ 已发布 |
+
+### 🧑‍💻 SDK 与开发框架 `guides/developer-integration/`
+
+| 文档 | 中文用途 | 难度 | 状态 |
+|:---|:---|:---:|:---:|
+| **[OpenAI Python / Node.js SDK](./guides/developer-integration/openai-sdk.md)** | Responses、Chat、流式、重试与错误处理 | ⭐⭐ | ✅ 已发布 |
+| **[LangChain 开发框架](./guides/developer-integration/langchain.md)** | Python / TypeScript、Tool Calling 与 Embedding | ⭐⭐⭐ | ✅ 已发布 |
+| **[LlamaIndex RAG 框架](./guides/developer-integration/llamaindex.md)** | OpenAILike、向量索引与来源验证 | ⭐⭐⭐ | ✅ 已发布 |
+| **[Vercel AI SDK](./guides/developer-integration/vercel-ai-sdk.md)** | Next.js 流式聊天、工具调用与 Provider | ⭐⭐⭐ | ✅ 已发布 |
+| **[Spring AI Java 框架](./guides/developer-integration/spring-ai.md)** | Spring Boot、ChatClient 与生产部署 | ⭐⭐⭐ | ✅ 已发布 |
 
 ### 📚 基础与排错 `guides/basics/`
 

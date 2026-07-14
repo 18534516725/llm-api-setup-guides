@@ -1,0 +1,90 @@
+# AI 工具自定义 API 中文教程总目录
+
+> 最后核验：2026-07-14 · 共 40 篇中文文档 · 覆盖 37 款工具、平台与开发框架
+
+[← 返回仓库首页](../README.md)
+
+> [!TIP]
+> **[纽智中转站](https://www.nexotoken.net/?ref=github)** 为本仓库提供配套 API 示例：每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。具体活动与模型状态以官网实时页面为准。
+
+## 新手从这里开始
+
+1. [API 接入基础：Base URL、Key、模型 ID 与协议](./basics/api-basics.md)
+2. [主流工具兼容性总表](./basics/compatibility-matrix.md)
+3. [401、404、429、SSE、Docker 与 RAG 通用排错](./basics/troubleshooting.md)
+
+## 聊天客户端
+
+| 中文名称 | 适合场景 |
+|---|---|
+| [Cherry Studio 多模型桌面客户端](./chat-clients/cherry-studio.md) | 新手、多供应商、桌面聊天 |
+| [Chatbox 轻量 AI 客户端](./chat-clients/chatbox.md) | 本地优先、快速配置 |
+| [LobeHub / LobeChat 自托管客户端](./chat-clients/lobechat.md) | Web、PWA、Docker、多用户 |
+| [NextChat 轻量网页客户端](./chat-clients/nextchat.md) | 快速私有部署 |
+| [Jan 本地 AI 客户端](./chat-clients/jan.md) | 本地模型与远程自定义端点 |
+| [Msty Studio AI 工作台](./chat-clients/msty.md) | 自带 Provider 与知识管理 |
+| [TypingMind 网页 AI 客户端](./chat-clients/typingmind.md) | 自定义完整 Endpoint |
+| [BoltAI macOS AI 客户端](./chat-clients/boltai.md) | macOS 原生与自定义 Server |
+
+## AI 编程工具
+
+| 中文名称 | 主要协议或定位 |
+|---|---|
+| [Claude Code 终端编程代理](./coding-tools/claude-code.md) | Anthropic Messages |
+| [Codex CLI 终端编程代理](./coding-tools/codex-cli.md) | OpenAI Responses |
+| [Cursor AI 编辑器](./coding-tools/cursor.md) | BYOK 与自定义 Base URL 限制 |
+| [Cline VS Code 编程代理](./coding-tools/cline.md) | OpenAI Compatible 与工具调用 |
+| [Continue IDE 编程助手](./coding-tools/continue.md) | Chat、Agent、补全、Embedding |
+| [CC Switch 配置切换工具](./coding-tools/cc-switch.md) | Claude / Codex 配置与本地路由 |
+| [Aider Git 终端编程助手](./coding-tools/aider.md) | Chat Completions 与代码编辑 |
+| [OpenCode 终端编程代理](./coding-tools/opencode.md) | Chat Completions / Responses |
+| [Kilo Code 编程代理](./coding-tools/kilo-code.md) | VS Code、CLI、自定义 Provider |
+| [Zed 编辑器 AI 助手](./coding-tools/zed.md) | Agent 与模型能力配置 |
+| [goose 开源编程代理](./coding-tools/goose.md) | 声明式 Provider 配置 |
+| [Roo Code 历史迁移资料](./coding-tools/roo-code.md) | 已停止运营，不建议新装 |
+
+## 自部署、知识库与 RAG
+
+| 中文名称 | 适合场景 |
+|---|---|
+| [Open WebUI 多用户聊天平台](./self-hosted/open-webui.md) | Docker、连接管理、反向代理 |
+| [LibreChat 多供应商聊天平台](./self-hosted/librechat.md) | Custom Endpoints 与 YAML |
+| [AnythingLLM 本地知识库](./self-hosted/anythingllm.md) | 桌面版、Docker、文档问答 |
+| [Dify AI 应用开发平台](./self-hosted/dify.md) | 工作流、知识库、应用发布 |
+| [FastGPT 知识库问答平台](./self-hosted/fastgpt.md) | 模型渠道、索引、应用 API |
+| [RAGFlow 文档 RAG 平台](./self-hosted/ragflow.md) | 数据集、检索测试、Agent |
+| [MaxKB 企业知识库](./self-hosted/maxkb.md) | 模型、智能体、应用发布 |
+
+## 自动化与可视化工作流
+
+| 中文名称 | 适合场景 |
+|---|---|
+| [n8n 自动化工作流平台](./automation-platforms/n8n.md) | AI 节点、RAG、Webhook、业务自动化 |
+| [Flowise 可视化 AI 编排平台](./automation-platforms/flowise.md) | Chatflow、Agentflow、API 发布 |
+| [Langflow 可视化工作流平台](./automation-platforms/langflow.md) | Flow、组件、RAG、Webhook |
+
+## 效率与知识管理工具
+
+| 中文名称 | 适合场景 |
+|---|---|
+| [沉浸式翻译双语翻译插件](./productivity-tools/immersive-translate.md) | 网页、PDF、字幕翻译 |
+| [Obsidian Copilot 知识库助手](./productivity-tools/obsidian-copilot.md) | 自定义模型与 Vault QA |
+
+## SDK 与开发框架
+
+| 中文名称 | 技术栈 |
+|---|---|
+| [OpenAI 官方 Python / Node.js SDK](./developer-integration/openai-sdk.md) | Python、TypeScript、Responses、Chat |
+| [LangChain 大模型应用框架](./developer-integration/langchain.md) | Python / TypeScript、Agent、Embedding |
+| [LlamaIndex RAG 开发框架](./developer-integration/llamaindex.md) | OpenAILike、索引、检索与引用 |
+| [Vercel AI SDK](./developer-integration/vercel-ai-sdk.md) | Next.js、流式 UI、Tool Calling |
+| [Spring AI Java 开发框架](./developer-integration/spring-ai.md) | Spring Boot、ChatClient、RAG |
+
+## 如何贡献
+
+- 想增加新产品：查看[贡献指南](../CONTRIBUTING.md)并使用“新增教程”Issue 模板；
+- 发现教程过时：使用“教程纠错”Issue 模板，附官方资料和版本；
+- 涉及 Key、私人日志或漏洞：不要公开发 Issue，先阅读[安全说明](../SECURITY.md)；
+- 想了解最近更新：查看[更新记录](../CHANGELOG.md)。
+
+所有教程都保留英文短文件名以保证 URL 稳定，但页面标题、目录和说明均使用中文。

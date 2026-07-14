@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-07-14
+> 最后核验：2026-07-14 · 覆盖 37 款工具、平台与开发框架（含 1 项停运历史资料）
 
 > [!TIP]
 > 想先低成本验证工具是否接得通，可以使用 [纽智中转站](https://www.nexotoken.net/?ref=github)：每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。活动与模型状态以官网实时页面为准。
@@ -14,16 +14,27 @@
 | 你的需求 | 优先查看 | 备选 |
 |---|---|---|
 | 新手桌面聊天 | [Cherry Studio](../chat-clients/cherry-studio.md)、[Chatbox](../chat-clients/chatbox.md) | [LobeChat](../chat-clients/lobechat.md) |
+| 本地模型与远程 API 混用 | [Jan](../chat-clients/jan.md)、[Msty](../chat-clients/msty.md) | [Cherry Studio](../chat-clients/cherry-studio.md) |
+| macOS 原生客户端 | [BoltAI](../chat-clients/boltai.md) | [Chatbox](../chat-clients/chatbox.md) |
 | 浏览器或 PWA 聊天 | [LobeChat](../chat-clients/lobechat.md)、[NextChat](../chat-clients/nextchat.md) | [Open WebUI](../self-hosted/open-webui.md) |
 | 终端 AI 编程 | [Claude Code](../coding-tools/claude-code.md)、[Codex CLI](../coding-tools/codex-cli.md) | — |
 | VS Code 编程代理 | [Cline](../coding-tools/cline.md)、[Continue](../coding-tools/continue.md) | Roo Code 已停运，不建议新装 |
+| Git 驱动终端编程 | [Aider](../coding-tools/aider.md) | [OpenCode](../coding-tools/opencode.md) |
+| 开源终端 Agent | [OpenCode](../coding-tools/opencode.md)、[goose](../coding-tools/goose.md) | [Kilo Code](../coding-tools/kilo-code.md) |
 | AI 编辑器 | [Cursor](../coding-tools/cursor.md) | 先阅读其自定义 API 限制 |
 | 多套编程 API 配置切换 | [CC Switch](../coding-tools/cc-switch.md) | 它不是聊天客户端 |
 | 多用户自部署聊天 | [Open WebUI](../self-hosted/open-webui.md)、[LibreChat](../self-hosted/librechat.md) | [LobeChat](../chat-clients/lobechat.md) |
 | 本地文档与知识库 | [AnythingLLM](../self-hosted/anythingllm.md) | [Dify](../self-hosted/dify.md)、[FastGPT](../self-hosted/fastgpt.md) |
 | 工作流与 AI 应用 | [Dify](../self-hosted/dify.md) | [FastGPT](../self-hosted/fastgpt.md) |
 | 企业知识库问答 | [FastGPT](../self-hosted/fastgpt.md) | [Dify](../self-hosted/dify.md) |
+| 文档解析型 RAG | [RAGFlow](../self-hosted/ragflow.md) | [MaxKB](../self-hosted/maxkb.md) |
+| 自动化与 Webhook | [n8n](../automation-platforms/n8n.md) | [Flowise](../automation-platforms/flowise.md)、[Langflow](../automation-platforms/langflow.md) |
 | 网页与文档双语翻译 | [沉浸式翻译](../productivity-tools/immersive-translate.md) | — |
+| Obsidian 知识问答 | [Obsidian Copilot](../productivity-tools/obsidian-copilot.md) | — |
+| Python / Node SDK 开发 | [OpenAI SDK](../developer-integration/openai-sdk.md) | — |
+| Agent / RAG 开发框架 | [LangChain](../developer-integration/langchain.md)、[LlamaIndex](../developer-integration/llamaindex.md) | — |
+| Next.js AI 应用 | [Vercel AI SDK](../developer-integration/vercel-ai-sdk.md) | — |
+| Java / Spring Boot | [Spring AI](../developer-integration/spring-ai.md) | — |
 
 ## 2. 聊天客户端
 
@@ -33,6 +44,10 @@
 | Chatbox | 桌面 / Web / 移动端 | OpenAI API Compatible | OpenAI Chat Completions | 注意 Host 是否需要 `/v1`，以界面最终请求规则为准 |
 | LobeChat | Web / PWA / Docker | OpenAI-compatible provider | OpenAI 兼容接口 | 客户端和服务端部署模式的环境变量、密钥保存位置不同 |
 | NextChat | Web / PWA / Docker | 环境变量或部署配置 | OpenAI Chat Completions | 公网部署必须设置访问密码并保护服务端环境变量 |
+| Jan | Windows / macOS / Linux | Custom Endpoint | OpenAI Chat Completions | Base URL 填到 `/v1`；本地模型与远程接口分开验证 |
+| Msty Studio | 桌面端 | Bring Your Own Provider | OpenAI 兼容接口 | Provider、模型能力和知识功能分别确认 |
+| TypingMind | Web / PWA | Custom endpoint | OpenAI Chat Completions | 官方入口使用完整 `/v1/chat/completions` Endpoint |
+| BoltAI | macOS | Custom OpenAI-compatible Server | OpenAI Chat Completions | 使用完整聊天端点；确认 Key 在本机的保存方式 |
 
 ### 适合谁
 
@@ -40,6 +55,10 @@
 - **Chatbox**：只想快速聊天、界面简单、本地优先；
 - **LobeChat**：重视 Web 体验、PWA、会话与扩展能力；
 - **NextChat**：想用较少配置部署一个轻量 Web 聊天界面。
+- **Jan**：希望把本地模型与远程兼容 API 放在同一桌面客户端；
+- **Msty Studio**：需要多 Provider、知识管理和桌面工作台；
+- **TypingMind**：偏好成熟 Web 聊天界面并能配置完整 Endpoint；
+- **BoltAI**：需要 macOS 原生体验和自定义 OpenAI-compatible Server。
 
 ## 3. AI 编程工具
 
@@ -52,6 +71,11 @@
 | Roo Code | 已停运的 VS Code 扩展 | 历史 OpenAI Compatible 配置 | 历史版本原生支持 | 仅供存量用户迁移；官方仓库已归档，不建议新装 |
 | Continue | VS Code / JetBrains 扩展 | `config.yaml` 模型配置 | Chat / Agent / 补全按配置 | Chat、Autocomplete、Embedding、Reranker 是不同角色，需分别配置 |
 | CC Switch | 桌面配置管理器 | 管理 Claude / Codex 等配置 | 不提供模型能力 | 它只切换配置；最终是否可用由目标 CLI 与 API 协议决定 |
+| Aider | 终端 / Git | `openai/<model>` 与环境变量 | 代码编辑 | 以 Chat Completions 为主；先在测试仓库验证 Git 变更 |
+| OpenCode | 终端代理 | 自定义 Provider 配置 | 原生 | 区分 AI SDK Chat Completions 与 Responses Provider 包 |
+| Kilo Code | VS Code / CLI | Custom Provider | 原生 | 审批、可信配置和模型工具能力必须一起验证 |
+| Zed | 编辑器 | Agent 模型 Provider | 原生 | `chat_completions` capability 会影响使用的协议路径 |
+| goose | 终端 / 桌面代理 | 声明式 Provider | 原生 | Base URL 可能要求完整 `/v1/chat/completions`，按官方字段填写 |
 
 ### 编程工具必须多测两步
 
@@ -71,6 +95,8 @@
 | AnythingLLM | 本地文档/工作区问答 | Generic OpenAI 等 LLM Provider | 是 | LLM、Embedding、向量库为独立组件，换模型可能需重建索引 |
 | Dify | 工作流与应用编排 | OpenAI-compatible 模型插件 | 知识库需要 | 对话模型、Embedding、Rerank 分开配置，插件版本要记录 |
 | FastGPT | 知识库与应用发布 | 模型渠道 / AI Proxy | 是 | 模型渠道、向量维度、索引、应用发布链路分别验证 |
+| RAGFlow | 文档解析与 RAG | OpenAI-compatible 模型配置 | 是 | Chat、Embedding、Rerank、检索测试和数据集解析分别验证 |
+| MaxKB | 企业知识库与智能体 | OpenAI 模型供应商配置 | 是 | 模型、知识库、应用发布、触发器和权限链路分别检查 |
 
 ### 自部署的最小验收
 
@@ -81,28 +107,49 @@
 - 反向代理不会缓冲 SSE；
 - 已备份配置、数据库和持久化卷，并验证恢复流程。
 
-## 5. 效率工具
+## 5. 自动化与可视化工作流
+
+| 工具 | 定位 | 兼容入口 | 关键提醒 |
+|---|---|---|---|
+| n8n | 业务自动化与 Webhook | OpenAI 凭据 / 节点 Base URL | 凭据、聊天、Embedding、Webhook 鉴权和执行数据保留分别设置 |
+| Flowise | Chatflow / Agentflow | ChatOpenAI / Embedding 节点 | 凭据加密、数据库持久化和已发布 Flow API Key 必须配置 |
+| Langflow | 可视化 AI Flow | OpenAI 兼容组件 | Chat 与 Embedding 组件独立，Webhook 和 API 需额外认证 |
+
+工作流平台会把一次用户操作扩展成多次模型调用。上线前限制循环次数、并发、Webhook 来源和单次执行成本。
+
+## 6. 效率工具
 
 | 工具 | 场景 | 兼容入口 | 验证重点 |
 |---|---|---|---|
 | 沉浸式翻译 | 网页、PDF、字幕双语翻译 | OpenAI 兼容翻译服务 | 长文本分段、术语、并发、速率限制与隐私 |
+| Obsidian Copilot | 笔记问答与 Vault QA | 第三方 OpenAI 格式模型 | 笔记内容会发送给接口；CORS 旁路模式不支持流式输出 |
 
 翻译工具会把网页选中文本或文档片段发送给配置的 API。处理合同、病历、客户资料或公司内部页面前，先确认数据处理规则。
 
-## 6. 协议覆盖速查
+## 7. SDK 与开发框架
+
+| 框架 | 语言 / 场景 | 自定义入口 | 关键提醒 |
+|---|---|---|---|
+| OpenAI 官方 SDK | Python / Node.js | `base_url` / `baseURL` | Chat、Responses、Embedding 是不同端点，分别验证 |
+| LangChain | Python / TypeScript | `ChatOpenAI` Custom URL | 非标准响应字段可能不会保留；LLM 与 Embedding 分开配置 |
+| LlamaIndex | Python RAG | `OpenAILike` / `api_base` | 必须填写上下文和工具能力元数据，换 Embedding 后重建索引 |
+| Vercel AI SDK | TypeScript / Next.js | `createOpenAICompatible` | Provider 必须仅在服务端创建，流式 Usage 兼容性需验证 |
+| Spring AI | Java / Spring Boot | `base-url` + `completions-path` | 小心 `/v1` 重复拼接，Tool 和 VectorStore 需独立契约测试 |
+
+## 8. 协议覆盖速查
 
 下表表示教程重点，不是对所有版本的永久能力承诺：
 
 | 协议或能力 | 常见工具 |
 |---|---|
-| OpenAI Chat Completions | Cherry Studio、Chatbox、LobeChat、NextChat、Open WebUI、LibreChat、AnythingLLM、Dify、FastGPT、沉浸式翻译 |
-| OpenAI Responses | Codex CLI；Continue 可按配置选择，需看服务与版本支持 |
+| OpenAI Chat Completions | 大多数聊天客户端；Aider、Cline、OpenCode 等编程工具；n8n、Flowise、Langflow；OpenAI SDK、LangChain、LlamaIndex、Vercel AI SDK、Spring AI |
+| OpenAI Responses | Codex CLI；Continue、OpenCode 和部分 SDK / 框架可按配置选择，需看服务与版本支持 |
 | Anthropic Messages | Claude Code；部分多供应商客户端也可原生配置 Anthropic |
-| Function Calling / 工具调用 | Cline、Continue、Claude Code、Codex CLI，以及部分聊天客户端；Roo Code 仅作历史资料 |
-| Embeddings | AnythingLLM、Dify、FastGPT、Open WebUI 等知识库场景 |
+| Function Calling / 工具调用 | Cline、Continue、Claude Code、Codex CLI、OpenCode、Kilo Code、Zed、goose 及开发框架；Roo Code 仅作历史资料 |
+| Embeddings | AnythingLLM、Dify、FastGPT、RAGFlow、MaxKB、自动化平台及 RAG 开发框架 |
 | SSE 流式输出 | 大多数聊天和编程工具；反向代理配置会影响稳定性 |
 
-## 7. Base URL 填写速查
+## 9. Base URL 填写速查
 
 | 输入框文字 | 通常填写 | 仍需确认 |
 |---|---|---|
@@ -113,7 +160,7 @@
 
 不要只看输入框名称猜地址。每篇教程都以对应工具的官方配置行为为准。
 
-## 8. 能力验收清单
+## 10. 能力验收清单
 
 按需要勾选，不用的能力无需测试：
 
@@ -131,7 +178,7 @@
 - [ ] 重启后的配置持久化；
 - [ ] Key 撤销和轮换。
 
-## 9. 本仓库的兼容性标注规则
+## 11. 本仓库的兼容性标注规则
 
 - **官方支持**：产品官方文档明确给出该配置入口；
 - **兼容入口**：官方提供通用 Base URL 或 OpenAI Compatible 设置，但不承诺所有第三方实现；
@@ -139,7 +186,7 @@
 - **需要自部署**：环境变量或 YAML 配置只适用于自己部署的实例；
 - **待复核**：界面或文档近期变化，教程会明确标注核验日期。
 
-## 10. 推荐阅读顺序
+## 12. 推荐阅读顺序
 
 1. 第一次接 API：先读 [API 接入基础](./api-basics.md)；
 2. 在本页选择工具并进入对应完整教程；

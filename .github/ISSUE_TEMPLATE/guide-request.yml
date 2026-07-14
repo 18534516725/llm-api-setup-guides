@@ -1,0 +1,82 @@
+name: 新增教程
+description: 申请增加一个支持自定义 API 的工具或平台
+title: "[教程需求] "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先确认产品官方资料明确支持自定义 API、Base URL 或兼容供应商。不要提交 API Key、Cookie、私人日志或内部渠道信息。
+  - type: input
+    id: product
+    attributes:
+      label: 产品名称
+      placeholder: 例如 Aider
+    validations:
+      required: true
+  - type: input
+    id: official_site
+    attributes:
+      label: 官方网站或官方仓库
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: config_docs
+    attributes:
+      label: 官方自定义 API 配置文档
+      description: 必须是官方文档、官方仓库或官方扩展商店页面
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 工具类别
+      options:
+        - 聊天客户端
+        - AI 编程工具
+        - 自部署或知识库
+        - 自动化或工作流
+        - 效率工具
+        - SDK 或开发框架
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 你使用的版本
+      placeholder: 版本号、发布日期或 Docker 镜像标签
+    validations:
+      required: true
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: 已确认的协议
+      multiple: true
+      options:
+        - OpenAI Chat Completions
+        - OpenAI Responses
+        - Anthropic Messages
+        - Embeddings
+        - 其他或不确定
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 使用场景与希望覆盖的重点
+      placeholder: 请说明安装平台、配置入口、Agent/RAG/翻译等重点，不要粘贴真实 Key。
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我没有提交 API Key、Cookie、私人数据、未经脱敏的日志或内部供应商信息
+          required: true
+        - label: 我提供的是产品官方资料，而不是只有二手教程
+          required: true
