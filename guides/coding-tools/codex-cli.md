@@ -6,7 +6,7 @@
 >
 > 关键前提：自定义提供方必须支持 OpenAI Responses API
 
-[← 返回教程目录](../README.md)
+[← 返回教程目录](../../README.md)
 
 > [!TIP]
 > **想直接测试 Codex CLI，又不想准备外币卡？**
@@ -35,6 +35,8 @@ POST /v1/responses
 
 ## 3. 安装 Codex CLI
 
+以下地址来自 Codex 官方安装说明。高安全环境建议优先使用 npm / Homebrew，或先下载并审阅安装脚本，再决定是否执行。
+
 ### macOS / Linux 官方安装器
 
 ```bash
@@ -57,13 +59,13 @@ brew install --cask codex
 
 ### Windows
 
-在 PowerShell 中运行官方安装器：
+Codex CLI 的 Windows 支持仍可能受版本和项目工具链影响。优先在 **WSL 2** 中按 Linux 方式安装；如需在 PowerShell 中尝试，可先安装 Node.js LTS，再执行：
 
 ```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
+npm install -g @openai/codex
 ```
 
-Codex 可在 Windows 原生使用。依赖 Linux 工具链的项目通常更适合在 WSL 2 内安装并运行。安装后重新打开终端。
+依赖 Bash、Linux 权限语义或 Linux 构建工具链的项目更适合在 WSL 2 内安装并运行。安装后重新打开终端。
 
 ## 4. 验证安装
 

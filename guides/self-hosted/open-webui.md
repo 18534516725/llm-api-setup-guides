@@ -6,7 +6,7 @@
 >
 > 推荐方式：Docker，本地或私有服务器部署
 
-[← 返回教程目录](../README.md)
+[← 返回教程目录](../../README.md)
 
 > [!TIP]
 > **还没有可接入 Open WebUI 的 API？**

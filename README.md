@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=600&lines=Cherry+Studio+%2F+Chatbox+%2F+Claude+Code+%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B;3+%E5%88%86%E9%92%9F%E6%8E%A5%E5%85%A5%EF%BC%8C%E9%9B%B6%E6%88%90%E6%9C%AC%E8%B5%B0%E5%AE%8C%E5%85%A8%E7%A8%8B;%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=700&lines=20+%E7%AF%87%E4%B8%BB%E6%B5%81+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;Claude+Code+%2F+Codex+%2F+Cursor+%2F+Dify+%2F+Cherry+Studio;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
 
 <br/>
 
@@ -25,7 +25,7 @@
 
 ## 🚀 教程配套 API：纽智中转站
 
-**Claude Code · Codex CLI · Cherry Studio · Chatbox · Open WebUI 一把 Key 接入**
+**Claude Code · Codex CLI · Cursor · Cline · Cherry Studio · Dify 等主流工具一把 Key 接入**
 
 **每天 20 次免费额度 · 新人 ¥1 得 300 积分 · 支付宝 / 微信直充 · 无需外币卡**
 
@@ -58,34 +58,54 @@
 
 ## 📖 教程目录
 
-### 💻 桌面客户端
+> 不知道选哪个？先看 **[17 款工具兼容性总表](./guides/basics/compatibility-matrix.md)**。第一次接 API，建议先读 **[Base URL、API Key、模型 ID 与协议基础](./guides/basics/api-basics.md)**。
+
+### 💬 聊天客户端 `guides/chat-clients/`
 
 | 工具 | 说明 | 难度 | 状态 |
 |:---|:---|:---:|:---:|
-| **[Cherry Studio](./guides/cherry-studio.md)** | 全能桌面客户端,统一管理多个模型 | ⭐ | ✅ 已发布 |
-| **[Chatbox](./guides/chatbox.md)** | 轻量简洁,本地优先,新手友好 | ⭐ | ✅ 已发布 |
-| **LobeChat** | 高颜值 Web 客户端,插件生态丰富 | ⭐⭐ | 📅 计划中 |
-| **NextChat** | 一键部署的经典选择 | ⭐⭐ | 📅 计划中 |
-| **[Open WebUI](./guides/open-webui.md)** | Docker 自部署,支持多账户与多连接 | ⭐⭐⭐ | ✅ 已发布 |
+| **[Cherry Studio](./guides/chat-clients/cherry-studio.md)** | 多模型桌面客户端，自定义供应商配置完整 | ⭐ | ✅ 已发布 |
+| **[Chatbox](./guides/chat-clients/chatbox.md)** | 轻量、本地优先，适合第一次接 API | ⭐ | ✅ 已发布 |
+| **[LobeChat](./guides/chat-clients/lobechat.md)** | Web / PWA / Docker，多服务商与扩展能力 | ⭐⭐ | ✅ 已发布 |
+| **[NextChat](./guides/chat-clients/nextchat.md)** | 轻量 Web 客户端，适合快速私有部署 | ⭐⭐ | ✅ 已发布 |
 
-### ⌨️ AI 编程工具
-
-| 工具 | 说明 | 难度 | 状态 |
-|:---|:---|:---:|:---:|
-| **[Claude Code](./guides/claude-code.md)** | Anthropic 官方终端编程代理 | ⭐⭐ | ✅ 已发布 |
-| **[Codex CLI](./guides/codex-cli.md)** | OpenAI 官方终端编程代理,支持 Responses API | ⭐⭐ | ✅ 已发布 |
-| **Cursor** | 最火的 AI 编辑器 | ⭐⭐ | 📅 计划中 |
-| **CC Switch** | Claude Code 多线路一键切换 | ⭐ | 📅 计划中 |
-
-### 🧩 插件与平台
+### ⌨️ AI 编程工具 `guides/coding-tools/`
 
 | 工具 | 说明 | 难度 | 状态 |
 |:---|:---|:---:|:---:|
-| **沉浸式翻译** | 全网最火的双语翻译插件 | ⭐ | 🚧 本周更新 |
-| **Dify** | 低代码 AI 应用编排平台 | ⭐⭐⭐ | 📅 计划中 |
-| **FastGPT** | 知识库问答平台 | ⭐⭐⭐ | 📅 计划中 |
+| **[Claude Code](./guides/coding-tools/claude-code.md)** | 终端编程代理，Anthropic Messages 兼容配置 | ⭐⭐ | ✅ 已发布 |
+| **[Codex CLI](./guides/coding-tools/codex-cli.md)** | 终端编程代理，OpenAI Responses 协议 | ⭐⭐ | ✅ 已发布 |
+| **[Cursor](./guides/coding-tools/cursor.md)** | BYOK、Override Base URL 与 Agent 限制说明 | ⭐⭐ | ✅ 已发布 |
+| **[Cline](./guides/coding-tools/cline.md)** | VS Code 编程代理，OpenAI Compatible 接入 | ⭐⭐ | ✅ 已发布 |
+| **[Roo Code（历史资料）](./guides/coding-tools/roo-code.md)** | 已停止运营；仅供存量用户迁移与排错 | — | ⚠️ 已停运 |
+| **[Continue](./guides/coding-tools/continue.md)** | Chat、Agent、补全、Embedding 分角色配置 | ⭐⭐⭐ | ✅ 已发布 |
+| **[CC Switch](./guides/coding-tools/cc-switch.md)** | Claude / Codex 等 CLI 配置管理与切换 | ⭐⭐ | ✅ 已发布 |
 
-> 📌 想要的工具不在列表里?[提个 Issue](https://github.com/18534516725/llm-api-setup-guides/issues) 告诉我,呼声高的优先写。
+### 🏠 自部署与知识库 `guides/self-hosted/`
+
+| 工具 | 说明 | 难度 | 状态 |
+|:---|:---|:---:|:---:|
+| **[Open WebUI](./guides/self-hosted/open-webui.md)** | Docker 多用户聊天、连接与反向代理 | ⭐⭐⭐ | ✅ 已发布 |
+| **[LibreChat](./guides/self-hosted/librechat.md)** | Custom Endpoints、YAML 与 Docker 部署 | ⭐⭐⭐ | ✅ 已发布 |
+| **[AnythingLLM](./guides/self-hosted/anythingllm.md)** | 本地文档、工作区与 RAG 完整链路 | ⭐⭐ | ✅ 已发布 |
+| **[Dify](./guides/self-hosted/dify.md)** | 模型插件、知识库、工作流与应用发布 | ⭐⭐⭐ | ✅ 已发布 |
+| **[FastGPT](./guides/self-hosted/fastgpt.md)** | 模型渠道、Embedding、知识库与应用 API | ⭐⭐⭐ | ✅ 已发布 |
+
+### 🧩 效率工具 `guides/productivity-tools/`
+
+| 工具 | 说明 | 难度 | 状态 |
+|:---|:---|:---:|:---:|
+| **[沉浸式翻译](./guides/productivity-tools/immersive-translate.md)** | 网页、PDF、字幕翻译与自定义 API | ⭐ | ✅ 已发布 |
+
+### 📚 基础与排错 `guides/basics/`
+
+| 文档 | 解决什么问题 |
+|:---|:---|
+| **[API 接入基础](./guides/basics/api-basics.md)** | Base URL、Key、模型 ID、Chat Completions、Responses、Messages |
+| **[兼容性总表](./guides/basics/compatibility-matrix.md)** | 按场景选工具，判断聊天、Agent、Embedding 和部署要求 |
+| **[通用排错手册](./guides/basics/troubleshooting.md)** | 400 / 401 / 403 / 404 / 429 / 5xx、SSE、Docker、RAG 排错 |
+
+> 📌 想要的工具不在列表里？[提交教程需求](https://github.com/18534516725/llm-api-setup-guides/issues/new)，请写明工具版本、官网地址和你希望配置的协议。
 
 ---
 
@@ -148,11 +168,11 @@ Base URL 填错。注意有的工具要填到 `/v1` 结尾,有的会自动补全
 - ➕ 想补充其他工具的教程 → 欢迎 PR
 - 💬 配置卡住了想找人问 → QQ 群 **822274386**,在线必回
 
-## ⭐ Star History
+## ⭐ 收藏这个仓库
 
 如果这些教程帮到了你,点个 **Star** ⭐ 是最大的支持——也方便你下次换工具时找回这里。
 
-[![Star History Chart](https://api.star-history.com/svg?repos=18534516725/llm-api-setup-guides&type=Date)](https://star-history.com/#18534516725/llm-api-setup-guides&Date)
+[![Star this repository](https://img.shields.io/badge/Star-%E6%94%B6%E8%97%8F%E6%95%99%E7%A8%8B-FFD700?style=for-the-badge&logo=github)](https://github.com/18534516725/llm-api-setup-guides)
 
 ## 📄 License
 
