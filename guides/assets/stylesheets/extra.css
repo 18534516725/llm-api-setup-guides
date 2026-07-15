@@ -8,6 +8,46 @@
   background: linear-gradient(110deg, #4036a9, #6d5dfc 55%, #2775ca);
 }
 
+.md-banner {
+  background: color-mix(in srgb, var(--nexo-accent) 9%, #f8f7ff);
+  color: #302a64;
+}
+
+[data-md-color-scheme='slate'] .md-banner {
+  background: color-mix(in srgb, var(--nexo-accent) 20%, #17172b);
+  color: #eeeefe;
+}
+
+.site-traffic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 1.25rem;
+  font-size: 0.68rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.site-traffic__item {
+  display: inline-flex;
+  gap: 0.2rem;
+  white-space: nowrap;
+}
+
+.site-traffic strong {
+  color: var(--nexo-accent-strong);
+  font-weight: 750;
+}
+
+[data-md-color-scheme='slate'] .site-traffic strong {
+  color: var(--nexo-cyan);
+}
+
+.site-traffic__separator,
+.site-traffic__since {
+  opacity: 0.68;
+}
+
 .hero {
   margin: 0 0 2rem;
   padding: clamp(1.5rem, 4vw, 3rem);
@@ -114,5 +154,14 @@
   .hero__actions .md-button {
     width: 100%;
     text-align: center;
+  }
+
+  .site-traffic {
+    gap: 0.35rem;
+    font-size: 0.62rem;
+  }
+
+  .site-traffic__since {
+    display: none;
   }
 }

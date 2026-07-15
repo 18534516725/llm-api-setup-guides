@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block announce %}
+  <div class="site-traffic" title="数据自 2026-07-15 接入统计后开始累计">
+    <span class="site-traffic__item">累计访客 <strong id="busuanzi_site_uv">统计中</strong> 人</span>
+    <span class="site-traffic__separator" aria-hidden="true">·</span>
+    <span class="site-traffic__item">累计浏览 <strong id="busuanzi_site_pv">统计中</strong> 次</span>
+    <span class="site-traffic__since">统计始于 2026-07-15</span>
+  </div>
+{% endblock %}
+
 {% block extrahead %}
   {{ super() }}
   <meta property="og:type" content="website">

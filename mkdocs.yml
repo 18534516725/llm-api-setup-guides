@@ -76,6 +76,7 @@ extra_css:
   - assets/stylesheets/extra.css
 
 extra_javascript:
+  - https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js
   - assets/javascripts/extra.js
 
 extra:
