@@ -90,8 +90,6 @@ YOUR_MODEL_ID
 
 ```bash
 git diff --check
-node --test tests/*.test.mjs
-node scripts/validate-docs.mjs
 python3 -m venv .venv-docs
 .venv-docs/bin/python -m pip install -r requirements-docs.txt
 .venv-docs/bin/mkdocs build --strict

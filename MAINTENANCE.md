@@ -5,8 +5,6 @@
 ## 每次提交前
 
 ```bash
-node --test tests/*.test.mjs
-node scripts/validate-docs.mjs
 .venv-docs/bin/mkdocs build --strict
 git diff --check
 ```
@@ -48,7 +46,6 @@ GitHub 仓库 Social preview 使用 [`guides/assets/images/github-social-preview
 
 ## 发布故障处理
 
-- 文档校验失败：按输出的文件、行号修正后本地重跑；
 - Pages 构建失败：查看 `mkdocs build --strict` 的第一条 warning 或 traceback；
 - 外部链接失败：先在浏览器核验，确认不是限流、登录页或短时故障后再修改；
 - 部署成功但页面旧：确认 Actions 部署的提交 SHA 与 `main` 一致，并检查浏览器缓存；

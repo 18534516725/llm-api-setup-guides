@@ -12,8 +12,6 @@
 
 ## 验证结果
 
-- [ ] 已运行 `node --test tests/*.test.mjs`
-- [ ] 已运行 `node scripts/validate-docs.mjs`
 - [ ] 已运行 `mkdocs build --strict`
 - [ ] 涉及界面变化时已附脱敏截图
 - [ ] README、教程总目录、导航或兼容性矩阵已按需同步
