@@ -44,6 +44,8 @@ git diff --check
 - 查看访问量、热门路径和来源，只据此确定核验优先级，不伪造流量或批量制造低质量页面；
 - 复查工作流权限，保持最小权限。
 
+GitHub 仓库 Social preview 使用 [`guides/assets/images/github-social-preview.jpg`](./guides/assets/images/github-social-preview.jpg)。该文件固定为 1280×640 且小于 1 MB，可在仓库 **Settings → General → Social preview → Edit** 中直接上传。网页 Open Graph 使用同目录的高质量 PNG。
+
 ## 发布故障处理
 
 - 文档校验失败：按输出的文件、行号修正后本地重跑；
