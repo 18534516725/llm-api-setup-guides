@@ -6,10 +6,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> **想先验证自定义 Agent 接口？**
->
-> [纽智中转站](https://www.nexotoken.net/?ref=github) 提供多模型 API、每天免费测试额度和新人体验额度。请从控制台确认目标模型支持 Responses 还是 Chat Completions，并复制准确 Base URL 与模型 ID。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. 先选择 API 形态
 

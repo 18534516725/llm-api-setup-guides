@@ -6,10 +6,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> **需要一个可直接测试的兼容 API？**
->
-> [NexoToken](https://www.nexotoken.net/?ref=github) 每天提供 20 次免费额度，新人 1 元可得 300 积分，并支持支付宝、微信直充。活动、额度与计费规则可能调整，**一切以官网最新页面为准**。创建 Key 后，请从控制台复制实际 Base URL 与模型 ID，不要猜写。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. Aider 的定位与兼容边界
 

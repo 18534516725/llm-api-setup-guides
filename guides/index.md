@@ -35,10 +35,6 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 3. 从下方选择工具，照着教程完成一次最小请求。
 4. 遇到状态码或流式问题，直接查 [通用排错手册](basics/troubleshooting.md)。
 
-!!! tip "教程配套 API：NexoToken（纽智中转站）"
-
-    本站教程支持任何符合对应协议的 API。若你还没有可测试的 Key，可以使用 [NexoToken](https://www.nexotoken.net/?ref=github-pages-tip)：支持支付宝、微信直充，并提供每日免费测试额度。活动、模型和计费规则可能调整，请以官网实时页面为准。
-
 ## 按使用场景选择教程
 
 <div class="guide-grid" markdown>

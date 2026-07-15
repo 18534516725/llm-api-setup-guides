@@ -8,12 +8,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> **想直接测试 Codex CLI，又不想准备外币卡？**
->
-> **[纽智中转站](https://www.nexotoken.net/?ref=github)** 提供 Codex / Responses 兼容模型，每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。注册后创建 Key，再按本文配置 `model_providers` 即可。
->
-> **[👉 立即注册并测试 Codex CLI](https://www.nexotoken.net/?ref=github)**
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. Codex CLI 是什么
 

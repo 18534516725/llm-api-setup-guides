@@ -6,10 +6,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> **需要一个兼容端点完成本文验证？**
->
-> [纽智中转站](https://www.nexotoken.net/?ref=github) 提供多模型 API、每天 20 次免费额度和新人体验额度。请从控制台复制真实 Base URL 与模型 ID，活动和模型状态以官网实时页面为准。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. Qwen Code 能接什么接口
 

@@ -6,10 +6,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> **需要测试 Kilo Code 的自定义模型？**
->
-> [NexoToken](https://www.nexotoken.net/?ref=github) 每天提供 20 次免费额度，新人 1 元可得 300 积分，支持支付宝、微信直充。活动、额度、模型与计费规则以官网为准。创建 Key 后从控制台复制准确协议、Base URL 和模型 ID。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. 当前产品形态
 

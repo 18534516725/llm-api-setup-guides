@@ -1,7 +1,7 @@
 # AI API 接入基础：Base URL、API Key、模型 ID 与协议
 
-> [!TIP]
-> 本仓库使用 [纽智中转站](https://www.nexotoken.net/?ref=github) 作为中文配置示例：每天 20 次免费额度，新人可用 ¥1 购买 300 积分，支持支付宝与微信直充。活动规则核验于 2026-07-14，请以官网实时页面为准。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 [← 返回教程目录](../教程总目录.md)
 

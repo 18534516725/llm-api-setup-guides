@@ -8,12 +8,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> **还没有可用的 API Key？**
->
-> 本教程可配合 **[NexoToken](https://www.nexotoken.net/?ref=github)** 使用：每天 20 次免费，新人 1 元得 300 积分，支持支付宝 / 微信直充。活动内容与额度可能调整，请以官网实时页面为准。
->
-> **[👉 注册并开始配置](https://www.nexotoken.net/?ref=github)**
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. 适合什么场景
 

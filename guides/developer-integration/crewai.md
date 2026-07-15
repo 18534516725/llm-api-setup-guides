@@ -6,8 +6,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> [纽智中转站](https://www.nexotoken.net/?ref=github) 提供多模型 API 和测试额度。请根据 CrewAI Provider 前缀选择匹配的协议地址，模型状态和活动规则以官网实时页面为准。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. CrewAI 的模型前缀很重要
 

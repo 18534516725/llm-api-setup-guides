@@ -6,10 +6,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> **需要测试 goose 的兼容 API？**
->
-> [NexoToken](https://www.nexotoken.net/?ref=github) 每天提供 20 次免费额度，新人 1 元可得 300 积分，支持支付宝、微信直充。活动、模型、额度和计费规则以官网为准。请从控制台复制真实 Base URL、模型 ID 与工具调用支持说明。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. goose 与兼容要求
 

@@ -6,10 +6,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> **准备验证 Gemini 原生兼容接口？**
->
-> [纽智中转站](https://www.nexotoken.net/?ref=github) 提供多模型 API 和新手测试额度。使用前请先确认控制台给出的地址明确支持 Gemini 原生协议；OpenAI-compatible 地址不能直接填到本文变量中。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. 最重要的协议区别
 

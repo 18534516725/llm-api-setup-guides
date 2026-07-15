@@ -23,19 +23,11 @@
 
 <div align="center">
 
-## 🚀 教程配套 API：纽智中转站
+## 教程配套 API
 
-**Claude Code · Codex CLI · Aider · Cherry Studio · n8n · Dify · LangChain 等工具一把 Key 接入**
+本仓库适用于任何符合对应协议的 API。还没有测试 Key 时，可以使用 NexoToken 完成教程中的配置与验证。
 
-**每天 20 次免费额度 · 新人 ¥1 得 300 积分 · 支付宝 / 微信直充 · 无需外币卡**
-
-**Claude Opus 4.8 ¥0.9/M · Claude Sonnet 5 ¥0.36/M · GPT-5.6 ¥0.5/M**
-
-[![立即注册](https://img.shields.io/badge/%E2%9A%A1_%E7%AB%8B%E5%8D%B3%E6%B3%A8%E5%86%8C-%E9%A2%86%E5%8F%96%E6%AF%8F%E6%97%A5%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6-6C5CE7?style=for-the-badge)](https://www.nexotoken.net/?ref=github)
-[![查看模型](https://img.shields.io/badge/%F0%9F%A4%96_130%2B_%E6%A8%A1%E5%9E%8B-Claude_%C2%B7_GPT_%C2%B7_DeepSeek-00B894?style=for-the-badge)](https://www.nexotoken.net/?ref=github)
-[![在线教程站](https://img.shields.io/badge/%F0%9F%8C%90_%E5%9C%A8%E7%BA%BF%E6%95%99%E7%A8%8B%E7%AB%99-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2_%C2%B7_%E6%89%8B%E6%9C%BA%E9%98%85%E8%AF%BB-2775CA?style=for-the-badge)](https://18534516725.github.io/llm-api-setup-guides/)
-
-<sub>价格与活动核验于 2026-07-14，后续以模型广场和控制台实时展示为准。</sub>
+[![获取配套 API Key](https://img.shields.io/badge/%E8%8E%B7%E5%8F%96%E9%85%8D%E5%A5%97_API_Key-%E6%9F%A5%E7%9C%8B%E6%8E%A5%E5%85%A5%E4%BF%A1%E6%81%AF-6C5CE7?style=for-the-badge)](https://www.nexotoken.net/?ref=github)
 
 </div>
 

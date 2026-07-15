@@ -6,8 +6,8 @@
 
 [← 返回教程目录](../教程总目录.md)
 
-> [!TIP]
-> [纽智中转站](https://www.nexotoken.net/?ref=github) 可用于测试多模型 API。创建 Key 后先确认模型支持的协议、工具调用与结构化输出，再替换本文占位符；活动和价格以官网实时页面为准。
+> [!NOTE]
+> 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 
 ## 1. 为什么要明确模型类
 
