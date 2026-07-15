@@ -4,7 +4,7 @@
 >
 > 适用范围：当前 Zed 原生 Agent 的 LLM Provider；不适用于外部 Agent 自己的认证配置
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要测试 Zed 的自定义 API？**

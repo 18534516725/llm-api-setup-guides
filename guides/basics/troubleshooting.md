@@ -3,7 +3,7 @@
 > [!TIP]
 > 如果你使用 [纽智中转站](https://www.nexotoken.net/?ref=github)，可先在控制台核对模型状态、模型 ID、余额和 Key 权限。平台提供每天 20 次免费额度，新人可用 ¥1 购买 300 积分，并支持支付宝与微信直充；活动规则核验于 2026-07-14，以官网为准。
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 这份手册适用于大多数 OpenAI 兼容客户端、Anthropic 兼容工具和自部署 AI 平台。排错原则只有一句：**先确认请求有没有到达，再按认证、路径、模型、协议、额度、网络的顺序缩小范围。**
 
@@ -236,4 +236,4 @@ HTTP 状态码：
 - [Anthropic API 文档](https://docs.anthropic.com/en/api/overview)
 - [MDN：HTTP 响应状态码](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Reference/Status)
 
-仍然没有解决？回到对应的[工具分类目录](../../README.md#-教程目录)，按那篇教程的“日志与排错”章节检查工具特有配置。
+仍然没有解决？回到[教程总目录](../教程总目录.md)，按那篇教程的“日志与排错”章节检查工具特有配置。

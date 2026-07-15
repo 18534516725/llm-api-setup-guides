@@ -6,7 +6,7 @@
 >
 > 接口要求：服务端必须兼容 Anthropic Messages API
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **想直接测试 Claude Code，又不想折腾海外支付？**

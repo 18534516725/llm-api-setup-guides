@@ -4,7 +4,7 @@
 >
 > 适用范围：CrewAI Python；OpenAI-compatible 或 Anthropic 原生兼容接口
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > [纽智中转站](https://www.nexotoken.net/?ref=github) 提供多模型 API 和测试额度。请根据 CrewAI Provider 前缀选择匹配的协议地址，模型状态和活动规则以官网实时页面为准。

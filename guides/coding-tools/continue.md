@@ -6,7 +6,7 @@
 >
 > 推荐格式：`~/.continue/config.yaml`；旧 `config.json` 已弃用
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **想给 Continue 配一个统一模型接口？**

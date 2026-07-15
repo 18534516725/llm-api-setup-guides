@@ -6,7 +6,7 @@
 >
 > 推荐路径：先验证聊天，再单独验证 Embedding，最后组合 RAG 与 Webhook
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要可供 n8n 调用的 OpenAI 兼容 API？**

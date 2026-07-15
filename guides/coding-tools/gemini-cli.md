@@ -4,7 +4,7 @@
 >
 > 适用范围：Google Gemini CLI；自定义地址使用 Gemini 原生协议，不是 OpenAI Chat Completions
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **准备验证 Gemini 原生兼容接口？**

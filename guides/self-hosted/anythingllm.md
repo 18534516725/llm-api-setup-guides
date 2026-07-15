@@ -6,7 +6,7 @@
 >
 > 推荐方式：个人用 Desktop；团队用 Docker；LLM Provider 选择 `OpenAI (Generic)`
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **还没有可接入 AnythingLLM 的 API？**

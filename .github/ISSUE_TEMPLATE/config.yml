@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 在线中文教程站
+    url: https://18534516725.github.io/llm-api-setup-guides/
+    about: 先搜索教程、兼容性说明和通用排错手册。
+  - name: 私密报告安全问题
+    url: https://github.com/18534516725/llm-api-setup-guides/security/advisories/new
+    about: API Key、私人日志或安全漏洞请通过私密安全报告提交，不要创建公开 Issue。
+  - name: NexoToken 使用帮助
+    url: https://www.nexotoken.net/?ref=github-issue
+    about: 账户、充值、模型状态和服务使用问题请前往服务站处理。

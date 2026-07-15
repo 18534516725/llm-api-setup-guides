@@ -13,7 +13,7 @@
 
 <br/>
 
-[📖 教程目录](#-教程目录) &nbsp;·&nbsp; [🔑 快速开始](#quick-start) &nbsp;·&nbsp; [❓ 常见问题](#-常见问题所有工具通用) &nbsp;·&nbsp; [💬 交流群](#-交流与反馈)
+[🌐 在线文档站](https://18534516725.github.io/llm-api-setup-guides/) &nbsp;·&nbsp; [📖 教程目录](#-教程目录) &nbsp;·&nbsp; [🔑 快速开始](#quick-start) &nbsp;·&nbsp; [❓ 常见问题](#-常见问题所有工具通用) &nbsp;·&nbsp; [💬 交流群](#-交流与反馈)
 
 </div>
 
@@ -33,6 +33,7 @@
 
 [![立即注册](https://img.shields.io/badge/%E2%9A%A1_%E7%AB%8B%E5%8D%B3%E6%B3%A8%E5%86%8C-%E9%A2%86%E5%8F%96%E6%AF%8F%E6%97%A5%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6-6C5CE7?style=for-the-badge)](https://www.nexotoken.net/?ref=github)
 [![查看模型](https://img.shields.io/badge/%F0%9F%A4%96_130%2B_%E6%A8%A1%E5%9E%8B-Claude_%C2%B7_GPT_%C2%B7_DeepSeek-00B894?style=for-the-badge)](https://www.nexotoken.net/?ref=github)
+[![在线教程站](https://img.shields.io/badge/%F0%9F%8C%90_%E5%9C%A8%E7%BA%BF%E6%95%99%E7%A8%8B%E7%AB%99-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2_%C2%B7_%E6%89%8B%E6%9C%BA%E9%98%85%E8%AF%BB-2775CA?style=for-the-badge)](https://18534516725.github.io/llm-api-setup-guides/)
 
 <sub>价格与活动核验于 2026-07-14，后续以模型广场和控制台实时展示为准。</sub>
 
@@ -58,7 +59,7 @@
 
 ## 📖 教程目录
 
-> 当前共 **47 篇中文文档，覆盖 44 款工具、平台与开发框架**。不知道选哪个？先看 **[完整中文教程总目录](./guides/README.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **47 篇中文文档，覆盖 44 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 

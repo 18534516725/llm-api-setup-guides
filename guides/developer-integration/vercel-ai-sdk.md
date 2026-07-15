@@ -6,7 +6,7 @@
 >
 > 关键入口：`createOpenAICompatible({ name, apiKey, baseURL })`
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要验证 Vercel AI SDK 的兼容接口？**

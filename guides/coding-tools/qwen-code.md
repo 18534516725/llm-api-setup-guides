@@ -4,7 +4,7 @@
 >
 > 适用范围：当前 Qwen Code CLI；支持 OpenAI、Anthropic、Gemini 及相应兼容端点
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要一个兼容端点完成本文验证？**

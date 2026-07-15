@@ -6,7 +6,7 @@
 >
 > 推荐路径：先用 OpenAI 组件验证聊天，再独立验证 Embedding 和向量库
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要可用于 Langflow 的 OpenAI 兼容 API？**

@@ -1,0 +1,45 @@
+name: 文档质量检查
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: 链接、示例与站点构建
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v7
+
+      - name: 配置 Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: 运行校验器单元测试
+        run: node --test tests/*.test.mjs
+
+      - name: 扫描文档链接、示例与敏感信息
+        run: node scripts/validate-docs.mjs
+
+      - name: 配置 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+
+      - name: 安装文档构建依赖
+        run: python -m pip install --disable-pip-version-check -r requirements-docs.txt
+
+      - name: 严格构建文档站
+        run: mkdocs build --strict

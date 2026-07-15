@@ -4,6 +4,15 @@
 
 ## 2026-07-15
 
+### 第五阶段：在线文档站与长期维护体系
+
+- 使用 MkDocs Material 建设 GitHub Pages 中文文档站，增加站内搜索、中文导航、深浅色主题、移动端布局、站点地图和社交分享元信息；
+- 新增文档站首页、404 页面、教程模板、SEO robots 文件和 2:1 社交预览封面；
+- 增加 Node.js 文档校验器，自动检查内部链接、Markdown 标题、JSON/Python 示例和疑似真实密钥；
+- 增加提交质量检查、Pages 自动部署、每周外链巡检和 Dependabot；
+- 补齐 Pull Request 模板、Issue 配置、社区行为准则与长期维护手册；
+- 将教程总目录改为中文文件名，并统一各教程的返回入口。
+
 ### 第四阶段：终端 Agent、Agent 框架与 API 调试
 
 - 新增 Qwen Code 与 Gemini CLI 自定义 API 教程，明确 OpenAI、Anthropic、Gemini 原生协议边界；

@@ -24,13 +24,14 @@
 | 自动化平台 | `guides/automation-platforms/` | n8n、Flowise |
 | 效率工具 | `guides/productivity-tools/` | 沉浸式翻译 |
 | 开发集成 | `guides/developer-integration/` | OpenAI SDK、LangChain |
+| API 测试 | `guides/api-testing/` | Apifox、Postman |
 | 基础知识 | `guides/basics/` | 协议基础、通用排错 |
 
 文件名使用小写英文和连字符，例如 `obsidian-copilot.md`。
 
 ## 新教程的必备结构
 
-每篇教程至少包含：
+建议从 [`guides/教程模板.md`](./guides/教程模板.md) 复制结构。每篇教程至少包含：
 
 - 标题、最后核验日期、适用版本和返回目录链接；
 - 仓库统一的 NexoToken 提示块；
@@ -89,7 +90,11 @@ YOUR_MODEL_ID
 
 ```bash
 git diff --check
-rg -n 'YOUR_API_KEY|YOUR_MODEL_ID' guides/你的文件.md
+node --test tests/*.test.mjs
+node scripts/validate-docs.mjs
+python3 -m venv .venv-docs
+.venv-docs/bin/python -m pip install -r requirements-docs.txt
+.venv-docs/bin/mkdocs build --strict
 ```
 
 还要人工确认：
@@ -100,6 +105,14 @@ rg -n 'YOUR_API_KEY|YOUR_MODEL_ID' guides/你的文件.md
 - 没把“能聊天”写成“Agent 完整兼容”；
 - 没有把停止维护的产品推荐给新用户；
 - README 与兼容性矩阵已同步。
+
+本地预览文档站：
+
+```bash
+.venv-docs/bin/mkdocs serve
+```
+
+打开终端显示的本地地址，检查桌面和手机宽度下的导航、表格、代码块与推广入口。不要提交 `.venv-docs/` 或 `site/`。
 
 ## 提交信息
 

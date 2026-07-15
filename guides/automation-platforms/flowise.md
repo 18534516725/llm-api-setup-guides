@@ -6,7 +6,7 @@
 >
 > 推荐路径：聊天、Embedding、Rerank 分开验证后再组装 Agentflow
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要可用于 Flowise 的 OpenAI 兼容 API？**

@@ -4,7 +4,7 @@
 >
 > 适用范围：Apifox、Postman；Models、Chat Completions、Responses 与流式响应基础验证
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要一个接口完成调试练习？**

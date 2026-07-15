@@ -4,7 +4,7 @@
 >
 > 项目状态：仍在维护；官方仓库已从原组织迁移至 Linux Foundation 旗下 AAIF 的 `aaif-goose/goose`
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要测试 goose 的兼容 API？**

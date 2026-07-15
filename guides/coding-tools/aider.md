@@ -4,7 +4,7 @@
 >
 > 适用范围：当前仍维护的 Aider；自定义接口须兼容 OpenAI Chat Completions
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要一个可直接测试的兼容 API？**

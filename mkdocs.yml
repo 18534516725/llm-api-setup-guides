@@ -1,0 +1,152 @@
+site_name: NexoToken 中文 AI 教程
+site_description: Claude Code、Codex CLI、Qwen Code、Gemini CLI、Cherry Studio、Dify 与主流 AI 工具的中文自定义 API 配置教程。
+site_author: NexoToken
+site_url: https://18534516725.github.io/llm-api-setup-guides/
+repo_name: 18534516725/llm-api-setup-guides
+repo_url: https://github.com/18534516725/llm-api-setup-guides
+edit_uri: edit/main/guides/
+docs_dir: guides
+site_dir: site
+copyright: Copyright &copy; 2026 NexoToken · 教程采用 MIT License
+
+theme:
+  name: material
+  language: zh
+  custom_dir: guides/overrides
+  icon:
+    logo: material/book-open-page-variant
+  font: false
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+      separator: '[\s\-\.\_]+'
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/extra.js
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/18534516725/llm-api-setup-guides
+      name: GitHub 仓库
+    - icon: fontawesome/solid/bolt
+      link: https://www.nexotoken.net/?ref=github-pages
+      name: NexoToken
+
+nav:
+  - 首页: index.md
+  - 教程总目录: 教程总目录.md
+  - 新手入门:
+      - API 接入基础: basics/api-basics.md
+      - 工具兼容性总表: basics/compatibility-matrix.md
+      - 通用排错手册: basics/troubleshooting.md
+  - AI 编程工具:
+      - Claude Code: coding-tools/claude-code.md
+      - Codex CLI: coding-tools/codex-cli.md
+      - Qwen Code: coding-tools/qwen-code.md
+      - Gemini CLI: coding-tools/gemini-cli.md
+      - Cursor: coding-tools/cursor.md
+      - Cline: coding-tools/cline.md
+      - Continue: coding-tools/continue.md
+      - CC Switch: coding-tools/cc-switch.md
+      - Aider: coding-tools/aider.md
+      - OpenCode: coding-tools/opencode.md
+      - Kilo Code: coding-tools/kilo-code.md
+      - Zed: coding-tools/zed.md
+      - goose: coding-tools/goose.md
+      - Roo Code（历史资料）: coding-tools/roo-code.md
+  - 聊天客户端:
+      - Cherry Studio: chat-clients/cherry-studio.md
+      - Chatbox: chat-clients/chatbox.md
+      - LobeChat: chat-clients/lobechat.md
+      - NextChat: chat-clients/nextchat.md
+      - Jan: chat-clients/jan.md
+      - Msty: chat-clients/msty.md
+      - TypingMind: chat-clients/typingmind.md
+      - BoltAI: chat-clients/boltai.md
+  - 开发集成:
+      - OpenAI SDK: developer-integration/openai-sdk.md
+      - OpenAI Agents SDK: developer-integration/openai-agents-sdk.md
+      - LangChain: developer-integration/langchain.md
+      - LlamaIndex: developer-integration/llamaindex.md
+      - Vercel AI SDK: developer-integration/vercel-ai-sdk.md
+      - Spring AI: developer-integration/spring-ai.md
+      - PydanticAI: developer-integration/pydantic-ai.md
+      - CrewAI: developer-integration/crewai.md
+  - 自托管与知识库:
+      - Open WebUI: self-hosted/open-webui.md
+      - LibreChat: self-hosted/librechat.md
+      - AnythingLLM: self-hosted/anythingllm.md
+      - Dify: self-hosted/dify.md
+      - FastGPT: self-hosted/fastgpt.md
+      - RAGFlow: self-hosted/ragflow.md
+      - MaxKB: self-hosted/maxkb.md
+  - 自动化平台:
+      - n8n: automation-platforms/n8n.md
+      - Flowise: automation-platforms/flowise.md
+      - Langflow: automation-platforms/langflow.md
+  - 效率工具:
+      - 沉浸式翻译: productivity-tools/immersive-translate.md
+      - Obsidian Copilot: productivity-tools/obsidian-copilot.md
+  - API 测试:
+      - 分类说明: api-testing/README.md
+      - Apifox / Postman: api-testing/apifox-postman.md
+  - 参与建设:
+      - 教程模板: 教程模板.md
+      - 问题反馈: https://github.com/18534516725/llm-api-setup-guides/issues
+      - 获取 API Key: https://www.nexotoken.net/?ref=github-pages-nav

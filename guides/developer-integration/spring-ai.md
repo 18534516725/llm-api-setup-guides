@@ -6,7 +6,7 @@
 >
 > 协议重点：使用官方 OpenAI Java SDK 集成，通过 Base URL、Key 和模型 ID 接入兼容服务
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要给 Spring AI 配置一个 OpenAI 兼容接口？**

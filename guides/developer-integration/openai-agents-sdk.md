@@ -4,7 +4,7 @@
 >
 > 适用范围：OpenAI Agents SDK for Python；自定义 Responses 或 Chat Completions 兼容接口
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **想先验证自定义 Agent 接口？**

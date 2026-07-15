@@ -6,7 +6,7 @@
 >
 > 推荐路径：聊天、Embedding、检索、Rerank、Agent 逐层验证
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要可用于 RAGFlow 的 OpenAI 兼容 API？**

@@ -4,7 +4,7 @@
 >
 > 适用范围：PydanticAI；OpenAI Responses、Chat Completions 与结构化 Agent 输出
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > [纽智中转站](https://www.nexotoken.net/?ref=github) 可用于测试多模型 API。创建 Key 后先确认模型支持的协议、工具调用与结构化输出，再替换本文占位符；活动和价格以官网实时页面为准。

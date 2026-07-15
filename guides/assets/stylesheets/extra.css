@@ -1,0 +1,118 @@
+:root {
+  --nexo-accent: #6d5dfc;
+  --nexo-accent-strong: #5145cd;
+  --nexo-cyan: #21d4fd;
+}
+
+.md-header {
+  background: linear-gradient(110deg, #4036a9, #6d5dfc 55%, #2775ca);
+}
+
+.hero {
+  margin: 0 0 2rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--nexo-accent) 35%, transparent);
+  border-radius: 1rem;
+  background:
+    radial-gradient(circle at 90% 10%, rgb(33 212 253 / 20%), transparent 35%),
+    linear-gradient(135deg, rgb(109 93 252 / 16%), rgb(39 117 202 / 7%));
+}
+
+.hero h2 {
+  max-width: 15em;
+  margin: 0.45rem 0 0.8rem;
+  font-size: clamp(1.7rem, 5vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.hero__eyebrow {
+  color: var(--nexo-accent-strong);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+[data-md-color-scheme='slate'] .hero__eyebrow {
+  color: var(--nexo-cyan);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.25rem;
+}
+
+.hero__service-button {
+  border-color: var(--nexo-accent) !important;
+  color: var(--nexo-accent-strong) !important;
+}
+
+[data-md-color-scheme='slate'] .hero__service-button {
+  color: var(--nexo-cyan) !important;
+}
+
+.trust-row {
+  margin: -0.75rem 0 2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 2rem;
+}
+
+.guide-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.7rem;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.7rem;
+  color: var(--md-default-fg-color) !important;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.guide-card:hover {
+  border-color: color-mix(in srgb, var(--nexo-accent) 55%, transparent);
+  box-shadow: 0 0.7rem 1.8rem rgb(30 35 90 / 10%);
+  transform: translateY(-2px);
+}
+
+.guide-card__icon {
+  grid-row: 1 / span 2;
+  font-size: 1.35rem;
+}
+
+.guide-card strong {
+  font-size: 0.95rem;
+}
+
+.guide-card span:last-child {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 44rem) {
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  .hero__actions .md-button {
+    width: 100%;
+    text-align: center;
+  }
+}

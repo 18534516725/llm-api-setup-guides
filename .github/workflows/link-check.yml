@@ -1,0 +1,34 @@
+name: 每周外部链接巡检
+
+on:
+  schedule:
+    - cron: '23 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: 检查外部链接
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v7
+
+      - name: 运行 Lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --exclude-loopback
+            --accept 200,206,429
+            --max-retries 2
+            README.md
+            guides/**/*.md
+          fail: false
+          failIfEmpty: true
+          jobSummary: true

@@ -6,7 +6,7 @@
 >
 > 推荐做法：聊天使用 `OpenAILike` 明确填写模型元数据，Embedding 单独配置并单独验证
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要为 LlamaIndex 准备聊天和 Embedding 接口？**

@@ -1,0 +1,7 @@
+.DS_Store
+.venv-docs/
+site/
+node_modules/
+*.log
+*.swp
+*~

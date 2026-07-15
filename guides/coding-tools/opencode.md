@@ -4,7 +4,7 @@
 >
 > 适用范围：当前 OpenCode CLI/TUI；官方支持自定义 OpenAI 兼容 Provider
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **需要快速验证自定义 Provider？**

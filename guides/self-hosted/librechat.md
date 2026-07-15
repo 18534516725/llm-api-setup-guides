@@ -6,7 +6,7 @@
 >
 > 推荐方式：`librechat.yaml` 定义端点，`.env` 保存密钥
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **还没有可接入 LibreChat 的 API？**

@@ -6,7 +6,7 @@
 >
 > 重要结论：Cursor 官方只承诺受支持供应商的 BYOK；通用 `Override OpenAI Base URL` 属于兼容入口，不等于任意 OpenAI 兼容服务都能完整运行 Cursor Agent
 
-[← 返回教程目录](../../README.md)
+[← 返回教程目录](../教程总目录.md)
 
 > [!TIP]
 > **想低成本测试 Cursor 的自定义 API？**
