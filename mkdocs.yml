@@ -107,6 +107,9 @@ nav:
       - CC Switch: coding-tools/cc-switch.md
       - Aider: coding-tools/aider.md
       - OpenCode: coding-tools/opencode.md
+      - Crush: coding-tools/crush.md
+      - OpenHands: coding-tools/openhands.md
+      - AionUi: coding-tools/aionui.md
       - Kilo Code: coding-tools/kilo-code.md
       - Zed: coding-tools/zed.md
       - goose: coding-tools/goose.md
@@ -120,6 +123,8 @@ nav:
       - Msty: chat-clients/msty.md
       - TypingMind: chat-clients/typingmind.md
       - BoltAI: chat-clients/boltai.md
+      - ChatWise: chat-clients/chatwise.md
+      - SillyTavern: chat-clients/sillytavern.md
   - 开发集成:
       - OpenAI SDK: developer-integration/openai-sdk.md
       - OpenAI Agents SDK: developer-integration/openai-agents-sdk.md

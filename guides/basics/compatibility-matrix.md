@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-07-15 · 覆盖 44 款工具、平台与开发框架（含 1 项停运历史资料）
+> 最后核验：2026-07-15 · 覆盖 49 款工具、平台与开发框架（含 1 项停运历史资料）
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
@@ -13,14 +13,16 @@
 
 | 你的需求 | 优先查看 | 备选 |
 |---|---|---|
-| 新手桌面聊天 | [Cherry Studio](../chat-clients/cherry-studio.md)、[Chatbox](../chat-clients/chatbox.md) | [LobeChat](../chat-clients/lobechat.md) |
+| 新手桌面聊天 | [Cherry Studio](../chat-clients/cherry-studio.md)、[Chatbox](../chat-clients/chatbox.md) | [ChatWise](../chat-clients/chatwise.md) |
+| 角色与提示词聊天 | [SillyTavern](../chat-clients/sillytavern.md) | 先从 release 分支与纯文本开始 |
 | 本地模型与远程 API 混用 | [Jan](../chat-clients/jan.md)、[Msty](../chat-clients/msty.md) | [Cherry Studio](../chat-clients/cherry-studio.md) |
 | macOS 原生客户端 | [BoltAI](../chat-clients/boltai.md) | [Chatbox](../chat-clients/chatbox.md) |
 | 浏览器或 PWA 聊天 | [LobeChat](../chat-clients/lobechat.md)、[NextChat](../chat-clients/nextchat.md) | [Open WebUI](../self-hosted/open-webui.md) |
 | 终端 AI 编程 | [Claude Code](../coding-tools/claude-code.md)、[Codex CLI](../coding-tools/codex-cli.md) | [Qwen Code](../coding-tools/qwen-code.md)、[Gemini CLI](../coding-tools/gemini-cli.md) |
 | VS Code 编程代理 | [Cline](../coding-tools/cline.md)、[Continue](../coding-tools/continue.md) | Roo Code 已停运，不建议新装 |
 | Git 驱动终端编程 | [Aider](../coding-tools/aider.md) | [OpenCode](../coding-tools/opencode.md) |
-| 开源终端 Agent | [OpenCode](../coding-tools/opencode.md)、[goose](../coding-tools/goose.md) | [Kilo Code](../coding-tools/kilo-code.md) |
+| 开源终端 Agent | [OpenCode](../coding-tools/opencode.md)、[Crush](../coding-tools/crush.md) | [goose](../coding-tools/goose.md) |
+| 软件工程 Agent / 多 Agent 工作台 | [OpenHands](../coding-tools/openhands.md) | [AionUi](../coding-tools/aionui.md) |
 | AI 编辑器 | [Cursor](../coding-tools/cursor.md) | 先阅读其自定义 API 限制 |
 | 多套编程 API 配置切换 | [CC Switch](../coding-tools/cc-switch.md) | 它不是聊天客户端 |
 | 多用户自部署聊天 | [Open WebUI](../self-hosted/open-webui.md)、[LibreChat](../self-hosted/librechat.md) | [LobeChat](../chat-clients/lobechat.md) |
@@ -49,6 +51,8 @@
 | Msty Studio | 桌面端 | Bring Your Own Provider | OpenAI 兼容接口 | Provider、模型能力和知识功能分别确认 |
 | TypingMind | Web / PWA | Custom endpoint | OpenAI Chat Completions | 官方入口使用完整 `/v1/chat/completions` Endpoint |
 | BoltAI | macOS | Custom OpenAI-compatible Server | OpenAI Chat Completions | 使用完整聊天端点；确认 Key 在本机的保存方式 |
+| ChatWise | 桌面端 | Custom Provider | OpenAI / Anthropic 兼容接口 | 模型能力开关要按真实服务逐项验证 |
+| SillyTavern | 本地 Web 前端 | Custom (OpenAI-compatible) | OpenAI Chat Completions | Endpoint 通常填到 `/v1`；release 与 staging 不要混用 |
 
 ### 适合谁
 
@@ -60,6 +64,8 @@
 - **Msty Studio**：需要多 Provider、知识管理和桌面工作台；
 - **TypingMind**：偏好成熟 Web 聊天界面并能配置完整 Endpoint；
 - **BoltAI**：需要 macOS 原生体验和自定义 OpenAI-compatible Server。
+- **ChatWise**：希望在桌面端管理 OpenAI / Anthropic 兼容 Provider；
+- **SillyTavern**：需要角色卡、世界书和高度可调提示词的本地前端。
 
 ## 3. AI 编程工具
 
@@ -76,6 +82,9 @@
 | CC Switch | 桌面配置管理器 | 管理 Claude / Codex 等配置 | 不提供模型能力 | 它只切换配置；最终是否可用由目标 CLI 与 API 协议决定 |
 | Aider | 终端 / Git | `openai/<model>` 与环境变量 | 代码编辑 | 以 Chat Completions 为主；先在测试仓库验证 Git 变更 |
 | OpenCode | 终端代理 | 自定义 Provider 配置 | 原生 | 区分 AI SDK Chat Completions 与 Responses Provider 包 |
+| Crush | 终端代理 | `openai-compat` / `anthropic` Provider | 原生 | 项目配置属于可信代码；工具调用和配置命令必须审查 |
+| OpenHands | 本地 GUI / 软件工程 Agent | Custom Model + Base URL | 原生 | Docker 网络、工作区挂载和强模型工具能力缺一不可 |
+| AionUi | 桌面多 Agent 工作台 | Models → Custom | 内置与外部 Agent 分开 | Custom 模型不会自动覆盖每个外部 CLI 的独立配置 |
 | Kilo Code | VS Code / CLI | Custom Provider | 原生 | 审批、可信配置和模型工具能力必须一起验证 |
 | Zed | 编辑器 | Agent 模型 Provider | 原生 | `chat_completions` capability 会影响使用的协议路径 |
 | goose | 终端 / 桌面代理 | 声明式 Provider | 原生 | Base URL 可能要求完整 `/v1/chat/completions`，按官方字段填写 |
@@ -157,10 +166,10 @@
 
 | 协议或能力 | 常见工具 |
 |---|---|
-| OpenAI Chat Completions | 大多数聊天客户端；Aider、Cline、OpenCode 等编程工具；n8n、Flowise、Langflow；OpenAI SDK、LangChain、LlamaIndex、Vercel AI SDK、Spring AI |
+| OpenAI Chat Completions | 大多数聊天客户端；Aider、Cline、OpenCode、Crush、OpenHands、AionUi 等编程工具；n8n、Flowise、Langflow；OpenAI SDK、LangChain、LlamaIndex、Vercel AI SDK、Spring AI |
 | OpenAI Responses | Codex CLI；Continue、OpenCode 和部分 SDK / 框架可按配置选择，需看服务与版本支持 |
 | Anthropic Messages | Claude Code；部分多供应商客户端也可原生配置 Anthropic |
-| Function Calling / 工具调用 | Cline、Continue、Claude Code、Codex CLI、OpenCode、Kilo Code、Zed、goose 及开发框架；Roo Code 仅作历史资料 |
+| Function Calling / 工具调用 | Cline、Continue、Claude Code、Codex CLI、OpenCode、Crush、OpenHands、AionUi、Kilo Code、Zed、goose 及开发框架；Roo Code 仅作历史资料 |
 | Embeddings | AnythingLLM、Dify、FastGPT、RAGFlow、MaxKB、自动化平台及 RAG 开发框架 |
 | SSE 流式输出 | 大多数聊天和编程工具；反向代理配置会影响稳定性 |
 

@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=47+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+RAG+%2F+%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=52+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+RAG+%2F+%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
 
 <br/>
 
@@ -51,7 +51,7 @@
 
 ## 📖 教程目录
 
-> 当前共 **47 篇中文文档，覆盖 44 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **52 篇中文文档，覆盖 49 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 
@@ -65,6 +65,8 @@
 | **[Msty Studio AI 工作台](./guides/chat-clients/msty.md)** | 自带 Provider、多模型与知识管理 | ⭐⭐ | ✅ 已发布 |
 | **[TypingMind 网页客户端](./guides/chat-clients/typingmind.md)** | 自定义完整 Endpoint 与 Web 配置 | ⭐⭐ | ✅ 已发布 |
 | **[BoltAI macOS 客户端](./guides/chat-clients/boltai.md)** | 自定义 OpenAI-compatible Server | ⭐⭐ | ✅ 已发布 |
+| **[ChatWise 桌面客户端](./guides/chat-clients/chatwise.md)** | OpenAI / Anthropic 兼容 Custom Provider | ⭐ | ✅ 已发布 |
+| **[SillyTavern LLM 前端](./guides/chat-clients/sillytavern.md)** | 角色聊天与 Custom OpenAI-compatible Endpoint | ⭐⭐ | ✅ 已发布 |
 
 ### ⌨️ AI 编程工具 `guides/coding-tools/`
 
@@ -81,6 +83,9 @@
 | **[CC Switch](./guides/coding-tools/cc-switch.md)** | Claude / Codex 等 CLI 配置管理与切换 | ⭐⭐ | ✅ 已发布 |
 | **[Aider 终端编程助手](./guides/coding-tools/aider.md)** | Git 驱动的代码编辑与 Chat Completions | ⭐⭐ | ✅ 已发布 |
 | **[OpenCode 终端编程代理](./guides/coding-tools/opencode.md)** | Chat Completions / Responses 分协议配置 | ⭐⭐⭐ | ✅ 已发布 |
+| **[Crush 终端编程 Agent](./guides/coding-tools/crush.md)** | OpenAI / Anthropic 兼容 Provider 与工具验证 | ⭐⭐⭐ | ✅ 已发布 |
+| **[OpenHands 软件工程 Agent](./guides/coding-tools/openhands.md)** | Local GUI、自定义模型、Docker 与 Base URL | ⭐⭐⭐ | ✅ 已发布 |
+| **[AionUi 多 Agent 工作台](./guides/coding-tools/aionui.md)** | Custom 模型、工作区与外部 CLI 边界 | ⭐⭐ | ✅ 已发布 |
 | **[Kilo Code 编程代理](./guides/coding-tools/kilo-code.md)** | VS Code、CLI 与自定义 Provider | ⭐⭐ | ✅ 已发布 |
 | **[Zed 编辑器 AI 助手](./guides/coding-tools/zed.md)** | Agent、模型能力与协议切换 | ⭐⭐ | ✅ 已发布 |
 | **[goose 开源编程代理](./guides/coding-tools/goose.md)** | 声明式 Provider 与完整聊天端点 | ⭐⭐⭐ | ✅ 已发布 |
