@@ -32,7 +32,7 @@ import {
 } from '../scripts/lib/markdown-validator.mjs';
 
 test('extractMarkdownLinks ignores web and anchor-only links', () => {
-  assert.deepEqual(extractMarkdownLinks('[本地](../README.md) [网页](https://example.com) [锚点](#安装)'), ['../README.md']);
+  assert.deepEqual(extractMarkdownLinks('[本地](../../../README.md) [网页](https://example.com) [锚点](#安装)'), ['../../../README.md']);
 });
 
 test('placeholder keys are accepted', () => {

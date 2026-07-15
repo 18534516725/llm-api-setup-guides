@@ -95,7 +95,7 @@ macOS 从 Dock 启动的 Zed 不一定继承终端临时环境；最稳妥方式
 
 OpenAI-compatible 模型默认 `chat_completions: true`，Zed 使用 Chat Completions。若端点只支持 Responses，改为：
 
-```json
+```jsonc
 "capabilities": {
   "tools": true,
   "images": false,
