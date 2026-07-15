@@ -2,6 +2,16 @@
 
 本项目使用日期记录文档批次。产品界面和 API 能力变化很快，具体教程中的“最后核验”日期比本页更重要。
 
+## 2026-07-15
+
+### 第四阶段：终端 Agent、Agent 框架与 API 调试
+
+- 新增 Qwen Code 与 Gemini CLI 自定义 API 教程，明确 OpenAI、Anthropic、Gemini 原生协议边界；
+- 新增 OpenAI Agents SDK、PydanticAI 与 CrewAI 开发指南；
+- 新建 API 测试与调试分类，加入 Apifox / Postman 的 Models、Chat、Responses、SSE 和 Function Calling 测试流程；
+- 同步更新首页、总目录与兼容性矩阵；
+- 中文文档达到 47 篇，覆盖 44 款工具、平台与开发框架。
+
 ## 2026-07-14
 
 ### 第一阶段：建立完整教程框架

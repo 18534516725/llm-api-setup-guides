@@ -1,6 +1,6 @@
 # AI 工具自定义 API 中文教程总目录
 
-> 最后核验：2026-07-14 · 共 40 篇中文文档 · 覆盖 37 款工具、平台与开发框架
+> 最后核验：2026-07-15 · 共 47 篇中文文档 · 覆盖 44 款工具、平台与开发框架
 
 [← 返回仓库首页](../README.md)
 
@@ -32,6 +32,8 @@
 |---|---|
 | [Claude Code 终端编程代理](./coding-tools/claude-code.md) | Anthropic Messages |
 | [Codex CLI 终端编程代理](./coding-tools/codex-cli.md) | OpenAI Responses |
+| [Qwen Code 终端编程代理](./coding-tools/qwen-code.md) | OpenAI / Anthropic / Gemini Provider |
+| [Gemini CLI 终端编程代理](./coding-tools/gemini-cli.md) | Gemini 原生 API 与自定义 Base URL |
 | [Cursor AI 编辑器](./coding-tools/cursor.md) | BYOK 与自定义 Base URL 限制 |
 | [Cline VS Code 编程代理](./coding-tools/cline.md) | OpenAI Compatible 与工具调用 |
 | [Continue IDE 编程助手](./coding-tools/continue.md) | Chat、Agent、补全、Embedding |
@@ -79,6 +81,15 @@
 | [LlamaIndex RAG 开发框架](./developer-integration/llamaindex.md) | OpenAILike、索引、检索与引用 |
 | [Vercel AI SDK](./developer-integration/vercel-ai-sdk.md) | Next.js、流式 UI、Tool Calling |
 | [Spring AI Java 开发框架](./developer-integration/spring-ai.md) | Spring Boot、ChatClient、RAG |
+| [OpenAI Agents SDK](./developer-integration/openai-agents-sdk.md) | Responses、Chat、多 Agent 与工具调用 |
+| [PydanticAI Agent 框架](./developer-integration/pydantic-ai.md) | 结构化输出与 OpenAI-compatible API |
+| [CrewAI 多 Agent 框架](./developer-integration/crewai.md) | Agent、Task、Crew 与自定义 LLM |
+
+## API 测试与调试
+
+| 中文名称 | 解决什么问题 |
+|---|---|
+| [Apifox / Postman 测试 AI API](./api-testing/apifox-postman.md) | Models、Chat Completions、Responses、SSE 与状态码排查 |
 
 ## 如何贡献
 

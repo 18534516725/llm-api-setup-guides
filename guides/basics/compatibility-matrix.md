@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-07-14 · 覆盖 37 款工具、平台与开发框架（含 1 项停运历史资料）
+> 最后核验：2026-07-15 · 覆盖 44 款工具、平台与开发框架（含 1 项停运历史资料）
 
 > [!TIP]
 > 想先低成本验证工具是否接得通，可以使用 [纽智中转站](https://www.nexotoken.net/?ref=github)：每天 20 次免费额度，新人 ¥1 得 300 积分，支持支付宝 / 微信直充。活动与模型状态以官网实时页面为准。
@@ -17,7 +17,7 @@
 | 本地模型与远程 API 混用 | [Jan](../chat-clients/jan.md)、[Msty](../chat-clients/msty.md) | [Cherry Studio](../chat-clients/cherry-studio.md) |
 | macOS 原生客户端 | [BoltAI](../chat-clients/boltai.md) | [Chatbox](../chat-clients/chatbox.md) |
 | 浏览器或 PWA 聊天 | [LobeChat](../chat-clients/lobechat.md)、[NextChat](../chat-clients/nextchat.md) | [Open WebUI](../self-hosted/open-webui.md) |
-| 终端 AI 编程 | [Claude Code](../coding-tools/claude-code.md)、[Codex CLI](../coding-tools/codex-cli.md) | — |
+| 终端 AI 编程 | [Claude Code](../coding-tools/claude-code.md)、[Codex CLI](../coding-tools/codex-cli.md) | [Qwen Code](../coding-tools/qwen-code.md)、[Gemini CLI](../coding-tools/gemini-cli.md) |
 | VS Code 编程代理 | [Cline](../coding-tools/cline.md)、[Continue](../coding-tools/continue.md) | Roo Code 已停运，不建议新装 |
 | Git 驱动终端编程 | [Aider](../coding-tools/aider.md) | [OpenCode](../coding-tools/opencode.md) |
 | 开源终端 Agent | [OpenCode](../coding-tools/opencode.md)、[goose](../coding-tools/goose.md) | [Kilo Code](../coding-tools/kilo-code.md) |
@@ -32,9 +32,10 @@
 | 网页与文档双语翻译 | [沉浸式翻译](../productivity-tools/immersive-translate.md) | — |
 | Obsidian 知识问答 | [Obsidian Copilot](../productivity-tools/obsidian-copilot.md) | — |
 | Python / Node SDK 开发 | [OpenAI SDK](../developer-integration/openai-sdk.md) | — |
-| Agent / RAG 开发框架 | [LangChain](../developer-integration/langchain.md)、[LlamaIndex](../developer-integration/llamaindex.md) | — |
+| Agent / RAG 开发框架 | [OpenAI Agents SDK](../developer-integration/openai-agents-sdk.md)、[PydanticAI](../developer-integration/pydantic-ai.md) | [CrewAI](../developer-integration/crewai.md)、[LangChain](../developer-integration/langchain.md)、[LlamaIndex](../developer-integration/llamaindex.md) |
 | Next.js AI 应用 | [Vercel AI SDK](../developer-integration/vercel-ai-sdk.md) | — |
 | Java / Spring Boot | [Spring AI](../developer-integration/spring-ai.md) | — |
+| 图形化 API 排错 | [Apifox / Postman](../api-testing/apifox-postman.md) | 先测最小请求，再排查客户端 |
 
 ## 2. 聊天客户端
 
@@ -66,6 +67,8 @@
 |---|---|---|---|---|
 | Claude Code | 终端代理 | Anthropic Messages 兼容配置 | 原生 | 服务必须兼容 Claude Code 所需的 Messages 与工具调用语义 |
 | Codex CLI | 终端代理 | OpenAI Responses | 原生 | 只支持 Chat Completions 的服务通常无法完整替代 Responses |
+| Qwen Code | 终端代理 | OpenAI / Anthropic / Gemini Provider | 原生 | Provider 分组决定 SDK 与协议，Base URL 不能跨协议混用 |
+| Gemini CLI | 终端代理 | Google GenAI / Gemini 原生 API | 原生 | `GOOGLE_GEMINI_BASE_URL` 不是 OpenAI-compatible 地址 |
 | Cursor | 独立编辑器 | BYOK / Override OpenAI Base URL | 部分取决于 Cursor | 自定义 Key 不代表全部 Agent、Tab 和专有功能都会走该地址 |
 | Cline | VS Code 扩展 | OpenAI Compatible 等供应商入口 | 原生 | 首次先设保守审批规则，验证工具调用而不只是聊天 |
 | Roo Code | 已停运的 VS Code 扩展 | 历史 OpenAI Compatible 配置 | 历史版本原生支持 | 仅供存量用户迁移；官方仓库已归档，不建议新装 |
@@ -135,8 +138,20 @@
 | LlamaIndex | Python RAG | `OpenAILike` / `api_base` | 必须填写上下文和工具能力元数据，换 Embedding 后重建索引 |
 | Vercel AI SDK | TypeScript / Next.js | `createOpenAICompatible` | Provider 必须仅在服务端创建，流式 Usage 兼容性需验证 |
 | Spring AI | Java / Spring Boot | `base-url` + `completions-path` | 小心 `/v1` 重复拼接，Tool 和 VectorStore 需独立契约测试 |
+| OpenAI Agents SDK | Python Agent | `OpenAIProvider` / 自定义 OpenAI Client | 默认偏向 Responses；Chat Completions 需要显式模型类 |
+| PydanticAI | Python Agent | `OpenAIProvider(base_url=...)` | 显式区分 Responses 与 Chat，结构化输出仍需 Pydantic 校验 |
+| CrewAI | Python 多 Agent | `LLM(base_url=...)` | Provider 前缀决定协议；Agent 数量会放大调用与错误 |
 
-## 8. 协议覆盖速查
+## 8. API 测试与调试
+
+| 工具 | 主要用途 | 关键提醒 |
+|---|---|---|
+| Apifox | REST、SSE、环境变量和脚本断言 | Key 使用私密环境值，分享项目和截图前彻底脱敏 |
+| Postman | Collection、Variables、Vault 和请求测试 | Secret 放入 Vault；导出 Collection 不等于自动移除所有敏感内容 |
+
+先用调试工具验证 `/models`、`/chat/completions` 或 `/responses`，再配置复杂客户端。普通非流式请求成功后，还需单独测试 SSE 与 Function Calling。
+
+## 9. 协议覆盖速查
 
 下表表示教程重点，不是对所有版本的永久能力承诺：
 
@@ -149,7 +164,7 @@
 | Embeddings | AnythingLLM、Dify、FastGPT、RAGFlow、MaxKB、自动化平台及 RAG 开发框架 |
 | SSE 流式输出 | 大多数聊天和编程工具；反向代理配置会影响稳定性 |
 
-## 9. Base URL 填写速查
+## 10. Base URL 填写速查
 
 | 输入框文字 | 通常填写 | 仍需确认 |
 |---|---|---|
@@ -160,7 +175,7 @@
 
 不要只看输入框名称猜地址。每篇教程都以对应工具的官方配置行为为准。
 
-## 10. 能力验收清单
+## 11. 能力验收清单
 
 按需要勾选，不用的能力无需测试：
 
@@ -178,7 +193,7 @@
 - [ ] 重启后的配置持久化；
 - [ ] Key 撤销和轮换。
 
-## 11. 本仓库的兼容性标注规则
+## 12. 本仓库的兼容性标注规则
 
 - **官方支持**：产品官方文档明确给出该配置入口；
 - **兼容入口**：官方提供通用 Base URL 或 OpenAI Compatible 设置，但不承诺所有第三方实现；
@@ -186,7 +201,7 @@
 - **需要自部署**：环境变量或 YAML 配置只适用于自己部署的实例；
 - **待复核**：界面或文档近期变化，教程会明确标注核验日期。
 
-## 12. 推荐阅读顺序
+## 13. 推荐阅读顺序
 
 1. 第一次接 API：先读 [API 接入基础](./api-basics.md)；
 2. 在本页选择工具并进入对应完整教程；
