@@ -213,4 +213,4 @@ Key 末四位：
 - [Anthropic API 文档](https://docs.anthropic.com/en/api/overview)
 - [GitHub：在 Markdown 中使用相对链接](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes#relative-links-and-image-paths)
 
-下一步：打开[兼容性总表](./compatibility-matrix.md)选择工具，遇到错误时查阅[通用排错手册](./troubleshooting.md)。
+下一步：还没决定使用订阅还是 API 时，先读[订阅与 API 选择指南](./subscription-api-selection.md)；准备接入时打开[兼容性总表](./compatibility-matrix.md)选择工具，遇到错误时查阅[通用排错手册](./troubleshooting.md)。

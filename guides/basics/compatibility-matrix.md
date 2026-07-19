@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-07-15 · 覆盖 49 款工具、平台与开发框架（含 1 项停运历史资料）
+> 最后核验：2026-07-19 · 覆盖 49 款工具、平台与开发框架（含 1 项停运历史资料）
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
@@ -215,6 +215,7 @@
 1. 第一次接 API：先读 [API 接入基础](./api-basics.md)；
 2. 在本页选择工具并进入对应完整教程；
 3. 配置失败：查 [通用排错手册](./troubleshooting.md)；
-4. 准备长期使用：完成 Key 轮换、权限和备份检查。
+4. 准备长期使用：完成[兼容 API 上线验收](./compatible-api-evaluation.md)；
+5. 使用 Agent 或长上下文：先做[成本测算](./token-context-agent-cost.md)和[完整能力测试](./streaming-tools-context-testing.md)。
 
 > 产品更新速度很快。本文只依据各项目官方文档和官方仓库整理；若界面与教程不一致，请提交 Issue，并附工具版本、操作系统和脱敏截图。

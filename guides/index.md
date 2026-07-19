@@ -11,7 +11,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **52 篇中文实操文档**，覆盖 AI 编程工具、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把 401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **56 篇中文实操文档**，覆盖 AI 编程工具、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把 401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,7 +22,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 <div class="trust-row" markdown>
 
-**52 篇中文文档** · **49 款工具与框架** · **安装、配置、验证、排错一页讲完**
+**56 篇中文文档** · **49 款工具与框架** · **选择、配置、验证、成本、排错一页讲完**
 
 </div>
 
@@ -31,9 +31,11 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 按这个顺序最省时间：
 
 1. 阅读 [API 接入基础](basics/api-basics.md)，弄清 Base URL、API Key、模型 ID 和三类常见协议。
-2. 打开 [兼容性总表](basics/compatibility-matrix.md)，确认你的工具需要 Chat Completions、Responses 还是 Messages。
-3. 从下方选择工具，照着教程完成一次最小请求。
-4. 遇到状态码或流式问题，直接查 [通用排错手册](basics/troubleshooting.md)。
+2. 还没决定买什么时，先看[订阅、官方 API 与兼容 API 怎么选](basics/subscription-api-selection.md)。
+3. 打开 [兼容性总表](basics/compatibility-matrix.md)，确认目标工具需要 Chat Completions、Responses 还是 Messages。
+4. 从下方选择工具，照着教程完成一次最小请求。
+5. 长期使用前完成[兼容 API 上线验收](basics/compatible-api-evaluation.md)和[成本测算](basics/token-context-agent-cost.md)。
+6. 遇到状态码或流式问题，直接查 [通用排错手册](basics/troubleshooting.md)。
 
 ## 按使用场景选择教程
 
@@ -87,6 +89,8 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 | [Dify](self-hosted/dify.md) | 搭建知识库与工作流 | Chat / Embedding / Rerank |
 | [OpenAI SDK](developer-integration/openai-sdk.md) | Python / Node.js 开发者 | Responses / Chat |
 | [Apifox / Postman](api-testing/apifox-postman.md) | 想先验证接口是否正常 | Models / Chat / Responses |
+| [兼容 API 上线验收](basics/compatible-api-evaluation.md) | 准备长期使用或部署应用 | 协议 / 用量 / 稳定性 / 安全 |
+| [流式、工具与长上下文测试](basics/streaming-tools-context-testing.md) | 普通聊天成功但 Agent 仍不可用 | SSE / Tools / Context |
 
 ## 教程内容原则
 

@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=52+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+RAG+%2F+%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=56+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+RAG+%2F+%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
 
 <br/>
 
@@ -51,7 +51,7 @@
 
 ## 📖 教程目录
 
-> 当前共 **52 篇中文文档，覆盖 49 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **56 篇中文文档，覆盖 49 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 
@@ -141,6 +141,10 @@
 | 文档 | 解决什么问题 |
 |:---|:---|
 | **[API 接入基础](./guides/basics/api-basics.md)** | Base URL、Key、模型 ID、Chat Completions、Responses、Messages |
+| **[订阅、官方 API 与兼容 API 怎么选](./guides/basics/subscription-api-selection.md)** | 分清聊天订阅与 API，按聊天、开发、Agent 和私有部署场景决策 |
+| **[兼容 API 上线验收](./guides/basics/compatible-api-evaluation.md)** | 协议、能力、账单、稳定性、密钥和数据安全评分 |
+| **[Token、上下文与 Agent 成本](./guides/basics/token-context-agent-cost.md)** | 计算多轮对话、工具循环、RAG 与缓存的真实消耗 |
+| **[流式、工具与长上下文测试](./guides/basics/streaming-tools-context-testing.md)** | SSE、Function Calling、上下文截断、Usage 与 Agent 完整测试 |
 | **[兼容性总表](./guides/basics/compatibility-matrix.md)** | 按场景选工具，判断聊天、Agent、Embedding 和部署要求 |
 | **[通用排错手册](./guides/basics/troubleshooting.md)** | 400 / 401 / 403 / 404 / 429 / 5xx、SSE、Docker、RAG 排错 |
 
