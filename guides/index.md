@@ -11,7 +11,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **56 篇中文实操文档**，覆盖 AI 编程工具、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把 401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **59 篇中文实操文档**，覆盖 AI 编程工具、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,7 +22,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 <div class="trust-row" markdown>
 
-**56 篇中文文档** · **49 款工具与框架** · **选择、配置、验证、成本、排错一页讲完**
+**59 篇中文文档** · **49 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
 
 </div>
 
@@ -35,7 +35,8 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 3. 打开 [兼容性总表](basics/compatibility-matrix.md)，确认目标工具需要 Chat Completions、Responses 还是 Messages。
 4. 从下方选择工具，照着教程完成一次最小请求。
 5. 长期使用前完成[兼容 API 上线验收](basics/compatible-api-evaluation.md)和[成本测算](basics/token-context-agent-cost.md)。
-6. 遇到状态码或流式问题，直接查 [通用排错手册](basics/troubleshooting.md)。
+6. 使用工具扩展时先读 [MCP 入门与安全配置](basics/mcp-basics-security.md)，上线前完成 [Key 安全](basics/api-key-security-rotation.md)与[重试控制](basics/rate-limits-retries.md)。
+7. 遇到状态码或流式问题，直接查 [通用排错手册](basics/troubleshooting.md)。
 
 ## 按使用场景选择教程
 
@@ -91,6 +92,9 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 | [Apifox / Postman](api-testing/apifox-postman.md) | 想先验证接口是否正常 | Models / Chat / Responses |
 | [兼容 API 上线验收](basics/compatible-api-evaluation.md) | 准备长期使用或部署应用 | 协议 / 用量 / 稳定性 / 安全 |
 | [流式、工具与长上下文测试](basics/streaming-tools-context-testing.md) | 普通聊天成功但 Agent 仍不可用 | SSE / Tools / Context |
+| [MCP 入门与安全配置](basics/mcp-basics-security.md) | 给 AI 客户端连接外部工具与数据 | Tools / Resources / Permissions |
+| [API Key 安全与轮换](basics/api-key-security-rotation.md) | 本地、CI 和生产环境管理凭据 | Secrets / Rotation / Incident |
+| [限流、重试与并发控制](basics/rate-limits-retries.md) | 解决 429、批处理和偶发 5xx | Retry / Backoff / Idempotency |
 
 ## 教程内容原则
 

@@ -99,6 +99,9 @@ nav:
       - 兼容 API 上线验收: basics/compatible-api-evaluation.md
       - Token 与 Agent 成本: basics/token-context-agent-cost.md
       - 流式、工具与长上下文测试: basics/streaming-tools-context-testing.md
+      - MCP 入门与安全配置: basics/mcp-basics-security.md
+      - API Key 安全与轮换: basics/api-key-security-rotation.md
+      - 限流、重试与并发控制: basics/rate-limits-retries.md
       - 通用排错手册: basics/troubleshooting.md
   - AI 编程工具:
       - Claude Code: coding-tools/claude-code.md

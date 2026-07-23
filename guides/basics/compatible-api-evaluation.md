@@ -110,7 +110,7 @@ curl --fail-with-body --show-error \
 | 429 重试 | ☐ | 尊重 `retry-after` |
 | 流中错误 | ☐ | 200 后仍可能出现错误事件 |
 
-详细测试载荷见[流式输出、工具调用与长上下文完整测试](./streaming-tools-context-testing.md)。
+详细测试载荷见[流式输出、工具调用与长上下文完整测试](./streaming-tools-context-testing.md)，429 与恢复策略见[限流、重试与并发控制](./rate-limits-retries.md)。
 
 ## 5. 第四层：核对 Token 和账单
 
@@ -197,6 +197,8 @@ curl --fail-with-body --show-error \
 - 支持单 Key 撤销，定期轮换；
 - CI 使用 Secret 管理，不写入 YAML 明文；
 - 离职、设备丢失或疑似泄露时立即撤销。
+
+完整的存放、无中断轮换和泄露处置流程见 [API Key 安全与轮换](./api-key-security-rotation.md)。如果应用连接了 MCP Server，还应按 [MCP 入门与安全配置](./mcp-basics-security.md)限制工具和数据权限。
 
 ### 数据边界
 
