@@ -11,7 +11,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **59 篇中文实操文档**，覆盖 AI 编程工具、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **63 篇中文实操文档**，覆盖 AI 编程工具、本地模型、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,7 +22,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 <div class="trust-row" markdown>
 
-**59 篇中文文档** · **49 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
+**63 篇中文文档** · **53 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
 
 </div>
 
@@ -45,7 +45,13 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 <a class="guide-card" href="coding-tools/claude-code/">
   <span class="guide-card__icon">⌨️</span>
   <strong>AI 编程工具</strong>
-  <span>Claude Code、Codex CLI、Crush、OpenHands、AionUi 等</span>
+  <span>Claude Code、Codex CLI、TRAE、Windsurf、OpenHands 等</span>
+</a>
+
+<a class="guide-card" href="local-models/ollama/">
+  <span class="guide-card__icon">🧠</span>
+  <strong>本地模型</strong>
+  <span>Ollama、LM Studio、本地 API、局域网与资源配置</span>
 </a>
 
 <a class="guide-card" href="chat-clients/cherry-studio/">

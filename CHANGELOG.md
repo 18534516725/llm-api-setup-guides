@@ -2,6 +2,17 @@
 
 本项目使用日期记录文档批次。产品界面和 API 能力变化很快，具体教程中的“最后核验”日期比本页更重要。
 
+## 2026-07-24
+
+### 第九阶段：本地模型与新一代 AI 编辑器
+
+- 新增 Ollama 本地模型教程，覆盖安装、模型管理、OpenAI / Anthropic 兼容接口、Responses、Embedding、上下文和局域网安全；
+- 新增 LM Studio 教程，覆盖图形化模型管理、原生 REST API、OpenAI / Anthropic 兼容端点、API Token、JIT 加载和 Docker 连接；
+- 新增 TRAE 自定义模型教程，明确 v3.5.51 版本边界、Base URL 与完整 Endpoint 的区别、Agent 分层验证和 Key 轮换；
+- 新增 Windsurf BYOK 教程，依据官方资料明确个人用户、受支持模型与“非通用自定义 Base URL”的限制；
+- 同步更新 README、在线首页、教程总目录、站点导航和兼容性矩阵；
+- 中文文档达到 63 篇，覆盖 53 款工具、平台与开发框架。
+
 ## 2026-07-23
 
 ### 第八阶段：MCP、安全与稳定性基础

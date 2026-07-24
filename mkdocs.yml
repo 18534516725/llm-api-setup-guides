@@ -108,6 +108,8 @@ nav:
       - Codex CLI: coding-tools/codex-cli.md
       - Qwen Code: coding-tools/qwen-code.md
       - Gemini CLI: coding-tools/gemini-cli.md
+      - TRAE: coding-tools/trae.md
+      - Windsurf: coding-tools/windsurf.md
       - Cursor: coding-tools/cursor.md
       - Cline: coding-tools/cline.md
       - Continue: coding-tools/continue.md
@@ -121,6 +123,9 @@ nav:
       - Zed: coding-tools/zed.md
       - goose: coding-tools/goose.md
       - Roo Code（历史资料）: coding-tools/roo-code.md
+  - 本地模型:
+      - Ollama: local-models/ollama.md
+      - LM Studio: local-models/lm-studio.md
   - 聊天客户端:
       - Cherry Studio: chat-clients/cherry-studio.md
       - Chatbox: chat-clients/chatbox.md
