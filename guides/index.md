@@ -11,7 +11,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **67 篇中文实操文档**，覆盖 AI 编程工具、本地模型、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **77 篇中文实操文档**，覆盖 AI 编程工具、本地模型、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,7 +22,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 <div class="trust-row" markdown>
 
-**67 篇中文文档** · **55 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
+**77 篇中文文档** · **64 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
 
 </div>
 
@@ -45,13 +45,13 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 <a class="guide-card" href="coding-tools/claude-code/">
   <span class="guide-card__icon">⌨️</span>
   <strong>AI 编程工具</strong>
-  <span>Claude Code、Copilot BYOK、Kiro、TRAE、Windsurf 等</span>
+  <span>Claude Code、Qoder CLI、Antigravity、Copilot BYOK、Kiro 等</span>
 </a>
 
 <a class="guide-card" href="local-models/ollama/">
   <span class="guide-card__icon">🧠</span>
   <strong>本地模型</strong>
-  <span>Ollama、LM Studio、本地 API、局域网与资源配置</span>
+  <span>Ollama、LM Studio、vLLM、Xinference 与本地 API</span>
 </a>
 
 <a class="guide-card" href="chat-clients/cherry-studio/">
@@ -63,13 +63,13 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 <a class="guide-card" href="developer-integration/openai-sdk/">
   <span class="guide-card__icon">🧑‍💻</span>
   <strong>SDK 与 Agent</strong>
-  <span>OpenAI SDK、Agents SDK、LangChain、PydanticAI、CrewAI</span>
+  <span>OpenAI SDK、Agents SDK、LangChain、LangGraph、CrewAI</span>
 </a>
 
 <a class="guide-card" href="self-hosted/dify/">
   <span class="guide-card__icon">🏠</span>
   <strong>自托管与知识库</strong>
-  <span>Dify、Open WebUI、RAGFlow、AnythingLLM、MaxKB</span>
+  <span>Dify、OpenClaw、AstrBot、LangBot、RAGFlow、MaxKB</span>
 </a>
 
 <a class="guide-card" href="automation-platforms/n8n/">
@@ -93,6 +93,9 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 | [Claude Code](coding-tools/claude-code.md) | 需要终端 Agent 写代码 | Anthropic Messages |
 | [Claude Code 进阶](coding-tools/claude-code-advanced.md) | 配置项目规则、Skills、Hooks 和 Subagents | Extensions / Permissions |
 | [Codex CLI](coding-tools/codex-cli.md) | 使用终端编程代理 | OpenAI Responses |
+| [Qoder CLI](coding-tools/qoder-cli.md) | 使用内置或受支持的 Custom Models | Qoder Provider / MCP |
+| [vLLM](local-models/vllm.md) | 在 GPU 服务器部署兼容推理服务 | Chat / Responses / Embedding |
+| [Xinference](local-models/xinference.md) | 统一管理 LLM、Embedding 与 Rerank | OpenAI-compatible / Rerank |
 | [VS Code / GitHub Copilot BYOK](coding-tools/github-copilot-byok.md) | 在 VS Code Chat 使用自己的模型 | Chat / Responses / Messages |
 | [Kiro](coding-tools/kiro.md) | 先写需求、设计与任务再编码 | Specs / Hooks / MCP |
 | [Cherry Studio](chat-clients/cherry-studio.md) | 第一次配置桌面客户端 | 多 Provider |

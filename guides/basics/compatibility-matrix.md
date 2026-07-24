@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-07-24 · 覆盖 55 款工具、平台与开发框架（含 1 项停运历史资料）
+> 最后核验：2026-07-24 · 覆盖 64 款工具、平台与开发框架（含 1 项停运历史资料）
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
@@ -16,11 +16,14 @@
 | 新手桌面聊天 | [Cherry Studio](../chat-clients/cherry-studio.md)、[Chatbox](../chat-clients/chatbox.md) | [ChatWise](../chat-clients/chatwise.md) |
 | 角色与提示词聊天 | [SillyTavern](../chat-clients/sillytavern.md) | 先从 release 分支与纯文本开始 |
 | 本地模型与远程 API 混用 | [Jan](../chat-clients/jan.md)、[Msty](../chat-clients/msty.md) | [Cherry Studio](../chat-clients/cherry-studio.md) |
-| 本机运行开源模型 | [Ollama](../local-models/ollama.md) | [LM Studio](../local-models/lm-studio.md) |
+| 本机运行开源模型 | [Ollama](../local-models/ollama.md) | [LM Studio](../local-models/lm-studio.md)、[Xinference](../local-models/xinference.md) |
+| GPU 服务器高吞吐推理 | [vLLM](../local-models/vllm.md) | [Xinference](../local-models/xinference.md) |
 | 图形化管理本地模型 | [LM Studio](../local-models/lm-studio.md) | [Ollama](../local-models/ollama.md) |
 | macOS 原生客户端 | [BoltAI](../chat-clients/boltai.md) | [Chatbox](../chat-clients/chatbox.md) |
 | 浏览器或 PWA 聊天 | [LobeChat](../chat-clients/lobechat.md)、[NextChat](../chat-clients/nextchat.md) | [Open WebUI](../self-hosted/open-webui.md) |
 | 终端 AI 编程 | [Claude Code](../coding-tools/claude-code.md)、[Codex CLI](../coding-tools/codex-cli.md) | [Qwen Code](../coding-tools/qwen-code.md)、[Gemini CLI](../coding-tools/gemini-cli.md) |
+| 内置模型终端 Agent | [Qoder CLI](../coding-tools/qoder-cli.md) | Custom Models 仅限官方支持列表 |
+| Google Agent 开发环境 | [Antigravity](../coding-tools/google-antigravity.md) | 内置模型与 MCP，不按通用 Base URL 配置 |
 | 规范驱动开发 | [Kiro](../coding-tools/kiro.md) | 先审 requirements、design 和 tasks 再执行 |
 | VS Code 编程代理 | [Cline](../coding-tools/cline.md)、[Continue](../coding-tools/continue.md) | Roo Code 已停运，不建议新装 |
 | VS Code Chat 使用自有模型 | [VS Code / GitHub Copilot BYOK](../coding-tools/github-copilot-byok.md) | BYOK 不会接管所有 Copilot 功能 |
@@ -30,15 +33,18 @@
 | AI 编辑器 | [Cursor](../coding-tools/cursor.md)、[TRAE](../coding-tools/trae.md) | [Windsurf](../coding-tools/windsurf.md) 的 BYOK 不是通用 Base URL |
 | 多套编程 API 配置切换 | [CC Switch](../coding-tools/cc-switch.md) | 它不是聊天客户端 |
 | 多用户自部署聊天 | [Open WebUI](../self-hosted/open-webui.md)、[LibreChat](../self-hosted/librechat.md) | [LobeChat](../chat-clients/lobechat.md) |
+| 自托管个人 Agent | [OpenClaw](../self-hosted/openclaw.md) | 先做 Gateway、渠道和工具权限隔离 |
+| 多平台聊天机器人 | [AstrBot](../self-hosted/astrbot.md)、[LangBot](../self-hosted/langbot.md) | 优先使用聊天平台官方 Bot/API |
 | 本地文档与知识库 | [AnythingLLM](../self-hosted/anythingllm.md) | [Dify](../self-hosted/dify.md)、[FastGPT](../self-hosted/fastgpt.md) |
 | 工作流与 AI 应用 | [Dify](../self-hosted/dify.md) | [FastGPT](../self-hosted/fastgpt.md) |
 | 企业知识库问答 | [FastGPT](../self-hosted/fastgpt.md) | [Dify](../self-hosted/dify.md) |
 | 文档解析型 RAG | [RAGFlow](../self-hosted/ragflow.md) | [MaxKB](../self-hosted/maxkb.md) |
 | 自动化与 Webhook | [n8n](../automation-platforms/n8n.md) | [Flowise](../automation-platforms/flowise.md)、[Langflow](../automation-platforms/langflow.md) |
-| 网页与文档双语翻译 | [沉浸式翻译](../productivity-tools/immersive-translate.md) | — |
+| 网页与文档双语翻译 | [沉浸式翻译](../productivity-tools/immersive-translate.md) | [Pot](../productivity-tools/pot.md) 适合全系统划词与 OCR |
 | Obsidian 知识问答 | [Obsidian Copilot](../productivity-tools/obsidian-copilot.md) | — |
 | Python / Node SDK 开发 | [OpenAI SDK](../developer-integration/openai-sdk.md) | — |
-| Agent / RAG 开发框架 | [OpenAI Agents SDK](../developer-integration/openai-agents-sdk.md)、[PydanticAI](../developer-integration/pydantic-ai.md) | [CrewAI](../developer-integration/crewai.md)、[LangChain](../developer-integration/langchain.md)、[LlamaIndex](../developer-integration/llamaindex.md) |
+| Agent / RAG 开发框架 | [OpenAI Agents SDK](../developer-integration/openai-agents-sdk.md)、[LangGraph](../developer-integration/langgraph.md)、[PydanticAI](../developer-integration/pydantic-ai.md) | [CrewAI](../developer-integration/crewai.md)、[LangChain](../developer-integration/langchain.md)、[LlamaIndex](../developer-integration/llamaindex.md) |
+| Embedding 与 Rerank 设计 | [选型、接入和迁移指南](./embedding-rerank.md) | 先建评测集，再决定模型和阈值 |
 | Next.js AI 应用 | [Vercel AI SDK](../developer-integration/vercel-ai-sdk.md) | — |
 | Java / Spring Boot | [Spring AI](../developer-integration/spring-ai.md) | — |
 | 图形化 API 排错 | [Apifox / Postman](../api-testing/apifox-postman.md) | 先测最小请求，再排查客户端 |
@@ -79,7 +85,9 @@
 | Claude Code 进阶 | 配置体系 | CLAUDE.md / Rules / Skills / Hooks / Subagents | 扩展原生 Agent | 行为说明不是强制安全边界；高风险操作用权限或 Hook |
 | Codex CLI | 终端代理 | OpenAI Responses | 原生 | 只支持 Chat Completions 的服务通常无法完整替代 Responses |
 | Qwen Code | 终端代理 | OpenAI / Anthropic / Gemini Provider | 原生 | Provider 分组决定 SDK 与协议，Base URL 不能跨协议混用 |
+| Qoder CLI | 终端代理 | 内置模型 / 受控 Custom Models | 原生 | Custom Models 不是任意 Base URL，Teams 当前不支持 |
 | Gemini CLI | 终端代理 | Google GenAI / Gemini 原生 API | 原生 | `GOOGLE_GEMINI_BASE_URL` 不是 OpenAI-compatible 地址 |
+| Google Antigravity | Agent 开发环境 | 产品内置模型选择 / MCP | 原生 | 没有可证实的任意 OpenAI-compatible 主模型入口 |
 | VS Code / GitHub Copilot BYOK | VS Code Chat | Built-in Provider / Custom Endpoint | Chat Agent | BYOK 可无 Copilot 计划使用；语义搜索、内联补全等仍有独立边界 |
 | Kiro | 独立编辑器 | 内置模型 + Specs / Steering / Hooks / MCP | 原生 | 官方未提供稳定通用的任意 OpenAI-compatible Base URL 流程 |
 | TRAE | 独立编辑器 | Custom Model / Custom baseURL | 原生 | 先确认版本；区分 Base URL 与完整 Request URL |
@@ -113,6 +121,8 @@
 |---|---|---|---|
 | Ollama | CLI / 桌面服务 | 原生 API、OpenAI / Anthropic 兼容接口 | 默认无传统 API Key 鉴权；上下文和速度受硬件影响 |
 | LM Studio | 图形界面 / `lms` CLI | 原生 REST、OpenAI / Anthropic 兼容接口 | 默认无认证；局域网开放时启用 API Token |
+| vLLM | CLI / GPU 推理服务 | OpenAI-compatible Chat、Responses、Embedding | API Key 主要保护 `/v1`，生产仍需网络隔离与反向代理 |
+| Xinference | WebUI / CLI / API | OpenAI-compatible、Embedding、Rerank | 不同模型需不同后端；公网部署必须鉴权 |
 
 本地模型不会自动获得云端模型同等的工具调用、视觉、推理或长上下文能力。先按“文本 → 流式 → 工具 → 长上下文”的顺序逐层验证，Docker 客户端访问宿主机时不要填写容器自己的 `localhost`。
 
@@ -127,6 +137,9 @@
 | FastGPT | 知识库与应用发布 | 模型渠道 / AI Proxy | 是 | 模型渠道、向量维度、索引、应用发布链路分别验证 |
 | RAGFlow | 文档解析与 RAG | OpenAI-compatible 模型配置 | 是 | Chat、Embedding、Rerank、检索测试和数据集解析分别验证 |
 | MaxKB | 企业知识库与智能体 | OpenAI 模型供应商配置 | 是 | 模型、知识库、应用发布、触发器和权限链路分别检查 |
+| OpenClaw | 个人 Agent / Gateway | `models.providers` | 可选 | 模型可用不代表工具安全；渠道和 Gateway 必须最小权限 |
+| AstrBot | 多平台机器人 | OpenAI / Google / Anthropic Provider | 可选 | ChatUI 先验模型，再验平台适配器和群聊权限 |
+| LangBot | 多平台 Agent 平台 | LLM / Embedding / Rerank 模型配置 | 是 | Request URL 可能是完整端点；Pipeline 与平台链路分层验证 |
 
 ### 自部署的最小验收
 
@@ -153,6 +166,7 @@
 |---|---|---|---|
 | 沉浸式翻译 | 网页、PDF、字幕双语翻译 | OpenAI 兼容翻译服务 | 长文本分段、术语、并发、速率限制与隐私 |
 | Obsidian Copilot | 笔记问答与 Vault QA | 第三方 OpenAI 格式模型 | 笔记内容会发送给接口；CORS 旁路模式不支持流式输出 |
+| Pot | 全系统划词、输入翻译与 OCR | 内置 OpenAI 服务 / 插件 | 多服务并行会把原文发送到多个接口 |
 
 翻译工具会把网页选中文本或文档片段发送给配置的 API。处理合同、病历、客户资料或公司内部页面前，先确认数据处理规则。
 
@@ -168,6 +182,7 @@
 | OpenAI Agents SDK | Python Agent | `OpenAIProvider` / 自定义 OpenAI Client | 默认偏向 Responses；Chat Completions 需要显式模型类 |
 | PydanticAI | Python Agent | `OpenAIProvider(base_url=...)` | 显式区分 Responses 与 Chat，结构化输出仍需 Pydantic 校验 |
 | CrewAI | Python 多 Agent | `LLM(base_url=...)` | Provider 前缀决定协议；Agent 数量会放大调用与错误 |
+| LangGraph | Python Agent / 状态图 | `ChatOpenAI(base_url=...)` | 新项目使用 `create_agent`；生产使用持久化 checkpointer |
 
 ## 9. API 测试与调试
 

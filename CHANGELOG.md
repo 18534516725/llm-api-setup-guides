@@ -4,6 +4,18 @@
 
 ## 2026-07-24
 
+### 第十阶段：本地推理、Agent 框架与多平台机器人
+
+- 新增 Qoder CLI 教程，纠正“完全不支持自定义模型”的旧结论，说明受控 Custom Models、Credits 与 Teams 边界；
+- 新增 Google Antigravity 教程，覆盖 Agent Manager、模型选择、MCP、安全审核和当前自定义主模型边界；
+- 新增 OpenClaw、AstrBot 与 LangBot 教程，覆盖模型 Provider、Gateway、聊天平台、Pipeline、Docker 网络与权限；
+- 新增 Pot 划词翻译与 OCR 教程，覆盖 OpenAI 服务、快捷键、多服务并行和本地 HTTP 调用；
+- 新增 vLLM 与 Xinference 本地推理教程，覆盖 Chat、Embedding、Rerank、工具调用、显存和生产安全；
+- 新增 LangGraph 1.x 教程，使用当前 `create_agent`、StateGraph、InMemorySaver 与 PostgreSQL checkpointer；
+- 新增 Embedding 与 Rerank 指南，覆盖向量维度、切块、两阶段检索、评测和无中断索引迁移；
+- 同步更新 README、在线首页、教程总目录、站点导航和兼容性矩阵；
+- 中文文档达到 77 篇，覆盖 64 款工具、平台与开发框架。
+
 ### 第九阶段：本地模型与新一代 AI 编辑器
 
 - 新增 Ollama 本地模型教程，覆盖安装、模型管理、OpenAI / Anthropic 兼容接口、Responses、Embedding、上下文和局域网安全；

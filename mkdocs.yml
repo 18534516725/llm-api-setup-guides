@@ -94,6 +94,7 @@ nav:
   - 教程总目录: 教程总目录.md
   - 新手入门:
       - API 接入基础: basics/api-basics.md
+      - Embedding 与 Rerank: basics/embedding-rerank.md
       - 订阅与 API 怎么选: basics/subscription-api-selection.md
       - 工具兼容性总表: basics/compatibility-matrix.md
       - 兼容 API 上线验收: basics/compatible-api-evaluation.md
@@ -109,7 +110,9 @@ nav:
       - Claude Code 进阶: coding-tools/claude-code-advanced.md
       - Codex CLI: coding-tools/codex-cli.md
       - Qwen Code: coding-tools/qwen-code.md
+      - Qoder CLI: coding-tools/qoder-cli.md
       - Gemini CLI: coding-tools/gemini-cli.md
+      - Google Antigravity: coding-tools/google-antigravity.md
       - VS Code / GitHub Copilot BYOK: coding-tools/github-copilot-byok.md
       - Kiro: coding-tools/kiro.md
       - TRAE: coding-tools/trae.md
@@ -130,6 +133,8 @@ nav:
   - 本地模型:
       - Ollama: local-models/ollama.md
       - LM Studio: local-models/lm-studio.md
+      - vLLM: local-models/vllm.md
+      - Xinference: local-models/xinference.md
   - 聊天客户端:
       - Cherry Studio: chat-clients/cherry-studio.md
       - Chatbox: chat-clients/chatbox.md
@@ -150,6 +155,7 @@ nav:
       - Spring AI: developer-integration/spring-ai.md
       - PydanticAI: developer-integration/pydantic-ai.md
       - CrewAI: developer-integration/crewai.md
+      - LangGraph: developer-integration/langgraph.md
   - 自托管与知识库:
       - Open WebUI: self-hosted/open-webui.md
       - LibreChat: self-hosted/librechat.md
@@ -158,12 +164,16 @@ nav:
       - FastGPT: self-hosted/fastgpt.md
       - RAGFlow: self-hosted/ragflow.md
       - MaxKB: self-hosted/maxkb.md
+      - OpenClaw: self-hosted/openclaw.md
+      - AstrBot: self-hosted/astrbot.md
+      - LangBot: self-hosted/langbot.md
   - 自动化平台:
       - n8n: automation-platforms/n8n.md
       - Flowise: automation-platforms/flowise.md
       - Langflow: automation-platforms/langflow.md
   - 效率工具:
       - 沉浸式翻译: productivity-tools/immersive-translate.md
+      - Pot 划词翻译: productivity-tools/pot.md
       - Obsidian Copilot: productivity-tools/obsidian-copilot.md
   - API 测试:
       - 分类说明: api-testing/README.md

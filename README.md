@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=67+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=77+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
 
 <br/>
 
@@ -51,7 +51,7 @@
 
 ## 📖 教程目录
 
-> 当前共 **67 篇中文文档，覆盖 55 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **77 篇中文文档，覆盖 64 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 
@@ -76,7 +76,9 @@
 | **[Claude Code 进阶](./guides/coding-tools/claude-code-advanced.md)** | CLAUDE.md、Rules、Skills、Hooks 与 Subagents | ⭐⭐⭐ | ✅ 已发布 |
 | **[Codex CLI](./guides/coding-tools/codex-cli.md)** | 终端编程代理，OpenAI Responses 协议 | ⭐⭐ | ✅ 已发布 |
 | **[Qwen Code](./guides/coding-tools/qwen-code.md)** | OpenAI / Anthropic / Gemini 多 Provider 终端代理 | ⭐⭐ | ✅ 已发布 |
+| **[Qoder CLI](./guides/coding-tools/qoder-cli.md)** | 内置模型、受控 Custom Models 与 MCP | ⭐⭐ | ✅ 已发布 |
 | **[Gemini CLI](./guides/coding-tools/gemini-cli.md)** | Gemini 原生 API、自定义 Base URL 与安全配置 | ⭐⭐ | ✅ 已发布 |
+| **[Google Antigravity](./guides/coding-tools/google-antigravity.md)** | Agent Manager、模型选择、MCP 与使用边界 | ⭐⭐ | ✅ 已发布 |
 | **[VS Code / GitHub Copilot BYOK](./guides/coding-tools/github-copilot-byok.md)** | Custom Endpoint、三类协议与功能边界 | ⭐⭐ | ✅ 已发布 |
 | **[Kiro](./guides/coding-tools/kiro.md)** | Specs、Steering、Hooks、MCP 与分阶段执行 | ⭐⭐ | ✅ 已发布 |
 | **[TRAE IDE](./guides/coding-tools/trae.md)** | Custom Model、Base URL、Agent 验证与版本边界 | ⭐⭐ | ✅ 已发布 |
@@ -101,6 +103,8 @@
 |:---|:---|:---:|:---:|
 | **[Ollama](./guides/local-models/ollama.md)** | 本地模型、兼容 API、上下文与局域网安全 | ⭐⭐ | ✅ 已发布 |
 | **[LM Studio](./guides/local-models/lm-studio.md)** | 图形化模型管理、API Server、认证与 JIT | ⭐⭐ | ✅ 已发布 |
+| **[vLLM](./guides/local-models/vllm.md)** | GPU 推理、OpenAI 兼容接口、工具与安全 | ⭐⭐⭐ | ✅ 已发布 |
+| **[Xinference](./guides/local-models/xinference.md)** | LLM、Embedding、Rerank 与统一管理 | ⭐⭐⭐ | ✅ 已发布 |
 
 ### 🏠 自部署与知识库 `guides/self-hosted/`
 
@@ -113,6 +117,9 @@
 | **[FastGPT](./guides/self-hosted/fastgpt.md)** | 模型渠道、Embedding、知识库与应用 API | ⭐⭐⭐ | ✅ 已发布 |
 | **[RAGFlow 文档知识库](./guides/self-hosted/ragflow.md)** | 模型、数据集、检索与 Agent | ⭐⭐⭐ | ✅ 已发布 |
 | **[MaxKB 企业知识库](./guides/self-hosted/maxkb.md)** | 模型、知识库、智能体与应用发布 | ⭐⭐⭐ | ✅ 已发布 |
+| **[OpenClaw](./guides/self-hosted/openclaw.md)** | 自托管助手、Custom Provider、渠道与 Gateway | ⭐⭐⭐ | ✅ 已发布 |
+| **[AstrBot](./guides/self-hosted/astrbot.md)** | 多平台机器人、模型 Provider 与插件 | ⭐⭐⭐ | ✅ 已发布 |
+| **[LangBot](./guides/self-hosted/langbot.md)** | 机器人、Pipeline、知识库与 Rerank | ⭐⭐⭐ | ✅ 已发布 |
 
 ### 🔄 自动化与工作流 `guides/automation-platforms/`
 
@@ -127,6 +134,7 @@
 | 工具 | 说明 | 难度 | 状态 |
 |:---|:---|:---:|:---:|
 | **[沉浸式翻译](./guides/productivity-tools/immersive-translate.md)** | 网页、PDF、字幕翻译与自定义 API | ⭐ | ✅ 已发布 |
+| **[Pot 划词翻译](./guides/productivity-tools/pot.md)** | 全系统划词、截图 OCR 与 OpenAI 服务 | ⭐ | ✅ 已发布 |
 | **[Obsidian Copilot 知识库助手](./guides/productivity-tools/obsidian-copilot.md)** | 自定义模型、Vault QA 与 CORS | ⭐⭐ | ✅ 已发布 |
 
 ### 🧑‍💻 SDK 与开发框架 `guides/developer-integration/`
@@ -141,6 +149,7 @@
 | **[OpenAI Agents SDK](./guides/developer-integration/openai-agents-sdk.md)** | Responses / Chat、自定义 Provider 与多 Agent | ⭐⭐⭐ | ✅ 已发布 |
 | **[PydanticAI](./guides/developer-integration/pydantic-ai.md)** | 结构化输出、工具调用与 OpenAI-compatible API | ⭐⭐⭐ | ✅ 已发布 |
 | **[CrewAI](./guides/developer-integration/crewai.md)** | 多 Agent、任务协作与自定义 LLM | ⭐⭐⭐ | ✅ 已发布 |
+| **[LangGraph](./guides/developer-integration/langgraph.md)** | Agent 状态图、工具、记忆与持久化 | ⭐⭐⭐ | ✅ 已发布 |
 
 ### 🧪 API 测试与调试 `guides/api-testing/`
 
@@ -153,6 +162,7 @@
 | 文档 | 解决什么问题 |
 |:---|:---|
 | **[API 接入基础](./guides/basics/api-basics.md)** | Base URL、Key、模型 ID、Chat Completions、Responses、Messages |
+| **[Embedding 与 Rerank](./guides/basics/embedding-rerank.md)** | 模型选型、向量维度、两阶段检索、评测与迁移 |
 | **[订阅、官方 API 与兼容 API 怎么选](./guides/basics/subscription-api-selection.md)** | 分清聊天订阅与 API，按聊天、开发、Agent 和私有部署场景决策 |
 | **[兼容 API 上线验收](./guides/basics/compatible-api-evaluation.md)** | 协议、能力、账单、稳定性、密钥和数据安全评分 |
 | **[Token、上下文与 Agent 成本](./guides/basics/token-context-agent-cost.md)** | 计算多轮对话、工具循环、RAG 与缓存的真实消耗 |
