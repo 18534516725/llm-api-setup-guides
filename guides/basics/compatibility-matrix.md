@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-07-24 · 覆盖 53 款工具、平台与开发框架（含 1 项停运历史资料）
+> 最后核验：2026-07-24 · 覆盖 55 款工具、平台与开发框架（含 1 项停运历史资料）
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
@@ -21,7 +21,9 @@
 | macOS 原生客户端 | [BoltAI](../chat-clients/boltai.md) | [Chatbox](../chat-clients/chatbox.md) |
 | 浏览器或 PWA 聊天 | [LobeChat](../chat-clients/lobechat.md)、[NextChat](../chat-clients/nextchat.md) | [Open WebUI](../self-hosted/open-webui.md) |
 | 终端 AI 编程 | [Claude Code](../coding-tools/claude-code.md)、[Codex CLI](../coding-tools/codex-cli.md) | [Qwen Code](../coding-tools/qwen-code.md)、[Gemini CLI](../coding-tools/gemini-cli.md) |
+| 规范驱动开发 | [Kiro](../coding-tools/kiro.md) | 先审 requirements、design 和 tasks 再执行 |
 | VS Code 编程代理 | [Cline](../coding-tools/cline.md)、[Continue](../coding-tools/continue.md) | Roo Code 已停运，不建议新装 |
+| VS Code Chat 使用自有模型 | [VS Code / GitHub Copilot BYOK](../coding-tools/github-copilot-byok.md) | BYOK 不会接管所有 Copilot 功能 |
 | Git 驱动终端编程 | [Aider](../coding-tools/aider.md) | [OpenCode](../coding-tools/opencode.md) |
 | 开源终端 Agent | [OpenCode](../coding-tools/opencode.md)、[Crush](../coding-tools/crush.md) | [goose](../coding-tools/goose.md) |
 | 软件工程 Agent / 多 Agent 工作台 | [OpenHands](../coding-tools/openhands.md) | [AionUi](../coding-tools/aionui.md) |
@@ -74,9 +76,12 @@
 | 工具 | 形态 | 主要协议/入口 | Agent 能力 | 最重要的限制 |
 |---|---|---|---|---|
 | Claude Code | 终端代理 | Anthropic Messages 兼容配置 | 原生 | 服务必须兼容 Claude Code 所需的 Messages 与工具调用语义 |
+| Claude Code 进阶 | 配置体系 | CLAUDE.md / Rules / Skills / Hooks / Subagents | 扩展原生 Agent | 行为说明不是强制安全边界；高风险操作用权限或 Hook |
 | Codex CLI | 终端代理 | OpenAI Responses | 原生 | 只支持 Chat Completions 的服务通常无法完整替代 Responses |
 | Qwen Code | 终端代理 | OpenAI / Anthropic / Gemini Provider | 原生 | Provider 分组决定 SDK 与协议，Base URL 不能跨协议混用 |
 | Gemini CLI | 终端代理 | Google GenAI / Gemini 原生 API | 原生 | `GOOGLE_GEMINI_BASE_URL` 不是 OpenAI-compatible 地址 |
+| VS Code / GitHub Copilot BYOK | VS Code Chat | Built-in Provider / Custom Endpoint | Chat Agent | BYOK 可无 Copilot 计划使用；语义搜索、内联补全等仍有独立边界 |
+| Kiro | 独立编辑器 | 内置模型 + Specs / Steering / Hooks / MCP | 原生 | 官方未提供稳定通用的任意 OpenAI-compatible Base URL 流程 |
 | TRAE | 独立编辑器 | Custom Model / Custom baseURL | 原生 | 先确认版本；区分 Base URL 与完整 Request URL |
 | Windsurf | 独立编辑器 | 官方 BYOK | 原生 | 仅个人用户和标有 BYOK 的受支持模型；非通用 Base URL |
 | Cursor | 独立编辑器 | BYOK / Override OpenAI Base URL | 部分取决于 Cursor | 自定义 Key 不代表全部 Agent、Tab 和专有功能都会走该地址 |
@@ -179,9 +184,9 @@
 
 | 协议或能力 | 常见工具 |
 |---|---|
-| OpenAI Chat Completions | 大多数聊天客户端；TRAE、Aider、Cline、OpenCode、Crush、OpenHands、AionUi 等编程工具；Ollama、LM Studio；自动化平台与开发框架 |
-| OpenAI Responses | Codex CLI；Ollama、LM Studio；Continue、OpenCode 和部分 SDK / 框架可按配置选择 |
-| Anthropic Messages | Claude Code；Ollama、LM Studio 和部分多供应商客户端可提供对应兼容入口 |
+| OpenAI Chat Completions | 大多数聊天客户端；VS Code Custom Endpoint、TRAE、Aider、Cline、OpenCode、Crush、OpenHands 等；Ollama、LM Studio；自动化平台与开发框架 |
+| OpenAI Responses | Codex CLI；VS Code Custom Endpoint；Ollama、LM Studio；Continue、OpenCode 和部分 SDK / 框架 |
+| Anthropic Messages | Claude Code；VS Code Custom Endpoint；Ollama、LM Studio 和部分多供应商客户端 |
 | Function Calling / 工具调用 | Cline、Continue、Claude Code、Codex CLI、OpenCode、Crush、OpenHands、AionUi、Kilo Code、Zed、goose 及开发框架；Roo Code 仅作历史资料 |
 | Embeddings | AnythingLLM、Dify、FastGPT、RAGFlow、MaxKB、自动化平台及 RAG 开发框架 |
 | SSE 流式输出 | 大多数聊天和编程工具；反向代理配置会影响稳定性 |

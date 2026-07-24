@@ -10,8 +10,12 @@
 - 新增 LM Studio 教程，覆盖图形化模型管理、原生 REST API、OpenAI / Anthropic 兼容端点、API Token、JIT 加载和 Docker 连接；
 - 新增 TRAE 自定义模型教程，明确 v3.5.51 版本边界、Base URL 与完整 Endpoint 的区别、Agent 分层验证和 Key 轮换；
 - 新增 Windsurf BYOK 教程，依据官方资料明确个人用户、受支持模型与“非通用自定义 Base URL”的限制；
+- 新增 Kiro 规范驱动开发教程，覆盖 Specs、Steering、Hooks、MCP、任务审核，并移除无官方依据的通用自定义端点说法；
+- 新增 VS Code / GitHub Copilot BYOK 教程，区分 BYOK Chat 与 Copilot 订阅，覆盖 Custom Endpoint 的 Chat、Responses 和 Messages；
+- 新增 Claude Code 进阶教程，按当前官方机制重写 CLAUDE.md、Rules、Auto Memory、Skills、Hooks 和 Subagents；
+- 新增 AI 编程用量与成本优化，覆盖 ccusage 多数据源、报表、估算边界、上下文与缓存优化；
 - 同步更新 README、在线首页、教程总目录、站点导航和兼容性矩阵；
-- 中文文档达到 63 篇，覆盖 53 款工具、平台与开发框架。
+- 中文文档达到 67 篇，覆盖 55 款工具、平台与开发框架。
 
 ## 2026-07-23
 

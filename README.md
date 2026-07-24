@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=63+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=67+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
 
 <br/>
 
@@ -51,7 +51,7 @@
 
 ## 📖 教程目录
 
-> 当前共 **63 篇中文文档，覆盖 53 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **67 篇中文文档，覆盖 55 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 
@@ -73,9 +73,12 @@
 | 工具 | 说明 | 难度 | 状态 |
 |:---|:---|:---:|:---:|
 | **[Claude Code](./guides/coding-tools/claude-code.md)** | 终端编程代理，Anthropic Messages 兼容配置 | ⭐⭐ | ✅ 已发布 |
+| **[Claude Code 进阶](./guides/coding-tools/claude-code-advanced.md)** | CLAUDE.md、Rules、Skills、Hooks 与 Subagents | ⭐⭐⭐ | ✅ 已发布 |
 | **[Codex CLI](./guides/coding-tools/codex-cli.md)** | 终端编程代理，OpenAI Responses 协议 | ⭐⭐ | ✅ 已发布 |
 | **[Qwen Code](./guides/coding-tools/qwen-code.md)** | OpenAI / Anthropic / Gemini 多 Provider 终端代理 | ⭐⭐ | ✅ 已发布 |
 | **[Gemini CLI](./guides/coding-tools/gemini-cli.md)** | Gemini 原生 API、自定义 Base URL 与安全配置 | ⭐⭐ | ✅ 已发布 |
+| **[VS Code / GitHub Copilot BYOK](./guides/coding-tools/github-copilot-byok.md)** | Custom Endpoint、三类协议与功能边界 | ⭐⭐ | ✅ 已发布 |
+| **[Kiro](./guides/coding-tools/kiro.md)** | Specs、Steering、Hooks、MCP 与分阶段执行 | ⭐⭐ | ✅ 已发布 |
 | **[TRAE IDE](./guides/coding-tools/trae.md)** | Custom Model、Base URL、Agent 验证与版本边界 | ⭐⭐ | ✅ 已发布 |
 | **[Windsurf BYOK](./guides/coding-tools/windsurf.md)** | 官方 BYOK 范围、配置、安全与能力边界 | ⭐ | ✅ 已发布 |
 | **[Cursor](./guides/coding-tools/cursor.md)** | BYOK、Override Base URL 与 Agent 限制说明 | ⭐⭐ | ✅ 已发布 |
@@ -157,6 +160,7 @@
 | **[MCP 入门与安全配置](./guides/basics/mcp-basics-security.md)** | Tools、Resources、Prompts、最小权限、审批和越界测试 |
 | **[API Key 安全与轮换](./guides/basics/api-key-security-rotation.md)** | 环境变量、CI、容器、无中断轮换和泄露处置 |
 | **[限流、重试与并发控制](./guides/basics/rate-limits-retries.md)** | 429、退避、队列、幂等、流式中断和重试预算 |
+| **[AI 编程用量与成本优化](./guides/basics/ai-coding-usage-cost.md)** | ccusage、多工具报表、估算边界、上下文与成本优化 |
 | **[兼容性总表](./guides/basics/compatibility-matrix.md)** | 按场景选工具，判断聊天、Agent、Embedding 和部署要求 |
 | **[通用排错手册](./guides/basics/troubleshooting.md)** | 400 / 401 / 403 / 404 / 429 / 5xx、SSE、Docker、RAG 排错 |
 

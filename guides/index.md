@@ -11,7 +11,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **63 篇中文实操文档**，覆盖 AI 编程工具、本地模型、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **67 篇中文实操文档**，覆盖 AI 编程工具、本地模型、聊天客户端、开发框架、知识库、自动化平台与 API 调试。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,7 +22,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 <div class="trust-row" markdown>
 
-**63 篇中文文档** · **53 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
+**67 篇中文文档** · **55 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
 
 </div>
 
@@ -45,7 +45,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 <a class="guide-card" href="coding-tools/claude-code/">
   <span class="guide-card__icon">⌨️</span>
   <strong>AI 编程工具</strong>
-  <span>Claude Code、Codex CLI、TRAE、Windsurf、OpenHands 等</span>
+  <span>Claude Code、Copilot BYOK、Kiro、TRAE、Windsurf 等</span>
 </a>
 
 <a class="guide-card" href="local-models/ollama/">
@@ -91,7 +91,10 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 | 教程 | 适合谁 | 关键协议 |
 |---|---|---|
 | [Claude Code](coding-tools/claude-code.md) | 需要终端 Agent 写代码 | Anthropic Messages |
+| [Claude Code 进阶](coding-tools/claude-code-advanced.md) | 配置项目规则、Skills、Hooks 和 Subagents | Extensions / Permissions |
 | [Codex CLI](coding-tools/codex-cli.md) | 使用终端编程代理 | OpenAI Responses |
+| [VS Code / GitHub Copilot BYOK](coding-tools/github-copilot-byok.md) | 在 VS Code Chat 使用自己的模型 | Chat / Responses / Messages |
+| [Kiro](coding-tools/kiro.md) | 先写需求、设计与任务再编码 | Specs / Hooks / MCP |
 | [Cherry Studio](chat-clients/cherry-studio.md) | 第一次配置桌面客户端 | 多 Provider |
 | [Dify](self-hosted/dify.md) | 搭建知识库与工作流 | Chat / Embedding / Rerank |
 | [OpenAI SDK](developer-integration/openai-sdk.md) | Python / Node.js 开发者 | Responses / Chat |
@@ -101,6 +104,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 | [MCP 入门与安全配置](basics/mcp-basics-security.md) | 给 AI 客户端连接外部工具与数据 | Tools / Resources / Permissions |
 | [API Key 安全与轮换](basics/api-key-security-rotation.md) | 本地、CI 和生产环境管理凭据 | Secrets / Rotation / Incident |
 | [限流、重试与并发控制](basics/rate-limits-retries.md) | 解决 429、批处理和偶发 5xx | Retry / Backoff / Idempotency |
+| [AI 编程用量与成本优化](basics/ai-coding-usage-cost.md) | 分析 Agent CLI Token 与估算成本 | ccusage / Usage / Context |
 
 ## 教程内容原则
 

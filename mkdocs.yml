@@ -102,12 +102,16 @@ nav:
       - MCP 入门与安全配置: basics/mcp-basics-security.md
       - API Key 安全与轮换: basics/api-key-security-rotation.md
       - 限流、重试与并发控制: basics/rate-limits-retries.md
+      - AI 编程用量与成本: basics/ai-coding-usage-cost.md
       - 通用排错手册: basics/troubleshooting.md
   - AI 编程工具:
       - Claude Code: coding-tools/claude-code.md
+      - Claude Code 进阶: coding-tools/claude-code-advanced.md
       - Codex CLI: coding-tools/codex-cli.md
       - Qwen Code: coding-tools/qwen-code.md
       - Gemini CLI: coding-tools/gemini-cli.md
+      - VS Code / GitHub Copilot BYOK: coding-tools/github-copilot-byok.md
+      - Kiro: coding-tools/kiro.md
       - TRAE: coding-tools/trae.md
       - Windsurf: coding-tools/windsurf.md
       - Cursor: coding-tools/cursor.md
