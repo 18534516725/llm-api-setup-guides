@@ -133,7 +133,10 @@ nav:
   - 本地模型:
       - Ollama: local-models/ollama.md
       - LM Studio: local-models/lm-studio.md
+      - llama.cpp / llama-server: local-models/llama-cpp-server.md
+      - LocalAI: local-models/localai.md
       - vLLM: local-models/vllm.md
+      - SGLang: local-models/sglang.md
       - Xinference: local-models/xinference.md
   - 聊天客户端:
       - Cherry Studio: chat-clients/cherry-studio.md
@@ -156,6 +159,10 @@ nav:
       - PydanticAI: developer-integration/pydantic-ai.md
       - CrewAI: developer-integration/crewai.md
       - LangGraph: developer-integration/langgraph.md
+      - Google ADK: developer-integration/google-adk.md
+      - Claude Agent SDK: developer-integration/claude-agent-sdk.md
+      - Hugging Face smolagents: developer-integration/smolagents.md
+      - Langfuse: developer-integration/langfuse.md
   - 自托管与知识库:
       - Open WebUI: self-hosted/open-webui.md
       - LibreChat: self-hosted/librechat.md
@@ -167,6 +174,7 @@ nav:
       - OpenClaw: self-hosted/openclaw.md
       - AstrBot: self-hosted/astrbot.md
       - LangBot: self-hosted/langbot.md
+      - LiteLLM Proxy: self-hosted/litellm-proxy.md
   - 自动化平台:
       - n8n: automation-platforms/n8n.md
       - Flowise: automation-platforms/flowise.md
@@ -178,6 +186,8 @@ nav:
   - API 测试:
       - 分类说明: api-testing/README.md
       - Apifox / Postman: api-testing/apifox-postman.md
+      - Promptfoo: api-testing/promptfoo.md
+      - Ragas: api-testing/ragas.md
   - 参与建设:
       - 教程模板: 教程模板.md
       - 问题反馈: https://github.com/18534516725/llm-api-setup-guides/issues

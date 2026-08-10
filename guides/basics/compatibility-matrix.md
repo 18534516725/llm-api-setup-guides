@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-07-24 · 覆盖 64 款工具、平台与开发框架（含 1 项停运历史资料）
+> 最后核验：2026-08-10 · 覆盖 74 款工具、平台与开发框架（含 1 项停运历史资料）
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
@@ -16,8 +16,9 @@
 | 新手桌面聊天 | [Cherry Studio](../chat-clients/cherry-studio.md)、[Chatbox](../chat-clients/chatbox.md) | [ChatWise](../chat-clients/chatwise.md) |
 | 角色与提示词聊天 | [SillyTavern](../chat-clients/sillytavern.md) | 先从 release 分支与纯文本开始 |
 | 本地模型与远程 API 混用 | [Jan](../chat-clients/jan.md)、[Msty](../chat-clients/msty.md) | [Cherry Studio](../chat-clients/cherry-studio.md) |
-| 本机运行开源模型 | [Ollama](../local-models/ollama.md) | [LM Studio](../local-models/lm-studio.md)、[Xinference](../local-models/xinference.md) |
-| GPU 服务器高吞吐推理 | [vLLM](../local-models/vllm.md) | [Xinference](../local-models/xinference.md) |
+| 本机运行开源模型 | [Ollama](../local-models/ollama.md) | [LM Studio](../local-models/lm-studio.md)、[llama.cpp](../local-models/llama-cpp-server.md)、[LocalAI](../local-models/localai.md) |
+| GPU 服务器高吞吐推理 | [vLLM](../local-models/vllm.md)、[SGLang](../local-models/sglang.md) | [Xinference](../local-models/xinference.md) |
+| 统一多个模型端点 | [LiteLLM Proxy](../self-hosted/litellm-proxy.md) | 先确定协议、鉴权、预算与回退语义 |
 | 图形化管理本地模型 | [LM Studio](../local-models/lm-studio.md) | [Ollama](../local-models/ollama.md) |
 | macOS 原生客户端 | [BoltAI](../chat-clients/boltai.md) | [Chatbox](../chat-clients/chatbox.md) |
 | 浏览器或 PWA 聊天 | [LobeChat](../chat-clients/lobechat.md)、[NextChat](../chat-clients/nextchat.md) | [Open WebUI](../self-hosted/open-webui.md) |
@@ -43,7 +44,10 @@
 | 网页与文档双语翻译 | [沉浸式翻译](../productivity-tools/immersive-translate.md) | [Pot](../productivity-tools/pot.md) 适合全系统划词与 OCR |
 | Obsidian 知识问答 | [Obsidian Copilot](../productivity-tools/obsidian-copilot.md) | — |
 | Python / Node SDK 开发 | [OpenAI SDK](../developer-integration/openai-sdk.md) | — |
-| Agent / RAG 开发框架 | [OpenAI Agents SDK](../developer-integration/openai-agents-sdk.md)、[LangGraph](../developer-integration/langgraph.md)、[PydanticAI](../developer-integration/pydantic-ai.md) | [CrewAI](../developer-integration/crewai.md)、[LangChain](../developer-integration/langchain.md)、[LlamaIndex](../developer-integration/llamaindex.md) |
+| Agent / RAG 开发框架 | [OpenAI Agents SDK](../developer-integration/openai-agents-sdk.md)、[Google ADK](../developer-integration/google-adk.md)、[LangGraph](../developer-integration/langgraph.md) | [Claude Agent SDK](../developer-integration/claude-agent-sdk.md)、[smolagents](../developer-integration/smolagents.md)、[PydanticAI](../developer-integration/pydantic-ai.md)、[CrewAI](../developer-integration/crewai.md) |
+| LLM / Agent 可观测性 | [Langfuse](../developer-integration/langfuse.md) | 先做客户端脱敏和 Trace 结构设计 |
+| Prompt、模型与 Agent 回归 | [Promptfoo](../api-testing/promptfoo.md) | 确定性断言优先，Red Team 只测获准系统 |
+| RAG 检索与忠实度评测 | [Ragas](../api-testing/ragas.md) | 使用真实检索上下文与留出测试集 |
 | Embedding 与 Rerank 设计 | [选型、接入和迁移指南](./embedding-rerank.md) | 先建评测集，再决定模型和阈值 |
 | Next.js AI 应用 | [Vercel AI SDK](../developer-integration/vercel-ai-sdk.md) | — |
 | Java / Spring Boot | [Spring AI](../developer-integration/spring-ai.md) | — |
@@ -123,6 +127,9 @@
 | LM Studio | 图形界面 / `lms` CLI | 原生 REST、OpenAI / Anthropic 兼容接口 | 默认无认证；局域网开放时启用 API Token |
 | vLLM | CLI / GPU 推理服务 | OpenAI-compatible Chat、Responses、Embedding | API Key 主要保护 `/v1`，生产仍需网络隔离与反向代理 |
 | Xinference | WebUI / CLI / API | OpenAI-compatible、Embedding、Rerank | 不同模型需不同后端；公网部署必须鉴权 |
+| llama.cpp / llama-server | CLI / 单进程服务 | Chat、Responses、Messages、Embedding、Rerank | GGUF 模板和任务类型必须匹配；实验性内置工具默认不要开放 |
+| LocalAI | WebUI / 多后端服务 | OpenAI-compatible、多模态与 Anthropic Messages | 简单 API Key 具有管理员能力；不同任务需安装对应模型和 backend |
+| SGLang | CLI / Docker / GPU 推理服务 | OpenAI / Anthropic / Ollama 兼容入口 | CUDA 与 wheel 组合变化快；Reasoning 和工具需匹配 parser |
 
 本地模型不会自动获得云端模型同等的工具调用、视觉、推理或长上下文能力。先按“文本 → 流式 → 工具 → 长上下文”的顺序逐层验证，Docker 客户端访问宿主机时不要填写容器自己的 `localhost`。
 
@@ -140,6 +147,7 @@
 | OpenClaw | 个人 Agent / Gateway | `models.providers` | 可选 | 模型可用不代表工具安全；渠道和 Gateway 必须最小权限 |
 | AstrBot | 多平台机器人 | OpenAI / Google / Anthropic Provider | 可选 | ChatUI 先验模型，再验平台适配器和群聊权限 |
 | LangBot | 多平台 Agent 平台 | LLM / Embedding / Rerank 模型配置 | 是 | Request URL 可能是完整端点；Pipeline 与平台链路分层验证 |
+| LiteLLM Proxy | 统一模型网关 | OpenAI-compatible Proxy | 可选 | 主 Key 与业务虚拟 Key 分离；重试和回退不能重复有副作用的 Agent 动作 |
 
 ### 自部署的最小验收
 
@@ -183,6 +191,10 @@
 | PydanticAI | Python Agent | `OpenAIProvider(base_url=...)` | 显式区分 Responses 与 Chat，结构化输出仍需 Pydantic 校验 |
 | CrewAI | Python 多 Agent | `LLM(base_url=...)` | Provider 前缀决定协议；Agent 数量会放大调用与错误 |
 | LangGraph | Python Agent / 状态图 | `ChatOpenAI(base_url=...)` | 新项目使用 `create_agent`；生产使用持久化 checkpointer |
+| Google ADK | Python / 多语言 Agent | Gemini / LiteLLM 模型连接器 | Dev UI 不用于生产；Session、工具轨迹与依赖安全需单独验收 |
+| Claude Agent SDK | Python / TypeScript Agent | 官方 API Key / 支持的云平台认证 | allow 列表不等于绝对禁止；高风险工具还需 deny、hook 与沙箱 |
+| Hugging Face smolagents | Python CodeAgent / Tool Agent | LiteLLM / OpenAI-compatible 等连接器 | 本地代码执行器不等于完整沙箱；生产使用容器或远程隔离 |
+| Langfuse | LLM / Agent 可观测性 | SDK / OpenTelemetry | Trace 可能含完整输入输出；敏感数据应在客户端发送前脱敏 |
 
 ## 9. API 测试与调试
 
@@ -190,6 +202,8 @@
 |---|---|---|
 | Apifox | REST、SSE、环境变量和脚本断言 | Key 使用私密环境值，分享项目和截图前彻底脱敏 |
 | Postman | Collection、Variables、Vault 和请求测试 | Secret 放入 Vault；导出 Collection 不等于自动移除所有敏感内容 |
+| Promptfoo | Prompt / Provider / Agent 自动化评测与 Red Team | 固定 CLI、模型、Prompt 和数据集版本；攻击测试只针对获准目标 |
+| Ragas | RAG、Agent 与回答质量评测 | 指标依赖字段不同；评测模型本身也会带来波动、成本和偏差 |
 
 先用调试工具验证 `/models`、`/chat/completions` 或 `/responses`，再配置复杂客户端。普通非流式请求成功后，还需单独测试 SSE 与 Function Calling。
 
@@ -199,9 +213,9 @@
 
 | 协议或能力 | 常见工具 |
 |---|---|
-| OpenAI Chat Completions | 大多数聊天客户端；VS Code Custom Endpoint、TRAE、Aider、Cline、OpenCode、Crush、OpenHands 等；Ollama、LM Studio；自动化平台与开发框架 |
-| OpenAI Responses | Codex CLI；VS Code Custom Endpoint；Ollama、LM Studio；Continue、OpenCode 和部分 SDK / 框架 |
-| Anthropic Messages | Claude Code；VS Code Custom Endpoint；Ollama、LM Studio 和部分多供应商客户端 |
+| OpenAI Chat Completions | 大多数聊天客户端；VS Code Custom Endpoint、TRAE、Aider、Cline、OpenCode、Crush、OpenHands 等；Ollama、LM Studio、llama.cpp、LocalAI、vLLM、SGLang；自动化平台与开发框架 |
+| OpenAI Responses | Codex CLI；VS Code Custom Endpoint；Ollama、LM Studio、llama.cpp、vLLM；Continue、OpenCode 和部分 SDK / 框架 |
+| Anthropic Messages | Claude Code；VS Code Custom Endpoint；Ollama、LM Studio、llama.cpp、LocalAI、SGLang 和部分多供应商客户端 |
 | Function Calling / 工具调用 | Cline、Continue、Claude Code、Codex CLI、OpenCode、Crush、OpenHands、AionUi、Kilo Code、Zed、goose 及开发框架；Roo Code 仅作历史资料 |
 | Embeddings | AnythingLLM、Dify、FastGPT、RAGFlow、MaxKB、自动化平台及 RAG 开发框架 |
 | SSE 流式输出 | 大多数聊天和编程工具；反向代理配置会影响稳定性 |

@@ -2,6 +2,19 @@
 
 本项目使用日期记录文档批次。产品界面和 API 能力变化很快，具体教程中的“最后核验”日期比本页更重要。
 
+## 2026-08-10
+
+### 第十一阶段：模型网关、高性能推理、Agent 与自动化评测
+
+- 新增 LiteLLM Proxy 统一模型网关教程，覆盖模型别名、环境变量、认证、虚拟 Key、预算、回退与生产安全；
+- 新增 llama.cpp / llama-server、LocalAI 与 SGLang 教程，覆盖 GGUF、本地多模态 API、Reasoning、工具解析、Embedding、监控与 GPU 调优；
+- 新增 Google ADK、Claude Agent SDK 与 Hugging Face smolagents 教程，覆盖工具、Session、多模型接入、权限求值、执行隔离与评测；
+- 新增 Langfuse 可观测性教程，覆盖 Trace 设计、成本与延迟、环境隔离、客户端脱敏、自托管与事件 flush；
+- 新增 Promptfoo 与 Ragas 教程，覆盖自动化断言、模型 / Prompt 对比、Red Team、RAG 检索与忠实度评测；
+- 所有关键命令、兼容入口和安全边界均依据项目官方文档或官方仓库重新核验；
+- 同步更新 README、在线首页、教程总目录、API 测试分类、站点导航和兼容性矩阵；
+- 中文文档达到 87 篇，覆盖 74 款工具、平台与开发框架。
+
 ## 2026-07-24
 
 ### 第十阶段：本地推理、Agent 框架与多平台机器人
