@@ -10,6 +10,8 @@
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
+>
+> 需要先建立接入与能力验收清单时，可查看 [NexoToken Cursor 兼容 API 专题](https://www.nexotoken.net/official/guides/cursor-compatible-api?ref=github-guide)；本文继续保留 Cursor 的完整限制说明。
 
 ## 1. 先看结论：Cursor 的兼容范围比普通聊天客户端窄
 

@@ -10,6 +10,8 @@
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
+>
+> 需要先判断 Base URL、模型和验证顺序时，可查看 [NexoToken Codex API 与 Base URL 专题](https://www.nexotoken.net/official/guides/codex-api-base-url?ref=github-guide)；本文继续保留完整 CLI 配置与排错步骤。
 
 ## 1. Codex CLI 是什么
 

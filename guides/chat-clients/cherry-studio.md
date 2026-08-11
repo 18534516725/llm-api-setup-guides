@@ -10,6 +10,8 @@
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
+>
+> 需要先核对服务类型、模型和首次验证顺序时，可查看 [NexoToken Cherry Studio 兼容 API 专题](https://www.nexotoken.net/official/guides/cherry-studio-compatible-api?ref=github-guide)；本文继续保留安装到排错的完整步骤。
 
 ## 1. Cherry Studio 适合谁
 

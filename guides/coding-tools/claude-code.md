@@ -10,6 +10,8 @@
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
+>
+> 需要先核对 Base URL、环境变量和最小验证流程时，可查看 [NexoToken Claude Code 自定义 API 专题](https://www.nexotoken.net/official/guides/claude-code-custom-api?ref=github-guide)；本文继续保留跨平台完整配置。
 
 ## 1. 先弄清楚：Claude Code 不是聊天客户端
 

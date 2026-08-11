@@ -8,6 +8,8 @@
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
+>
+> 需要先按实际记录核对 Codex 输入、输出和缓存命中时，可查看 [NexoToken Codex Token 与缓存成本专题](https://www.nexotoken.net/official/guides/codex-token-cache-cost?ref=github-guide)；本文继续保留通用计算方法。
 
 API 账单最容易被低估的地方，不是模型单价，而是一次操作背后到底发出了多少 Token、多少轮模型调用。聊天框里只输入一句话，实际请求可能携带系统提示、历史消息、代码、工具定义和检索结果；Agent 还可能在后台连续调用多次。
 
