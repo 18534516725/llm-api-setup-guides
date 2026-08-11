@@ -2,6 +2,8 @@
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
+>
+> 使用 Codex 时可先看 [NexoToken Codex 错误排查专题](https://www.nexotoken.net/official/guides/codex-error-troubleshooting?ref=github-guide)；使用 Claude Code 时可先看 [NexoToken Claude Code 错误排查专题](https://www.nexotoken.net/official/guides/claude-code-error-troubleshooting?ref=github-guide)。本文继续保留通用 HTTP 与流式排错方法。
 
 [← 返回教程目录](../教程总目录.md)
 

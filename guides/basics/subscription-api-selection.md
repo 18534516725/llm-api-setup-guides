@@ -8,6 +8,8 @@
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
+>
+> 重点比较 Codex 与 Claude Code 工作流时，可先看 [NexoToken Codex 与 Claude Code 选型专题](https://www.nexotoken.net/official/guides/codex-vs-claude-code?ref=github-guide)；本文继续保留订阅、官方 API 与兼容 API 的通用决策框架。
 
 很多人第一次付费时会把“聊天订阅”“API 额度”和“兼容接口”当成同一种东西。它们都能让你使用大模型，但购买对象、计费方式、配置方法和风险边界完全不同。先选对形态，通常比先选模型更重要。
 

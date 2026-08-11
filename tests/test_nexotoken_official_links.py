@@ -4,18 +4,28 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 EXPECTED = {
-    "guides/coding-tools/codex-cli.md": "/official/guides/codex-api-base-url",
-    "guides/coding-tools/claude-code.md": "/official/guides/claude-code-custom-api",
-    "guides/coding-tools/cursor.md": "/official/guides/cursor-compatible-api",
-    "guides/chat-clients/cherry-studio.md": "/official/guides/cherry-studio-compatible-api",
-    "guides/basics/token-context-agent-cost.md": "/official/guides/codex-token-cache-cost",
+    "guides/coding-tools/codex-cli.md": [
+        "/official/guides/codex-api-base-url",
+        "/official/guides/codex-config-toml",
+    ],
+    "guides/coding-tools/claude-code.md": ["/official/guides/claude-code-custom-api"],
+    "guides/coding-tools/cursor.md": ["/official/guides/cursor-compatible-api"],
+    "guides/chat-clients/cherry-studio.md": ["/official/guides/cherry-studio-compatible-api"],
+    "guides/basics/token-context-agent-cost.md": ["/official/guides/codex-token-cache-cost"],
+    "guides/basics/troubleshooting.md": [
+        "/official/guides/codex-error-troubleshooting",
+        "/official/guides/claude-code-error-troubleshooting",
+    ],
+    "guides/basics/subscription-api-selection.md": ["/official/guides/codex-vs-claude-code"],
+    "guides/basics/compatible-api-evaluation.md": ["/official/guides/ai-api-billing-model-selection"],
 }
 
 
 def test_contextual_official_links_exist_without_replacing_tutorial_entry():
-    for relative, path in EXPECTED.items():
+    for relative, paths in EXPECTED.items():
         text = (ROOT / relative).read_text(encoding="utf-8")
-        assert f"https://www.nexotoken.net{path}?ref=github-guide" in text
+        for path in paths:
+            assert f"https://www.nexotoken.net{path}?ref=github-guide" in text
         assert "教程配套 API" in text
 
 

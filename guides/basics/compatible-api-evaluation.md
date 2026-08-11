@@ -8,6 +8,8 @@
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
+>
+> 需要先按计费口径与任务类型筛选模型时，可先看 [NexoToken AI API 计费与模型选择专题](https://www.nexotoken.net/official/guides/ai-api-billing-model-selection?ref=github-guide)；本文继续保留上线前的完整验收清单。
 
 判断一个兼容接口是否可靠，不能只看价格、模型列表或一次“你好”。真正有用的结论来自一套可重复的验收：协议是否正确、能力是否完整、用量能否对账、错误能否恢复、数据和密钥是否可控。
 
