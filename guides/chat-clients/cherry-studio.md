@@ -1,3 +1,9 @@
+---
+title: Cherry Studio API 地址配置：密钥、模型与连接失败排查
+description: 在 Cherry Studio 填写 API 地址、API Key 和模型 ID，完成连通性测试并排查 401、404、连接失败与模型不可用。
+last_verified: 2026-08-12
+---
+
 # Cherry Studio 接入 OpenAI 兼容 API：从安装到排错的完整教程
 
 > 最后核验：2026-07-14
@@ -12,6 +18,8 @@
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 >
 > 需要先核对服务类型、模型和首次验证顺序时，可查看 [NexoToken Cherry Studio 兼容 API 专题](https://www.nexotoken.net/official/guides/cherry-studio-compatible-api?ref=github-guide)；本文继续保留安装到排错的完整步骤。
+
+**直接回答：Cherry Studio API 地址应填写服务要求的 Base URL，**同时选择匹配的服务商类型、API Key 与模型 ID；地址是否带 `/v1` 取决于客户端和接口说明。连接失败时先用内置检查或最小请求区分认证、路径、模型和网络问题。选型前可读 [API 中转站选择与使用指南](../basics/api-relay-guide.md)。
 
 ## 1. Cherry Studio 适合谁
 
@@ -180,6 +188,16 @@ Cherry Studio 的 API 地址通常填写 Base URL，不应直接填完整的 `/c
 - [Cherry Studio 官方网站](https://www.cherry-ai.com/)
 - [Cherry Studio 官方文档：自定义服务商](https://docs.cherry-studio-ai.com/pre-basic/providers/zi-ding-yi-fu-wu-shang)
 - [Cherry Studio 官方 GitHub](https://github.com/CherryHQ/cherry-studio)
+
+## 常见问题 FAQ
+
+### Cherry Studio API 地址要填完整接口路径吗？
+
+通常填写 Base URL，不要直接填 `/chat/completions`，但是否包含 `/v1` 要以所选服务商类型的拼接规则为准。
+
+### 模型列表能加载，发送消息为什么仍连接失败？
+
+模型列表与聊天可能使用不同接口。继续核对模型 ID、Chat Completions 支持、流式响应和代理设置。
 
 ---
 

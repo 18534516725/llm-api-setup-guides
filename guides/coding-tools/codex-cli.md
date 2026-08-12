@@ -1,3 +1,9 @@
+---
+title: Codex API Key 配置：Base URL 与 config.toml 完整教程
+description: 配置 Codex CLI 的 API Key、Base URL、config.toml 与 Responses 协议，并排查登录、401、404 和模型错误。
+last_verified: 2026-08-12
+---
+
 # OpenAI Codex CLI 接入兼容 API：Responses 协议完整教程
 
 > 最后核验：2026-07-14
@@ -14,6 +20,8 @@
 > 需要先判断 Base URL、模型和验证顺序时，可查看 [NexoToken Codex API 与 Base URL 专题](https://www.nexotoken.net/official/guides/codex-api-base-url?ref=github-guide)；本文继续保留完整 CLI 配置与排错步骤。
 >
 > 需要逐项核对 `config.toml` 时，可配合 [NexoToken Codex config.toml 配置专题](https://www.nexotoken.net/official/guides/codex-config-toml?ref=github-guide) 使用。
+
+**直接回答：Codex API Key 配置的关键是**把密钥放入环境变量，在 `config.toml` 中声明模型提供方、Base URL 与 Responses 协议，然后用 `/status` 和最小任务核对实际生效配置。还没确定服务是否适配时，先看 [API 中转站选择与使用指南](../basics/api-relay-guide.md)。
 
 ## 1. Codex CLI 是什么
 
@@ -340,6 +348,16 @@ brew upgrade --cask codex
 - [Codex 配置基础](https://developers.openai.com/codex/config-basic/)
 - [Codex 配置参考](https://developers.openai.com/codex/config-reference/)
 - [Codex 官方 GitHub](https://github.com/openai/codex)
+
+## 常见问题 FAQ
+
+### 为什么 `config.toml` 写好了仍走官方登录？
+
+通常是配置文件位置、provider 名称或环境变量未被当前终端加载。先运行 `codex login status` 和 `/status`，不要只根据界面猜测。
+
+### Chat Completions 可用，Codex 为什么仍报错？
+
+Codex 的自定义提供方通常需要 OpenAI Responses API。仅支持 `/v1/chat/completions` 的服务不能因此视为完整兼容。
 
 ---
 

@@ -1,3 +1,9 @@
+---
+title: Cursor API Key 配置：Override Base URL、验证与 Agent 限制
+description: 配置 Cursor API Key 与 Override Base URL，验证自定义 OpenAI 兼容接口，并说明 Chat、Agent 和补全的能力边界。
+last_verified: 2026-08-12
+---
+
 # Cursor 接入自定义 OpenAI 兼容 API：配置、验证与限制说明
 
 > 最后核验：2026-07-14
@@ -12,6 +18,8 @@
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 >
 > 需要先建立接入与能力验收清单时，可查看 [NexoToken Cursor 兼容 API 专题](https://www.nexotoken.net/official/guides/cursor-compatible-api?ref=github-guide)；本文继续保留 Cursor 的完整限制说明。
+
+**直接回答：Cursor API Key 配置入口位于 Models 设置中。** `Override Base URL` 只改变部分受支持请求的目标地址，不代表 Cursor Agent、补全和全部内部能力都会经过该接口。先按 [API 中转站选择与使用指南](../basics/api-relay-guide.md)验证协议，再测试 Chat 与 Agent 两条链路。
 
 ## 1. 先看结论：Cursor 的兼容范围比普通聊天客户端窄
 
@@ -248,5 +256,15 @@ Cursor 官方说明，即使使用自定义 API Key，请求仍经过 Cursor 后
 - [Cursor 隐私与安全说明](https://docs.cursor.com/account/privacy)
 - [Cursor 模式说明](https://docs.cursor.com/agent/custom-modes)
 - [Cursor 下载页](https://cursor.com/downloads)
+
+## 常见问题 FAQ
+
+### Override Base URL 打开后为什么 Agent 仍不可用？
+
+因为 BYOK 与自定义 Base URL 的覆盖范围有限，Agent 还可能依赖 Cursor 后端和特定模型能力。普通对话成功不能替代 Agent 验收。
+
+### Cursor 连接失败先检查什么？
+
+先核对 Key、Base URL 拼接、模型开关和接口协议，再检查网络代理。保留状态码，但不要公开完整密钥。
 
 > 界面和兼容范围可能随版本变化。若官方文档与本文不一致，以 Cursor 当前官方文档和客户端实际界面为准。

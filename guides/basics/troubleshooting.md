@@ -1,3 +1,9 @@
+---
+title: AI API 401、404、429 与连接失败通用排错手册
+description: 按认证、Base URL、模型、协议、额度和网络顺序排查 AI API 的 400、401、403、404、429、5xx 与流式错误。
+last_verified: 2026-08-12
+---
+
 # AI 客户端与中转 API 通用排错手册
 
 > [!NOTE]
@@ -8,6 +14,8 @@
 [← 返回教程目录](../教程总目录.md)
 
 这份手册适用于大多数 OpenAI 兼容客户端、Anthropic 兼容工具和自部署 AI 平台。排错原则只有一句：**先确认请求有没有到达，再按认证、路径、模型、协议、额度、网络的顺序缩小范围。**
+
+如果还没有完成最小请求或不确定服务的兼容范围，先回到 [API 中转站选择与使用指南](./api-relay-guide.md)，不要一边换 Key、一边换模型和客户端，否则会失去可复现条件。
 
 ## 1. 先收集六项信息
 
@@ -237,5 +245,15 @@ HTTP 状态码：
 - [OpenAI API Reference：认证与调试请求](https://platform.openai.com/docs/api-reference/introduction)
 - [Anthropic API 文档](https://docs.anthropic.com/en/api/overview)
 - [MDN：HTTP 响应状态码](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Reference/Status)
+
+## 常见问题 FAQ
+
+### 401、404 和 429 最快怎么区分？
+
+401 优先检查认证，404 优先检查 Base URL、接口路径和模型 ID，429 则检查额度、速率限制与并发。三者不应使用同一种重试策略。
+
+### 为什么浏览器能打开地址，客户端却连接失败？
+
+浏览器打开根地址只证明域名可访问，不能证明认证头、POST 接口、TLS、SSE 或客户端代理配置正确。应使用与客户端相同协议的最小请求验证。
 
 仍然没有解决？回到[教程总目录](../教程总目录.md)，按那篇教程的“日志与排错”章节检查工具特有配置。

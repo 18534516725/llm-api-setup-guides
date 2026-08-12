@@ -1,3 +1,9 @@
+---
+title: Claude Code API Key 配置：Base URL、环境变量与连接失败排查
+description: 在 macOS、Windows 与 Linux 配置 Claude Code API Key 和 ANTHROPIC_BASE_URL，并定位连接失败、401、模型与协议问题。
+last_verified: 2026-08-12
+---
+
 # Claude Code 接入 Anthropic 兼容 API：跨平台完整配置教程
 
 > 最后核验：2026-07-14
@@ -12,6 +18,8 @@
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
 >
 > 需要先核对 Base URL、环境变量和最小验证流程时，可查看 [NexoToken Claude Code 自定义 API 专题](https://www.nexotoken.net/official/guides/claude-code-custom-api?ref=github-guide)；本文继续保留跨平台完整配置。
+
+**直接回答：Claude Code API Key 配置需要**设置认证环境变量和 `ANTHROPIC_BASE_URL`，重新打开终端后用 `/status` 与最小代码任务验证。连接失败时先分清 DNS、TLS、代理、认证和 Messages 协议问题。选择服务前可先读 [API 中转站选择与使用指南](../basics/api-relay-guide.md)。
 
 ## 1. 先弄清楚：Claude Code 不是聊天客户端
 
@@ -313,6 +321,16 @@ Remove-Item Env:ANTHROPIC_DEFAULT_HAIKU_MODEL
 - [Claude Code 网关协议参考](https://code.claude.com/docs/en/llm-gateway-protocol)
 - [Claude Code 模型配置](https://code.claude.com/docs/en/model-config)
 - [Claude Code 官方 GitHub](https://github.com/anthropics/claude-code)
+
+## 常见问题 FAQ
+
+### 环境变量已经设置，为什么 Claude Code 没有读取？
+
+常见原因是变量只写入了另一个 shell、当前终端未重启，或项目级设置覆盖了用户级设置。用系统命令检查变量是否存在，再查看 `/status`。
+
+### Claude Code 连接失败能否直接反复重试？
+
+不建议。认证和协议错误不会因重试恢复；网络超时或偶发 5xx 才适合有限退避重试，并应保留请求 ID 供排查。
 
 ---
 

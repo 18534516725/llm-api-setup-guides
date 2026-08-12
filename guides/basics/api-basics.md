@@ -1,3 +1,9 @@
+---
+title: API Base URL 是什么：API Key、模型 ID 与兼容协议基础
+description: 解释 API Base URL、API Key、模型 ID、OpenAI-compatible API、Responses 与 Anthropic Messages 的区别和验证方法。
+last_verified: 2026-08-12
+---
+
 # AI API 接入基础：Base URL、API Key、模型 ID 与协议
 
 > [!NOTE]
@@ -6,6 +12,8 @@
 [← 返回教程目录](../教程总目录.md)
 
 如果你第一次给 Cherry Studio、Claude Code、Dify 之类的工具配置自定义 API，真正需要理解的只有四件事：**服务地址、密钥、模型 ID、协议**。这篇先把它们讲清楚，再去看具体工具教程会轻松很多。
+
+**直接回答：API Base URL 是什么？** 它是客户端发起请求时使用的服务根地址；是否包含 `/v1` 必须以目标服务和客户端的拼接规则为准。OpenAI-compatible API 只表示接口格式兼容，不代表 Responses、工具调用、图片或 Embedding 等能力全部可用。若你还在比较不同接入方式，先读 [API 中转站选择与使用指南](./api-relay-guide.md)。
 
 ## 1. 一次请求经过了什么
 
@@ -212,5 +220,15 @@ Key 末四位：
 - [OpenAI API Reference：认证、请求 ID 与 REST API](https://platform.openai.com/docs/api-reference/introduction)
 - [Anthropic API 文档](https://docs.anthropic.com/en/api/overview)
 - [GitHub：在 Markdown 中使用相对链接](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes#relative-links-and-image-paths)
+
+## 常见问题 FAQ
+
+### Base URL 一定要以 `/v1` 结尾吗？
+
+不一定。有些客户端会自动追加 `/v1` 或具体接口路径，重复填写会导致 404。先查看工具教程，再用最小请求确认最终 URL。
+
+### OpenAI-compatible API 能直接用于 Codex 或 Claude Code 吗？
+
+不能只凭名称判断。Codex 通常需要 Responses 协议，Claude Code 需要 Anthropic Messages 兼容能力；普通 Chat Completions 成功并不能证明这两类工具可用。
 
 下一步：还没决定使用订阅还是 API 时，先读[订阅与 API 选择指南](./subscription-api-selection.md)；准备接入时打开[兼容性总表](./compatibility-matrix.md)选择工具。投入长期使用前，再完成 [API Key 安全与轮换](./api-key-security-rotation.md)以及[限流、重试与并发控制](./rate-limits-retries.md)。
