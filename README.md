@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=87+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=88+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
 
 <br/>
 
@@ -19,7 +19,7 @@
 
 ---
 
-# AI 客户端自定义 API / 中转 API 接入教程
+# AI API 中转站与自定义 API 接入教程
 
 <div align="center">
 
@@ -47,11 +47,39 @@
 
 > ✅ 教程全部按公开标准协议编写,覆盖 OpenAI Chat Completions、OpenAI Responses 和 Anthropic Messages。使用前请确认服务支持对应工具所需的协议,再替换 Base URL、Key 和模型 ID。
 
+## 🔎 按问题直达
+
+每个高频问题只由一篇主教程负责，减少重复内容，也方便搜索引擎识别页面主题。
+
+| 你正在搜索的问题 | 直接查看 |
+|---|---|
+| API 中转站是什么、怎么用、怎么选 | [完整选择与使用指南](./guides/basics/api-relay-guide.md) |
+| API Base URL 是什么、该填哪一段 | [API 接入基础](./guides/basics/api-basics.md) |
+| Codex API Key 配置、Base URL 与 `config.toml` 怎么写 | [Codex CLI 教程](./guides/coding-tools/codex-cli.md) |
+| Claude Code API Key 配置和连接失败排查 | [Claude Code 教程](./guides/coding-tools/claude-code.md) |
+| Cursor API Key 与 Override Base URL 怎么设置 | [Cursor 教程](./guides/coding-tools/cursor.md) |
+| Cherry Studio API 地址和密钥填在哪里 | [Cherry Studio 教程](./guides/chat-clients/cherry-studio.md) |
+| 401、404、429、5xx 或流式响应异常 | [通用排错手册](./guides/basics/troubleshooting.md) |
+
+## 常见搜索问题 FAQ
+
+### 中转 API 和官方 API 有什么区别？
+
+两者可能使用相同的公开协议，但服务主体、模型范围、计费、数据处理和可用能力不同。先用最小请求验证协议，再核对价格、安全政策和退出方案。
+
+### OpenAI-compatible 是否代表所有功能都兼容？
+
+不代表。Chat Completions 成功不等于 Responses、工具调用、图片输入或 Embedding 都可用，应按目标工具逐项测试。
+
+### 为什么填了 Key 仍然报 401 或 404？
+
+401 通常与认证有关；404 更常见于 Base URL 路径、接口协议或模型 ID 不匹配。不要反复更换 Key，先按状态码逐项定位。
+
 ---
 
 ## 📖 教程目录
 
-> 当前共 **87 篇中文文档，覆盖 74 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **88 篇中文文档，覆盖 74 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 
@@ -171,6 +199,7 @@
 
 | 文档 | 解决什么问题 |
 |:---|:---|
+| **[API 中转站选择与使用](./guides/basics/api-relay-guide.md)** | 是什么、怎么用、怎么选、最小验证、安全检查与常见错误 |
 | **[API 接入基础](./guides/basics/api-basics.md)** | Base URL、Key、模型 ID、Chat Completions、Responses、Messages |
 | **[Embedding 与 Rerank](./guides/basics/embedding-rerank.md)** | 模型选型、向量维度、两阶段检索、评测与迁移 |
 | **[订阅、官方 API 与兼容 API 怎么选](./guides/basics/subscription-api-selection.md)** | 分清聊天订阅与 API，按聊天、开发、Agent 和私有部署场景决策 |

@@ -1,6 +1,6 @@
 ---
 title: 中文 AI API 接入教程
-description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Cherry Studio、Dify 和主流 AI 工具的自定义 API。
+description: 88 篇中文 AI API 中转、Base URL、Codex、Claude Code、Cursor、Cherry Studio 与主流工具配置和排错教程。
 ---
 
 # 中文 AI API 接入教程
@@ -11,7 +11,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **87 篇中文实操文档**，覆盖 AI 编程工具、本地模型、聊天客户端、开发框架、知识库、自动化平台、可观测性与自动化评测。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **88 篇中文实操文档**，覆盖 AI 编程工具、本地模型、聊天客户端、开发框架、知识库、自动化平台、可观测性与自动化评测。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,7 +22,7 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 <div class="trust-row" markdown>
 
-**87 篇中文文档** · **74 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
+**88 篇中文文档** · **74 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
 
 </div>
 
@@ -30,13 +30,25 @@ description: 从零配置 Claude Code、Codex CLI、Qwen Code、Gemini CLI、Che
 
 按这个顺序最省时间：
 
-1. 阅读 [API 接入基础](basics/api-basics.md)，弄清 Base URL、API Key、模型 ID 和三类常见协议。
-2. 还没决定买什么时，先看[订阅、官方 API 与兼容 API 怎么选](basics/subscription-api-selection.md)。
-3. 打开 [兼容性总表](basics/compatibility-matrix.md)，确认目标工具需要 Chat Completions、Responses 还是 Messages。
-4. 从下方选择工具，照着教程完成一次最小请求。
-5. 长期使用前完成[兼容 API 上线验收](basics/compatible-api-evaluation.md)和[成本测算](basics/token-context-agent-cost.md)。
-6. 使用工具扩展时先读 [MCP 入门与安全配置](basics/mcp-basics-security.md)，上线前完成 [Key 安全](basics/api-key-security-rotation.md)与[重试控制](basics/rate-limits-retries.md)。
-7. 遇到状态码或流式问题，直接查 [通用排错手册](basics/troubleshooting.md)。
+1. 不确定服务怎么选时，先看 [API 中转站是什么、怎么用、怎么选](basics/api-relay-guide.md)。
+2. 阅读 [API 接入基础](basics/api-basics.md)，弄清 Base URL、API Key、模型 ID 和三类常见协议。
+3. 还没决定买什么时，查看[订阅、官方 API 与兼容 API 怎么选](basics/subscription-api-selection.md)。
+4. 打开 [兼容性总表](basics/compatibility-matrix.md)，确认目标工具需要 Chat Completions、Responses 还是 Messages。
+5. 从下方选择工具，照着教程完成一次最小请求。
+6. 长期使用前完成[兼容 API 上线验收](basics/compatible-api-evaluation.md)和[成本测算](basics/token-context-agent-cost.md)。
+7. 使用工具扩展时先读 [MCP 入门与安全配置](basics/mcp-basics-security.md)，上线前完成 [Key 安全](basics/api-key-security-rotation.md)与[重试控制](basics/rate-limits-retries.md)。
+8. 遇到状态码或流式问题，直接查 [通用排错手册](basics/troubleshooting.md)。
+
+## 按问题快速找到教程
+
+| 问题 | 主教程 |
+|---|---|
+| 服务选择、使用流程与风险检查 | [API 中转站完整指南](basics/api-relay-guide.md) |
+| Base URL、Key、模型 ID 与协议 | [API 接入基础](basics/api-basics.md) |
+| Codex API 配置 | [Codex CLI](coding-tools/codex-cli.md) |
+| Claude Code API 配置与连接错误 | [Claude Code](coding-tools/claude-code.md) |
+| Cursor 或 Cherry Studio 配置 | [Cursor](coding-tools/cursor.md) · [Cherry Studio](chat-clients/cherry-studio.md) |
+| 401、404、429、5xx 与 SSE | [通用排错手册](basics/troubleshooting.md) |
 
 ## 按使用场景选择教程
 
