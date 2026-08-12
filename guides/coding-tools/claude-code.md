@@ -6,7 +6,7 @@ last_verified: 2026-08-12
 
 # Claude Code 接入 Anthropic 兼容 API：跨平台完整配置教程
 
-> 最后核验：2026-07-14
+> 最后核验：2026-08-12
 >
 > 适用范围：Claude Code 当前稳定版；macOS 13+、Windows 10 1809+、主流 Linux
 >

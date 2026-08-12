@@ -6,7 +6,7 @@ last_verified: 2026-08-12
 
 # Cherry Studio 接入 OpenAI 兼容 API：从安装到排错的完整教程
 
-> 最后核验：2026-07-14
+> 最后核验：2026-08-12
 >
 > 适用范围：Windows、macOS、Linux；Cherry Studio 当前稳定版
 >

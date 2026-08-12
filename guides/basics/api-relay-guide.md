@@ -83,7 +83,8 @@ Base URL 是否包含 `/v1`、工具是否自动拼接路径，必须以服务�
 
 ```bash
 export AI_BASE_URL="https://api.example.com/v1"
-export AI_API_KEY="YOUR_API_KEY"
+read -rsp "API Key: " AI_API_KEY
+echo
 
 curl -sS "$AI_BASE_URL/chat/completions" \
   -H "Authorization: Bearer $AI_API_KEY" \
@@ -93,6 +94,8 @@ curl -sS "$AI_BASE_URL/chat/completions" \
     "messages": [{"role": "user", "content": "只回复 OK"}],
     "stream": false
   }'
+
+unset AI_API_KEY
 ```
 
 如果目标工具需要 Responses 或 Messages，必须换成对应协议测试，不能因为 Chat Completions 成功就判断 Codex 或 Claude Code 一定可用：

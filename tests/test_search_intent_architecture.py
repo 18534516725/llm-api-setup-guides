@@ -31,6 +31,8 @@ def test_api_relay_pillar_answers_the_complete_decision_journey():
         "../coding-tools/claude-code.md",
     ]:
         assert link in text
+    assert 'export AI_API_KEY=' not in text
+    assert 'read -rsp "API Key: " AI_API_KEY' in text
 
 
 def test_pillar_is_registered_in_every_public_entry_point():
@@ -45,7 +47,15 @@ def test_pillar_is_registered_in_every_public_entry_point():
 
 
 def test_public_document_count_is_synchronized():
-    for relative in ["README.md", "guides/index.md", "CHANGELOG.md"]:
+    public_guides = list((ROOT / "guides").glob("*/*.md"))
+    assert len(public_guides) == 88
+    for relative in [
+        "README.md",
+        "guides/index.md",
+        "guides/教程总目录.md",
+        "CHANGELOG.md",
+        "mkdocs.yml",
+    ]:
         assert "88 篇中文" in read(relative), f"{relative} 仍使用旧文档数量"
     assert "74 款工具" in read("README.md")
     assert "74 款工具" in read("guides/index.md")
@@ -66,6 +76,8 @@ def test_each_high_intent_query_has_one_metadata_rich_owner_page():
         assert "title:" in text.split("---", 2)[1]
         assert "description:" in text.split("---", 2)[1]
         assert "last_verified: 2026-08-12" in text.split("---", 2)[1]
+        if "最后核验：" in text:
+            assert "最后核验：2026-08-12" in text, f"{relative} 可见核验日期与元数据冲突"
         assert text.count("\n# ") == 1, f"{relative} 必须只有一个 H1"
         assert "## 常见问题 FAQ" in text, f"{relative} 缺少搜索问题 FAQ"
         assert "api-relay-guide.md" in text, f"{relative} 缺少支柱页上下文链接"

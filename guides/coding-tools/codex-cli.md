@@ -6,7 +6,7 @@ last_verified: 2026-08-12
 
 # OpenAI Codex CLI 接入兼容 API：Responses 协议完整教程
 
-> 最后核验：2026-07-14
+> 最后核验：2026-08-12
 >
 > 适用范围：当前版本 Codex CLI
 >
