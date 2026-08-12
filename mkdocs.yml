@@ -1,5 +1,5 @@
-site_name: NexoToken 中文 AI 教程
-site_description: Claude Code、Codex CLI、Qwen Code、Gemini CLI、Cherry Studio、Dify 与主流 AI 工具的中文自定义 API 配置教程。
+site_name: NexoToken AI API 中转与工具配置教程
+site_description: 88 篇中文 AI API 中转、Codex、Claude Code、Base URL、OpenAI-compatible API、客户端配置与错误排查教程。
 site_author: NexoToken
 site_url: https://18534516725.github.io/llm-api-setup-guides/
 repo_name: 18534516725/llm-api-setup-guides
@@ -93,6 +93,7 @@ nav:
   - 首页: index.md
   - 教程总目录: 教程总目录.md
   - 新手入门:
+      - API 中转站选择与使用: basics/api-relay-guide.md
       - API 接入基础: basics/api-basics.md
       - Embedding 与 Rerank: basics/embedding-rerank.md
       - 订阅与 API 怎么选: basics/subscription-api-selection.md
