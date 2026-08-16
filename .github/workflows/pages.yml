@@ -1,5 +1,7 @@
 name: 部署 GitHub Pages
 
+# 账号命名空间恢复后，通过 main 分支重新发布 Pages 站点。
+
 on:
   push:
     branches: [main]
