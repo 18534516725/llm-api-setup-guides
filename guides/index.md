@@ -26,6 +26,10 @@ description: 88 篇中文 AI API 中转、Base URL、Codex、Claude Code、Curso
 
 </div>
 
+## 本地诊断与项目证据
+
+需要在 Codex、Claude Code 等 AI 编程客户端中核对任务进度、Token、费用精度和跨客户端交接时，可以使用 [Agent Doctor by NexoToken](https://www.nexotoken.net/official/tools/agent-doctor?ref=docs-guide)。它在本机运行并将数据保存在本地 SQLite；源码、安装包和反馈入口位于 [Agent Doctor GitHub 仓库](https://github.com/18534516725/Agent-Doctor)。
+
 ## 新手第一次接 API？
 
 按这个顺序最省时间：

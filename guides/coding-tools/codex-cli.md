@@ -21,6 +21,8 @@ last_verified: 2026-08-12
 >
 > 需要逐项核对 `config.toml` 时，可配合 [NexoToken Codex config.toml 配置专题](https://www.nexotoken.net/official/guides/codex-config-toml?ref=github-guide) 使用。
 
+> 需要在本机持续观察 Codex 任务进度、Token、费用精度和验证状态时，可查看 [Agent Doctor by NexoToken](https://www.nexotoken.net/official/tools/agent-doctor?ref=docs-guide)。它不会替代 Codex，也不会要求上传完整项目。
+
 **直接回答：Codex API Key 配置的关键是**把密钥放入环境变量，在 `config.toml` 中声明模型提供方、Base URL 与 Responses 协议，然后用 `/status` 和最小任务核对实际生效配置。还没确定服务是否适配时，先看 [API 中转站选择与使用指南](../basics/api-relay-guide.md)。
 
 ## 1. Codex CLI 是什么

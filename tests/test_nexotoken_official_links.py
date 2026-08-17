@@ -38,4 +38,8 @@ def test_contextual_official_links_use_only_approved_origin_and_campaign():
             if token.startswith("https://www.nexotoken.net/official/")
         ]
         assert official_links
-        assert all(link.endswith("?ref=github-guide") for link in official_links)
+        for link in official_links:
+            if "/official/tools/agent-doctor" in link:
+                assert link.endswith("?ref=docs-guide")
+            else:
+                assert link.endswith("?ref=github-guide")

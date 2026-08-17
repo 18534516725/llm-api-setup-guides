@@ -19,6 +19,8 @@ last_verified: 2026-08-12
 >
 > 需要先核对 Base URL、环境变量和最小验证流程时，可查看 [NexoToken Claude Code 自定义 API 专题](https://www.nexotoken.net/official/guides/claude-code-custom-api?ref=github-guide)；本文继续保留跨平台完整配置。
 
+> 需要在本机核对 Claude Code 任务证据、Token、费用精度和跨客户端交接时，可查看 [Agent Doctor by NexoToken](https://www.nexotoken.net/official/tools/agent-doctor?ref=docs-guide)。具体控制能力以客户端公开 Hook 边界为准。
+
 **直接回答：Claude Code API Key 配置需要**设置认证环境变量和 `ANTHROPIC_BASE_URL`，重新打开终端后用 `/status` 与最小代码任务验证。连接失败时先分清 DNS、TLS、代理、认证和 Messages 协议问题。选择服务前可先读 [API 中转站选择与使用指南](../basics/api-relay-guide.md)。
 
 ## 1. 先弄清楚：Claude Code 不是聊天客户端

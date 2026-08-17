@@ -13,7 +13,7 @@
 
 <br/>
 
-[🌐 在线文档站](https://18534516725.github.io/llm-api-setup-guides/) &nbsp;·&nbsp; [📖 教程目录](#-教程目录) &nbsp;·&nbsp; [🔑 快速开始](#quick-start) &nbsp;·&nbsp; [❓ 常见问题](#-常见问题所有工具通用) &nbsp;·&nbsp; [💬 交流群](#-交流与反馈)
+[🌐 在线文档站](https://docs.nexotoken.net/) &nbsp;·&nbsp; [📖 教程目录](#-教程目录) &nbsp;·&nbsp; [🔑 快速开始](#quick-start) &nbsp;·&nbsp; [❓ 常见问题](#-常见问题所有工具通用) &nbsp;·&nbsp; [💬 交流群](#-交流与反馈)
 
 </div>
 
@@ -79,7 +79,7 @@
 
 ## 📖 教程目录
 
-> 当前共 **88 篇中文文档，覆盖 74 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://18534516725.github.io/llm-api-setup-guides/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **88 篇中文文档，覆盖 74 款工具、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://docs.nexotoken.net/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 

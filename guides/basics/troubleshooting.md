@@ -11,6 +11,8 @@ last_verified: 2026-08-12
 >
 > 使用 Codex 时可先看 [NexoToken Codex 错误排查专题](https://www.nexotoken.net/official/guides/codex-error-troubleshooting?ref=github-guide)；使用 Claude Code 时可先看 [NexoToken Claude Code 错误排查专题](https://www.nexotoken.net/official/guides/claude-code-error-troubleshooting?ref=github-guide)。本文继续保留通用 HTTP 与流式排错方法。
 
+> 如果问题只在长任务或跨客户端切换时出现，可用 [Agent Doctor by NexoToken](https://www.nexotoken.net/official/tools/agent-doctor?ref=docs-guide) 在本机保留诊断证据。它只报告实际捕获的数据和限制，不能替代服务端日志或凭证检查。
+
 [← 返回教程目录](../教程总目录.md)
 
 这份手册适用于大多数 OpenAI 兼容客户端、Anthropic 兼容工具和自部署 AI 平台。排错原则只有一句：**先确认请求有没有到达，再按认证、路径、模型、协议、额度、网络的顺序缩小范围。**

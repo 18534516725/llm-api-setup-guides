@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: 在线中文教程站
-    url: https://18534516725.github.io/llm-api-setup-guides/
+    url: https://docs.nexotoken.net/
     about: 先搜索教程、兼容性说明和通用排错手册。
   - name: 私密报告安全问题
     url: https://github.com/18534516725/llm-api-setup-guides/security/advisories/new

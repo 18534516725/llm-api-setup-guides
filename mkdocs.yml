@@ -1,7 +1,7 @@
 site_name: NexoToken AI API 中转与工具配置教程
 site_description: 88 篇中文 AI API 中转、Codex、Claude Code、Base URL、OpenAI-compatible API、客户端配置与错误排查教程。
 site_author: NexoToken
-site_url: https://18534516725.github.io/llm-api-setup-guides/
+site_url: https://docs.nexotoken.net/
 repo_name: 18534516725/llm-api-setup-guides
 repo_url: https://github.com/18534516725/llm-api-setup-guides
 edit_uri: edit/main/guides/
