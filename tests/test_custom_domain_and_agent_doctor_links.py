@@ -26,6 +26,15 @@ def test_custom_domain_is_the_single_public_docs_origin():
         assert OLD_ORIGIN not in read(relative), f"{relative} 仍指向旧 GitHub Pages 域名"
 
 
+def test_pages_workflow_repairs_the_custom_domain_through_the_official_api():
+    workflow = read(".github/workflows/pages.yml")
+    assert "pages: write" in workflow
+    assert "GH_TOKEN: ${{ github.token }}" in workflow
+    assert "repos/${GITHUB_REPOSITORY}/pages" in workflow
+    assert "cname=docs.nexotoken.net" in workflow
+    assert workflow.index("cname=docs.nexotoken.net") < workflow.index("actions/configure-pages@")
+
+
 def test_docs_home_and_relevant_guides_link_agent_doctor_with_context():
     home = read("guides/index.md")
     assert AGENT_PRODUCT in home

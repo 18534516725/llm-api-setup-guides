@@ -38,6 +38,14 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-docs.txt
 
+      - name: 绑定品牌文档域名
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh api --method PUT
+          "repos/${GITHUB_REPOSITORY}/pages"
+          -f cname=docs.nexotoken.net
+
       - name: 配置 Pages
         id: pages
         uses: actions/configure-pages@v6
