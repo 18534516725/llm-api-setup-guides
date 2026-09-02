@@ -2,6 +2,20 @@
 
 本项目使用日期记录文档批次。产品界面和 API 能力变化很快，具体教程中的“最后核验”日期比本页更重要。
 
+## 2026-09-02
+
+### 第十三阶段：Agent 协议、交互式 MCP、框架与安全执行环境
+
+- 新增 MCP `2026-07-28` 迁移指南，覆盖无状态核心、`server/discover`、MRTR、列表缓存、OAuth、双栈协商和多实例验证；
+- 新增 MCP Inspector v2 与 MCP Apps 教程，覆盖 Web / CLI / TUI、CI 冒烟、协议 era、UI Resource、沙箱 iframe、CSP 和文本降级；
+- 新增 Agent Skills 教程，覆盖 `SKILL.md`、渐进加载、触发评测、脚本审查、跨客户端兼容和供应链安全；
+- 新增 ACP 与 A2A 教程，区分编辑器到编程 Agent、Agent 到远程 Agent、Agent 到工具三类协议边界；
+- 新增 Microsoft Agent Framework 与 Mastra 教程，覆盖 Tool、Session、Memory、Workflow、Harness、MCP、A2A 和可观测性；
+- 新增 Browser Use 与 Daytona 教程，覆盖浏览器 Profile、域名和高风险动作边界，以及代码 Sandbox、Snapshot、网络、Secret 和资源回收；
+- 全部版本、命令、稳定性标签和安全边界均依据项目官方规范、官方文档或官方仓库重新核验；
+- 同步更新 README、在线首页、教程总目录、API 测试分类、兼容性矩阵和站点导航；
+- 当前共 98 篇中文文档，覆盖 83 款工具、协议、平台与开发框架。
+
 ## 2026-08-12
 
 ### 第十二阶段：搜索意图与 API 中转选择指南

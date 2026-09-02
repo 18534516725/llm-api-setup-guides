@@ -1,5 +1,5 @@
 site_name: NexoToken AI API 中转与工具配置教程
-site_description: 88 篇中文 AI API 中转、Codex、Claude Code、Base URL、OpenAI-compatible API、客户端配置与错误排查教程。
+site_description: 98 篇中文 AI API、Agent 协议、Codex、Claude Code、MCP、Base URL、客户端配置与错误排查教程。
 site_author: NexoToken
 site_url: https://docs.nexotoken.net/
 repo_name: 18534516725/llm-api-setup-guides
@@ -101,6 +101,10 @@ nav:
       - Token 与 Agent 成本: basics/token-context-agent-cost.md
       - 流式、工具与长上下文测试: basics/streaming-tools-context-testing.md
       - MCP 入门与安全配置: basics/mcp-basics-security.md
+      - MCP 2026-07-28 新规范: basics/mcp-2026-07-28.md
+      - Agent Skills 编写与安全: basics/agent-skills.md
+      - ACP Agent Client Protocol: basics/agent-client-protocol.md
+      - A2A Agent2Agent 协议: basics/a2a-protocol.md
       - API Key 安全与轮换: basics/api-key-security-rotation.md
       - 限流、重试与并发控制: basics/rate-limits-retries.md
       - AI 编程用量与成本: basics/ai-coding-usage-cost.md
@@ -163,6 +167,11 @@ nav:
       - Claude Agent SDK: developer-integration/claude-agent-sdk.md
       - Hugging Face smolagents: developer-integration/smolagents.md
       - Langfuse: developer-integration/langfuse.md
+      - MCP Apps: developer-integration/mcp-apps.md
+      - Microsoft Agent Framework: developer-integration/microsoft-agent-framework.md
+      - Mastra: developer-integration/mastra.md
+      - Browser Use: developer-integration/browser-use.md
+      - Daytona: developer-integration/daytona.md
   - 自托管与知识库:
       - Open WebUI: self-hosted/open-webui.md
       - LibreChat: self-hosted/librechat.md
@@ -186,6 +195,7 @@ nav:
   - API 测试:
       - 分类说明: api-testing/README.md
       - Apifox / Postman: api-testing/apifox-postman.md
+      - MCP Inspector: api-testing/mcp-inspector.md
       - Promptfoo: api-testing/promptfoo.md
       - Ragas: api-testing/ragas.md
   - 参与建设:

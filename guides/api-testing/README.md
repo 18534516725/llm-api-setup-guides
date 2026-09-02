@@ -14,6 +14,7 @@
 | 教程 | 适合场景 |
 |---|---|
 | [Apifox / Postman 测试 AI API](./apifox-postman.md) | 图形界面测试 Models、Chat Completions、Responses 与 SSE |
+| [MCP Inspector v2 调试与 CI](./mcp-inspector.md) | 测试 stdio / HTTP MCP Server、OAuth、协议版本、Tools 与 MCP Apps |
 | [Promptfoo 自动化评测](./promptfoo.md) | 对比 Prompt / 模型、断言业务规则、Agent 回归测试与 Red Team |
 | [Ragas RAG 评测](./ragas.md) | 定位检索精度、召回、忠实度、回答质量与评测偏差 |
 

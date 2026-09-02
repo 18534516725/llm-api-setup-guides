@@ -1,6 +1,6 @@
 ---
 title: 中文 AI API 接入教程
-description: 88 篇中文 AI API 中转、Base URL、Codex、Claude Code、Cursor、Cherry Studio 与主流工具配置和排错教程。
+description: 98 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Claude Code 与主流工具配置和排错教程。
 ---
 
 # 中文 AI API 接入教程
@@ -11,7 +11,7 @@ description: 88 篇中文 AI API 中转、Base URL、Codex、Claude Code、Curso
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **88 篇中文实操文档**，覆盖 AI 编程工具、本地模型、聊天客户端、开发框架、知识库、自动化平台、可观测性与自动化评测。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **98 篇中文实操文档**，覆盖 AI 编程工具、Agent 协议、本地模型、聊天客户端、开发框架、知识库、自动化平台、可观测性与自动化评测。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,7 +22,7 @@ description: 88 篇中文 AI API 中转、Base URL、Codex、Claude Code、Curso
 
 <div class="trust-row" markdown>
 
-**88 篇中文文档** · **74 款工具与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
+**98 篇中文文档** · **83 款工具、协议与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
 
 </div>
 
@@ -40,7 +40,7 @@ description: 88 篇中文 AI API 中转、Base URL、Codex、Claude Code、Curso
 4. 打开 [兼容性总表](basics/compatibility-matrix.md)，确认目标工具需要 Chat Completions、Responses 还是 Messages。
 5. 从下方选择工具，照着教程完成一次最小请求。
 6. 长期使用前完成[兼容 API 上线验收](basics/compatible-api-evaluation.md)和[成本测算](basics/token-context-agent-cost.md)。
-7. 使用工具扩展时先读 [MCP 入门与安全配置](basics/mcp-basics-security.md)，上线前完成 [Key 安全](basics/api-key-security-rotation.md)与[重试控制](basics/rate-limits-retries.md)。
+7. 使用工具扩展时先读 [MCP 入门与安全配置](basics/mcp-basics-security.md)；迁移新服务再看 [MCP 2026-07-28](basics/mcp-2026-07-28.md)，上线前完成 [Key 安全](basics/api-key-security-rotation.md)与[重试控制](basics/rate-limits-retries.md)。
 8. 遇到状态码或流式问题，直接查 [通用排错手册](basics/troubleshooting.md)。
 
 ## 按问题快速找到教程
@@ -127,6 +127,14 @@ description: 88 篇中文 AI API 中转、Base URL、Codex、Claude Code、Curso
 | [兼容 API 上线验收](basics/compatible-api-evaluation.md) | 准备长期使用或部署应用 | 协议 / 用量 / 稳定性 / 安全 |
 | [流式、工具与长上下文测试](basics/streaming-tools-context-testing.md) | 普通聊天成功但 Agent 仍不可用 | SSE / Tools / Context |
 | [MCP 入门与安全配置](basics/mcp-basics-security.md) | 给 AI 客户端连接外部工具与数据 | Tools / Resources / Permissions |
+| [MCP 2026-07-28](basics/mcp-2026-07-28.md) | 迁移无状态 MCP 与双栈协议 | Discovery / MRTR / Extensions |
+| [Agent Skills](basics/agent-skills.md) | 固化可复用 Agent 工作方法 | SKILL.md / Eval / Security |
+| [ACP](basics/agent-client-protocol.md) | 连接编辑器与编程 Agent | Session / Diff / Permission |
+| [A2A](basics/a2a-protocol.md) | 连接跨框架远程 Agent | Card / Task / Artifact |
+| [MCP Inspector](api-testing/mcp-inspector.md) | 调试 MCP Server 和自动化冒烟 | Web / CLI / TUI |
+| [Mastra](developer-integration/mastra.md) | TypeScript Agent、Tool 与 Workflow | AI SDK / MCP / Observability |
+| [Browser Use](developer-integration/browser-use.md) | 构建受控浏览器 Agent | Browser / MCP / Permissions |
+| [Daytona](developer-integration/daytona.md) | 隔离运行 Agent 生成的代码 | Sandbox / Snapshot / Network |
 | [API Key 安全与轮换](basics/api-key-security-rotation.md) | 本地、CI 和生产环境管理凭据 | Secrets / Rotation / Incident |
 | [限流、重试与并发控制](basics/rate-limits-retries.md) | 解决 429、批处理和偶发 5xx | Retry / Backoff / Idempotency |
 | [AI 编程用量与成本优化](basics/ai-coding-usage-cost.md) | 分析 Agent CLI Token 与估算成本 | ccusage / Usage / Context |

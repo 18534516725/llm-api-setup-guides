@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-08-10 · 覆盖 74 款工具、平台与开发框架（含 1 项停运历史资料）
+> 最后核验：2026-09-02 · 覆盖 83 款工具、协议、平台与开发框架（含 1 项停运历史资料）
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
@@ -195,6 +195,11 @@
 | Claude Agent SDK | Python / TypeScript Agent | 官方 API Key / 支持的云平台认证 | allow 列表不等于绝对禁止；高风险工具还需 deny、hook 与沙箱 |
 | Hugging Face smolagents | Python CodeAgent / Tool Agent | LiteLLM / OpenAI-compatible 等连接器 | 本地代码执行器不等于完整沙箱；生产使用容器或远程隔离 |
 | Langfuse | LLM / Agent 可观测性 | SDK / OpenTelemetry | Trace 可能含完整输入输出；敏感数据应在客户端发送前脱敏 |
+| MCP Apps | 交互式 MCP Tool UI | `@modelcontextprotocol/ext-apps` | Host 支持不一致；必须提供文本降级、沙箱和最小 CSP |
+| Microsoft Agent Framework | Python / .NET / Go Agent | 多 Provider Chat Client | Responses、Session、Workflow、审批与持久化需分别验收 |
+| Mastra | TypeScript Agent / Workflow | AI SDK Provider / `baseURL` | 1.x 使用子路径导入；Tool 授权、Memory 与 Trace 需生产配置 |
+| Browser Use | Python 浏览器 Agent | 多模型连接器 / MCP | 优先正式 API；Profile、Cookie、域名和高风险动作必须限制 |
+| Daytona | AI 代码执行 Sandbox | Python / TS / API / CLI | 沙箱不等于无风险；限制网络、Secret、资源、Snapshot 和回收 |
 
 ## 9. API 测试与调试
 
@@ -202,6 +207,7 @@
 |---|---|---|
 | Apifox | REST、SSE、环境变量和脚本断言 | Key 使用私密环境值，分享项目和截图前彻底脱敏 |
 | Postman | Collection、Variables、Vault 和请求测试 | Secret 放入 Vault；导出 Collection 不等于自动移除所有敏感内容 |
+| MCP Inspector | MCP Server Web / CLI / TUI 调试 | 固定版本；检查协议 era、OAuth、Schema、非法参数和子进程清理 |
 | Promptfoo | Prompt / Provider / Agent 自动化评测与 Red Team | 固定 CLI、模型、Prompt 和数据集版本；攻击测试只针对获准目标 |
 | Ragas | RAG、Agent 与回答质量评测 | 指标依赖字段不同；评测模型本身也会带来波动、成本和偏差 |
 
@@ -219,6 +225,10 @@
 | Function Calling / 工具调用 | Cline、Continue、Claude Code、Codex CLI、OpenCode、Crush、OpenHands、AionUi、Kilo Code、Zed、goose 及开发框架；Roo Code 仅作历史资料 |
 | Embeddings | AnythingLLM、Dify、FastGPT、RAGFlow、MaxKB、自动化平台及 RAG 开发框架 |
 | SSE 流式输出 | 大多数聊天和编程工具；反向代理配置会影响稳定性 |
+| MCP 2026-07-28 | 无状态 MCP Server、Inspector v2、MCP Apps 与新一代 Agent 基础设施 |
+| ACP | Zed、Gemini CLI、Copilot CLI 等编辑器 / 编程 Agent 互操作生态 |
+| A2A | Google ADK、Microsoft Agent Framework 等跨框架远程 Agent 协作 |
+| Agent Skills | Claude Code、Codex 等支持 `SKILL.md` 渐进加载的 Agent 客户端 |
 
 ## 11. Base URL 填写速查
 
