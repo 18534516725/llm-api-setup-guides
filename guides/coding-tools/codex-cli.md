@@ -141,11 +141,89 @@ wire_api = "responses"
 |---|---|
 | `model` | 实际发送给接口的模型 ID |
 | `model_provider` | 选择下面定义的提供方 ID |
+| `model_reasoning_effort` | 可选思考等级，放在顶层；示例 medium 不是平台强制默认值 |
 | `base_url` | Responses API 的 Base URL，通常以 `/v1` 结尾，以控制台说明为准 |
 | `env_key` | Codex 从哪个环境变量读取 Key |
 | `wire_api` | 当前自定义提供方只支持 `responses` |
 
 `openai`、`ollama`、`lmstudio` 是 Codex 内置提供方 ID，不要拿它们作为自定义表名覆盖。这里使用独立 ID `nexotoken`。
+
+## 6.1 设置思考等级：CLI、CI 与 API
+
+> 本节于 2026-09-13 核对官方参数文档与 NexoToken 当前转发代码；不是对每个模型、每个等级的付费调用认证。
+
+已有配置示例中的 `model_reasoning_effort = "medium"` 就是思考等级。要改成更深入的推理，在同一位置改为：
+
+```toml
+model_reasoning_effort = "high"
+```
+
+它必须位于 `config.toml` 顶层、所有 `[表名]` 之前，不能写在 `[model_providers.nexotoken]` 内。同一层不要重复添加该字段。用户级文件通常位于 `~/.codex/config.toml`；设置了 `CODEX_HOME` 时以该目录为准，Windows 默认在 `%USERPROFILE%\.codex\config.toml`。
+
+### 只覆盖本次 CLI 或 CI 任务
+
+完成前面的 provider、Base URL 和环境变量配置后，在 Bash、zsh 或 PowerShell 中执行：
+
+```bash
+codex -c 'model_reasoning_effort="high"'
+
+codex exec -c 'model_reasoning_effort="high"' "解释项目结构，不修改文件"
+```
+
+这里的 `-c` 是配置覆盖参数，不是模型名的一部分。CI 从平台的 Secret 管理中注入 `NEXO_API_KEY`，不要在流水线正文写入真实密钥。命令行覆盖只影响本次启动；项目配置、profile 和当前会话选择也可能影响最终设置。确认客户端版本支持该值，并检查实际生效配置，不能仅凭回答长短判断思考等级。
+
+### 等级如何选择
+
+| 等级 | 使用方向 |
+| --- | --- |
+| `low` | 简单任务，优先速度 |
+| `medium` | 日常任务的均衡起点 |
+| `high` | 更复杂的分析和代码任务，可能增加耗时与 Token 用量 |
+| `xhigh` | 仅在模型和客户端明确支持时使用 |
+
+`none`、`minimal`、`max`、`ultra` 等值不能当作所有模型通用的选项；客户端界面名称也不一定等于 API 值。不要给 GPT-4o、图片或音频模型套用此参数。省略配置不代表固定使用 `medium`：客户端可能自行发送默认值；请求未携带该字段时，平台不统一补充思考等级。
+
+### 直接调用 API 时怎么写
+
+以下是完整请求体示例；替换模型 ID，并配合前文的 Base URL、Bearer 鉴权使用。所选模型必须支持对应接口与思考等级。
+
+**Responses：`POST /v1/responses`**
+
+```json
+{
+  "model": "YOUR_RESPONSES_MODEL",
+  "input": "Explain binary search briefly.",
+  "reasoning": { "effort": "high" },
+  "stream": true
+}
+```
+
+Python SDK 在 `client.responses.create(...)` 中添加 `reasoning={"effort": "high"}`。
+
+**Chat Completions：`POST /v1/chat/completions`**
+
+```json
+{
+  "model": "YOUR_CHAT_MODEL",
+  "messages": [{ "role": "user", "content": "Explain binary search briefly." }],
+  "reasoning_effort": "high",
+  "stream": true
+}
+```
+
+Python SDK 在 `client.chat.completions.create(...)` 中添加 `reasoning_effort="high"`。两个接口字段结构不同，不要混用，也不要在 API 请求中发送 `model_reasoning_effort`。
+
+### NexoToken 是否透传
+
+- 原生 Chat Completions 与 Responses 转发保留客户端提交的思考字段，不统一强制为 `high` 或 `medium`。
+- 部分兼容处理会把 `minimal` 转为 `none`；特定 GPT-5.6 上下文压缩子请求会把 `max` 转为 `xhigh`，不能承诺所有路径逐字透传。
+- 跨协议转换不保证等价保留思考设置。GPT 模型优先使用其支持的原生接口，Codex CLI 使用 Responses。
+- 透传不等于模型支持。请求成功也不能单独证明实际采用了指定等级；以模型能力、接口响应及可用的用量信息综合核验。
+- 平台网页聊天目前没有主动发送思考等级；CLI 与 API 可以按上述方式明确指定。
+
+遇到参数不支持错误，先确认模型 ID、接口与客户端版本，再改用已支持等级或移除可选参数。不要只换字段名反复重试。
+
+参考：[Codex 配置参考](https://learn.chatgpt.com/docs/config-file/config-reference)、[Codex CLI 参数](https://learn.chatgpt.com/docs/developer-commands?surface=cli)、[OpenAI 模型参数指南](https://developers.openai.com/api/docs/guides/latest-model)。
 
 ## 7. TOML 常见语法错误
 
