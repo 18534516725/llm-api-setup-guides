@@ -1,6 +1,6 @@
 ---
 title: 中文 AI API 接入教程
-description: 120 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Claude Code 与主流工具配置和排错教程。
+description: 121 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Claude Code 与主流工具配置和排错教程。
 ---
 
 # 中文 AI API 接入教程
@@ -11,7 +11,7 @@ description: 120 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Clau
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **120 篇中文实操文档**，覆盖 AI 编程工具、Agent 协议、本地模型、聊天客户端、开发框架、知识库、自动化平台、可观测性与自动化评测。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **121 篇中文实操文档**，覆盖 AI 编程工具、Agent 协议、本地模型、聊天客户端、开发框架、知识库、自动化平台、可观测性与自动化评测。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,7 +22,7 @@ description: 120 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Clau
 
 <div class="trust-row" markdown>
 
-**120 篇中文文档** · **83 款工具、协议与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
+**121 篇中文文档** · **83 款工具、协议与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
 
 </div>
 

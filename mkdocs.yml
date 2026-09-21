@@ -1,5 +1,5 @@
 site_name: NexoToken AI API 中转与工具配置教程
-site_description: 120 篇中文 AI API、Agent 协议、Codex、Claude Code、MCP、Base URL、客户端配置与错误排查教程。
+site_description: 121 篇中文 AI API、Agent 协议、Codex、Claude Code、MCP、Base URL、客户端配置与错误排查教程。
 site_author: NexoToken
 site_url: https://docs.nexotoken.net/
 repo_name: 18534516725/llm-api-setup-guides
@@ -219,6 +219,7 @@ nav:
       - 分类说明: api-testing/README.md
       - curl API 冒烟测试: api-testing/curl-openai-compatible-smoke-test.md
       - AI API 契约测试: api-testing/api-contract-smoke-test.md
+      - OrcaReplay API 回放测试: api-testing/orcareplay.md
       - Apifox / Postman: api-testing/apifox-postman.md
       - MCP Inspector: api-testing/mcp-inspector.md
       - Promptfoo: api-testing/promptfoo.md

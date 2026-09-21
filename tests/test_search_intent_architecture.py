@@ -48,7 +48,7 @@ def test_pillar_is_registered_in_every_public_entry_point():
 
 def test_public_document_count_is_synchronized():
     public_guides = list((ROOT / "guides").glob("*/*.md"))
-    assert len(public_guides) == 120
+    assert len(public_guides) == 121
     for relative in [
         "README.md",
         "guides/index.md",
@@ -56,7 +56,7 @@ def test_public_document_count_is_synchronized():
         "CHANGELOG.md",
         "mkdocs.yml",
     ]:
-        assert "120 篇中文" in read(relative), f"{relative} 文档数量未同步"
+        assert "121 篇中文" in read(relative), f"{relative} 文档数量未同步"
     assert "83 款工具" in read("README.md")
     assert "83 款工具" in read("guides/index.md")
 
