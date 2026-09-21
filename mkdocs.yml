@@ -1,5 +1,5 @@
 site_name: NexoToken AI API 中转与工具配置教程
-site_description: 98 篇中文 AI API、Agent 协议、Codex、Claude Code、MCP、Base URL、客户端配置与错误排查教程。
+site_description: 120 篇中文 AI API、Agent 协议、Codex、Claude Code、MCP、Base URL、客户端配置与错误排查教程。
 site_author: NexoToken
 site_url: https://docs.nexotoken.net/
 repo_name: 18534516725/llm-api-setup-guides
@@ -7,6 +7,9 @@ repo_url: https://github.com/18534516725/llm-api-setup-guides
 edit_uri: edit/main/guides/
 docs_dir: guides
 site_dir: site
+exclude_docs: |
+  404.md
+  教程模板.md
 copyright: Copyright &copy; 2026 NexoToken · 教程采用 MIT License
 
 theme:
@@ -94,6 +97,17 @@ nav:
   - 新手入门:
       - API 中转站选择与使用: basics/api-relay-guide.md
       - API 接入基础: basics/api-basics.md
+      - API Base URL 路径与 404 排查: basics/api-base-url-path-troubleshooting.md
+      - Responses 与 Chat Completions: basics/responses-vs-chat-completions.md
+      - Anthropic Messages 兼容性: basics/anthropic-messages-compatibility.md
+      - 模型 ID 与 404 排查: basics/openai-model-id-404.md
+      - AI API 预算估算: basics/api-budget-estimation.md
+      - API Key 泄露处置: basics/api-key-leak-response.md
+      - SSE 流式响应排查: basics/sse-streaming-debug.md
+      - Tool Calling 兼容性: basics/tool-calling-compatibility.md
+      - API 上线前健康检查: basics/api-health-check.md
+      - Embedding 与 Rerank API: basics/embeddings-rerank-api.md
+      - 429 限流与重试预算: basics/rate-limit-retry-budget.md
       - Embedding 与 Rerank: basics/embedding-rerank.md
       - 订阅与 API 怎么选: basics/subscription-api-selection.md
       - 工具兼容性总表: basics/compatibility-matrix.md
@@ -111,8 +125,11 @@ nav:
       - 通用排错手册: basics/troubleshooting.md
   - AI 编程工具:
       - Claude Code: coding-tools/claude-code.md
+      - Claude Code 权限与工具: coding-tools/claude-code-permissions.md
       - Claude Code 进阶: coding-tools/claude-code-advanced.md
       - Codex CLI: coding-tools/codex-cli.md
+      - Codex reasoning effort: coding-tools/codex-reasoning-effort.md
+      - Windows 配置 Codex CLI: coding-tools/codex-windows-setup.md
       - Qwen Code: coding-tools/qwen-code.md
       - Qoder CLI: coding-tools/qoder-cli.md
       - Gemini CLI: coding-tools/gemini-cli.md
@@ -122,6 +139,8 @@ nav:
       - TRAE: coding-tools/trae.md
       - Windsurf: coding-tools/windsurf.md
       - Cursor: coding-tools/cursor.md
+      - Cursor 模型不可用排查: coding-tools/cursor-model-availability.md
+      - 客户端配置备份: coding-tools/client-config-backup.md
       - Cline: coding-tools/cline.md
       - Continue: coding-tools/continue.md
       - CC Switch: coding-tools/cc-switch.md
@@ -155,6 +174,10 @@ nav:
       - SillyTavern: chat-clients/sillytavern.md
   - 开发集成:
       - OpenAI SDK: developer-integration/openai-sdk.md
+      - Python SDK 接入兼容 API: developer-integration/python-sdk-compatible-endpoint.md
+      - Node.js SDK 接入兼容 API: developer-integration/node-sdk-compatible-endpoint.md
+      - LangChain 接入兼容 API: developer-integration/langchain-openai-compatible.md
+      - Vercel AI SDK 自定义 Base URL: developer-integration/vercel-ai-sdk-base-url.md
       - OpenAI Agents SDK: developer-integration/openai-agents-sdk.md
       - LangChain: developer-integration/langchain.md
       - LlamaIndex: developer-integration/llamaindex.md
@@ -194,11 +217,12 @@ nav:
       - Obsidian Copilot: productivity-tools/obsidian-copilot.md
   - API 测试:
       - 分类说明: api-testing/README.md
+      - curl API 冒烟测试: api-testing/curl-openai-compatible-smoke-test.md
+      - AI API 契约测试: api-testing/api-contract-smoke-test.md
       - Apifox / Postman: api-testing/apifox-postman.md
       - MCP Inspector: api-testing/mcp-inspector.md
       - Promptfoo: api-testing/promptfoo.md
       - Ragas: api-testing/ragas.md
   - 参与建设:
-      - 教程模板: 教程模板.md
       - 问题反馈: https://github.com/18534516725/llm-api-setup-guides/issues
       - 获取 API Key: https://www.nexotoken.net/?ref=github-pages-nav

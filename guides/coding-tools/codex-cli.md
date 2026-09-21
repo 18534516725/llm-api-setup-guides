@@ -1,12 +1,12 @@
 ---
 title: Codex API Key 配置：Base URL 与 config.toml 完整教程
 description: 配置 Codex CLI 的 API Key、Base URL、config.toml 与 Responses 协议，并排查登录、401、404 和模型错误。
-last_verified: 2026-08-12
+last_verified: 2026-09-21
 ---
 
 # OpenAI Codex CLI 接入兼容 API：Responses 协议完整教程
 
-> 最后核验：2026-08-12
+> 最后核验：2026-09-21
 >
 > 适用范围：当前版本 Codex CLI
 >

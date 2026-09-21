@@ -1,12 +1,12 @@
 ---
 title: Claude Code API Key 配置：Base URL、环境变量与连接失败排查
 description: 在 macOS、Windows 与 Linux 配置 Claude Code API Key 和 ANTHROPIC_BASE_URL，并定位连接失败、401、模型与协议问题。
-last_verified: 2026-08-12
+last_verified: 2026-09-21
 ---
 
 # Claude Code 接入 Anthropic 兼容 API：跨平台完整配置教程
 
-> 最后核验：2026-08-12
+> 最后核验：2026-09-21
 >
 > 适用范围：Claude Code 当前稳定版；macOS 13+、Windows 10 1809+、主流 Linux
 >

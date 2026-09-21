@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=98+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+%E2%AD%90" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=120+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+⭐" alt="Typing SVG" />
 
 <br/>
 
@@ -79,7 +79,7 @@
 
 ## 📖 教程目录
 
-> 当前共 **98 篇中文文档，覆盖 83 款工具、协议、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://docs.nexotoken.net/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **120 篇中文文档，覆盖 83 款工具、协议、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://docs.nexotoken.net/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 

@@ -1,7 +1,7 @@
 ---
 title: AI API 401、404、429 与连接失败通用排错手册
 description: 按认证、Base URL、模型、协议、额度和网络顺序排查 AI API 的 400、401、403、404、429、5xx 与流式错误。
-last_verified: 2026-08-12
+last_verified: 2026-09-21
 ---
 
 # AI 客户端与中转 API 通用排错手册

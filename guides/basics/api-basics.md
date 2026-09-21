@@ -1,7 +1,7 @@
 ---
 title: API Base URL 是什么：API Key、模型 ID 与兼容协议基础
 description: 解释 API Base URL、API Key、模型 ID、OpenAI-compatible API、Responses 与 Anthropic Messages 的区别和验证方法。
-last_verified: 2026-08-12
+last_verified: 2026-09-21
 ---
 
 # AI API 接入基础：Base URL、API Key、模型 ID 与协议

@@ -1,12 +1,12 @@
 ---
 title: Cursor API Key 配置：Override Base URL、验证与 Agent 限制
 description: 配置 Cursor API Key 与 Override Base URL，验证自定义 OpenAI 兼容接口，并说明 Chat、Agent 和补全的能力边界。
-last_verified: 2026-08-12
+last_verified: 2026-09-21
 ---
 
 # Cursor 接入自定义 OpenAI 兼容 API：配置、验证与限制说明
 
-> 最后核验：2026-08-12
+> 最后核验：2026-09-21
 >
 > 适用范围：Cursor 桌面版的 BYOK（自带 API Key）功能
 >

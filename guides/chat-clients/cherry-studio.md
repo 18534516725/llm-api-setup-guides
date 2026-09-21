@@ -1,12 +1,12 @@
 ---
 title: Cherry Studio API 地址配置：密钥、模型与连接失败排查
 description: 在 Cherry Studio 填写 API 地址、API Key 和模型 ID，完成连通性测试并排查 401、404、连接失败与模型不可用。
-last_verified: 2026-08-12
+last_verified: 2026-09-21
 ---
 
 # Cherry Studio 接入 OpenAI 兼容 API：从安装到排错的完整教程
 
-> 最后核验：2026-08-12
+> 最后核验：2026-09-21
 >
 > 适用范围：Windows、macOS、Linux；Cherry Studio 当前稳定版
 >
