@@ -200,6 +200,7 @@
 | **[MCP Inspector](./guides/api-testing/mcp-inspector.md)** | MCP Server Web / CLI / TUI 调试与 CI 冒烟 | ⭐⭐⭐ | ✅ 已发布 |
 | **[Promptfoo 自动化评测](./guides/api-testing/promptfoo.md)** | Prompt、模型、Agent 回归测试与 Red Team | ⭐⭐⭐ | ✅ 已发布 |
 | **[Ragas RAG 评测](./guides/api-testing/ragas.md)** | 检索、忠实度、回答质量与实验方法 | ⭐⭐⭐ | ✅ 已发布 |
+| **[OrcaReplay 录制与离线重放](./guides/api-testing/orcareplay.md)** | 录下 Agent 与模型服务之间的请求，断网重放；含各框架读哪个 Base URL 变量的实测对照 | ⭐⭐⭐ | ✅ 已发布 |
 
 ### 📚 基础与排错 `guides/basics/`
 
