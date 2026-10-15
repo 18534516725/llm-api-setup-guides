@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 0.55rem;
   min-height: 1.25rem;
   font-size: 0.68rem;
@@ -162,6 +163,11 @@
   }
 
   .site-traffic__since {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .site-traffic__since:empty {
     display: none;
   }
 }
