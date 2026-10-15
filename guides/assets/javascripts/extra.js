@@ -4,8 +4,8 @@
   window.nexoDocsTrafficInitialized = true;
 
   const API_URL = 'https://www.nexotoken.net/api/public/docs-traffic';
-  // Never reuse third-party snapshots: these totals have a new, explicit start date.
-  const CACHE_KEY = 'nexotoken:docs-traffic:v1:snapshot';
+  // Versioned snapshots prevent pre-baseline totals from being shown as historical totals.
+  const CACHE_KEY = 'nexotoken:docs-traffic:v2:snapshot';
   const VISITOR_KEY = 'nexotoken:docs-traffic:v1:visitor';
   const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
   let snapshot = null;
@@ -15,11 +15,10 @@
   let latestSuccess = 0;
 
   function validTotals(value) {
-    return value && value.source === 'self-hosted' && value.historicalIncluded === false
+    return value && value.source === 'self-hosted' && value.historicalIncluded === true
       && Number.isSafeInteger(value.siteUv) && value.siteUv >= 0
       && Number.isSafeInteger(value.sitePv) && value.sitePv >= value.siteUv
-      && ((value.startedAt === null && value.sitePv === 0 && value.siteUv === 0)
-        || (typeof value.startedAt === 'string' && Number.isFinite(Date.parse(value.startedAt))));
+      && typeof value.startedAt === 'string' && Number.isFinite(Date.parse(value.startedAt));
   }
 
   function render() {
@@ -40,7 +39,7 @@
     if (since) {
       const date = snapshot?.startedAt
         ? new Date(snapshot.startedAt).toLocaleDateString('sv-SE', { timeZone: 'Asia/Shanghai' }) : null;
-      since.textContent = date ? `自建统计始于 ${date} · 不含旧统计` : '自建统计 · 不含旧统计';
+      since.textContent = `统计始于 ${date || '2026-07-15'}`;
     }
   }
 
@@ -80,7 +79,7 @@
       // Concurrent navigation responses in the same series must not lower totals.
       if (!snapshot || snapshot.startedAt !== totals.startedAt || totals.sitePv >= snapshot.sitePv) {
         snapshot = { sitePv: totals.sitePv, siteUv: totals.siteUv, startedAt: totals.startedAt,
-          source: 'self-hosted', historicalIncluded: false, savedAt: Date.now() };
+          source: 'self-hosted', historicalIncluded: true, savedAt: Date.now() };
       }
       state = 'live';
       try { localStorage.setItem(CACHE_KEY, JSON.stringify(snapshot)); }

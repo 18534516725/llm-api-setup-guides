@@ -4,10 +4,10 @@ const vm = require('node:vm');
 const fs = require('node:fs');
 const { webcrypto } = require('node:crypto');
 const source = fs.readFileSync('guides/assets/javascripts/extra.js', 'utf8');
-const key = 'nexotoken:docs-traffic:v1:snapshot';
+const key = 'nexotoken:docs-traffic:v2:snapshot';
 const visitorKey = 'nexotoken:docs-traffic:v1:visitor';
-const startedAt = '2026-10-15T00:00:00.000Z';
-const totals = (pv = 450, uv = 120) => ({ sitePv: pv, siteUv: uv, startedAt, source: 'self-hosted', historicalIncluded: false });
+const startedAt = '2026-07-15T00:00:00+08:00';
+const totals = (pv = 450, uv = 120) => ({ sitePv: pv, siteUv: uv, startedAt, source: 'self-hosted', historicalIncluded: true });
 function setup(fetch, cached, blocked = false, noCrypto = false) {
   const elements = Object.fromEntries(['docs-site-uv', 'docs-site-pv', 'site-traffic-status', 'docs-traffic-since'].map(id => [id, {textContent: '统计中'}]));
   const storage = new Map(cached ? [[key, JSON.stringify(cached)]] : []);
@@ -47,8 +47,8 @@ test('POST uses only first-party API, random visitor and event IDs; caches valid
   assert.equal(s.storage.get(visitorKey), body.visitorId);
   assert.equal(s.elements['docs-site-uv'].textContent, '1,234');
   assert.equal(JSON.parse(s.storage.get(key)).sitePv, 5678);
-  assert.match(s.elements['docs-traffic-since'].textContent, /2026-10-15/);
-  assert.match(s.elements['docs-traffic-since'].textContent, /不含旧统计/);
+  assert.match(s.elements['docs-traffic-since'].textContent, /2026-07-15/);
+  assert.doesNotMatch(s.elements['docs-traffic-since'].textContent, /不含旧统计|自建统计始于/);
   assert.equal(s.timers.size, 0);
 });
 test('invalid or partial totals never overwrite a valid snapshot', async () => {
@@ -87,7 +87,7 @@ test('duplicate script execution does not subscribe or count again', async () =>
   vm.runInContext(source, s.context); await settle(); assert.equal(calls, 1);
 });
 test('legacy or malformed cache cannot masquerade as new totals', async () => {
-  for (const value of [{uv: 9999, pv: 99999, savedAt: Date.now()}, {...cached, source: 'legacy'}, {...cached, startedAt: 'bad'}, {...cached, savedAt: Date.now() + 60000}]) {
+  for (const value of [{uv: 9999, pv: 99999, savedAt: Date.now()}, {...cached, source: 'legacy'}, {...cached, historicalIncluded: false}, {...cached, startedAt: 'bad'}, {...cached, savedAt: Date.now() + 60000}]) {
     const s = setup(async () => { throw Error(); }, value); await settle();
     assert.equal(s.elements['docs-site-uv'].textContent, '暂不可用');
   }
@@ -101,10 +101,12 @@ test('out-of-order navigation responses cannot reduce current totals', async () 
   assert.equal(s.elements['docs-site-pv'].textContent, '22');
   assert.equal(s.elements['docs-site-uv'].textContent, '11');
 });
-test('empty self-hosted store is distinct from unavailable historical totals', async () => {
-  const s = setup(async () => ({ok:true, json:async()=>({...totals(0,0), startedAt:null})}), null, true); await settle();
-  assert.equal(s.elements['docs-site-pv'].textContent, '0');
-  assert.match(s.elements['docs-traffic-since'].textContent, /不含旧统计/);
+test('owner-provided historical baseline retains the original start date', async () => {
+  const s = setup(async () => ({ok:true, json:async()=>totals(2134,1534)}), null, true); await settle();
+  assert.equal(s.elements['docs-site-pv'].textContent, '2,134');
+  assert.equal(s.elements['docs-site-uv'].textContent, '1,534');
+  assert.match(s.elements['docs-traffic-since'].textContent, /2026-07-15/);
+  assert.doesNotMatch(s.elements['docs-traffic-since'].textContent, /不含旧统计|自建统计始于/);
 });
 
 test('unavailable crypto reads totals without generating visitor IDs', async () => {
