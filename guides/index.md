@@ -1,6 +1,6 @@
 ---
 title: 中文 AI API 接入教程
-description: 121 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Claude Code 与主流工具配置和排错教程。
+description: 139 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Claude Code 与主流工具配置和排错教程。
 ---
 
 # 中文 AI API 接入教程
@@ -11,7 +11,7 @@ description: 121 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Clau
 
 ## 一把 Key，接入你真正使用的 AI 工具
 
-这里整理了 **121 篇中文实操文档**，覆盖 AI 编程工具、Agent 协议、本地模型、聊天客户端、开发框架、知识库、自动化平台、可观测性与自动化评测。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
+这里整理了 **139 篇中文实操文档**，覆盖 AI 编程工具、Agent 协议、本地模型、聊天客户端、开发框架、知识库、自动化平台、可观测性与自动化评测。每篇教程都从安装讲到首次请求，并把密钥安全、MCP 权限、401、404、429、协议不匹配和流式输出等高频问题讲清楚。
 
 <div class="hero__actions">
   <a class="md-button md-button--primary" href="教程总目录/">浏览全部教程</a>
@@ -22,9 +22,34 @@ description: 121 篇中文 AI API、Agent 协议、MCP、Base URL、Codex、Clau
 
 <div class="trust-row" markdown>
 
-**121 篇中文文档** · **83 款工具、协议与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
+**139 篇中文文档** · **99 款工具、协议与框架** · **选择、配置、安全、验证、成本、排错一页讲完**
 
 </div>
+
+## 2026 年 10 月更新：18 篇工具与实战教程
+
+从热门项目的安装入手，再完成一次可以核对的操作。下列文章分别标明版本与官方来源；选型指南提供测试方法，未使用虚构的速度、准确率或搜索量排行。
+
+| 教程 | 主要内容 |
+|---|---|
+| [REA：逆向分析](coding-tools/rea.md) | 安装、MCP、静态分析与证据 |
+| [Superpowers：开发工作流](coding-tools/superpowers.md) | 安装、设计、实现与验证 |
+| [agent-browser：网页操作](coding-tools/agent-browser.md) | 快照、定位、截图和会话 |
+| [Repomix：代码上下文](coding-tools/repomix.md) | 筛选、Token、打包与脱敏 |
+| [Context7：版本文档](coding-tools/context7.md) | CLI / Skills、MCP 与库版本 |
+| [FastMCP 4](developer-integration/fastmcp.md) | 工具开发、Client 与 HTTP |
+| [Deep Agents](developer-integration/deepagents.md) | 规划、文件、委派与上下文 |
+| [Agno 与 AgentOS](developer-integration/agno.md) | 只读工具、Session 与服务 |
+| [Mem0 长期记忆](developer-integration/mem0.md) | 新增、检索、删除与隔离 |
+| [E2B 代码沙箱](developer-integration/e2b.md) | 执行、文件、模板与清理 |
+| [LightRAG](self-hosted/lightrag.md) | 模型、图谱、索引与查询 |
+| [MinerU 4](document-processing/mineru.md) | PDF、OCR 与文档库 |
+| [Docling](document-processing/docling.md) | 统一结构、解析与 Markdown |
+| [MarkItDown](document-processing/markitdown.md) | Office、PDF 与格式转换 |
+| [PDF 解析工具选型](document-processing/pdf-parser-comparison.md) | MinerU / Docling / MarkItDown |
+| [Firecrawl](data-collection/firecrawl.md) | v2 API、Scrape 与 Crawl |
+| [Crawl4AI](data-collection/crawl4ai.md) | 本地浏览器采集与正文清洗 |
+| [网页采集与交互选型](data-collection/crawler-comparison.md) | Firecrawl / Crawl4AI / Browser Use |
 
 ## 本地诊断与项目证据
 

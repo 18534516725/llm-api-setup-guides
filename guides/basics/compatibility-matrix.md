@@ -1,6 +1,6 @@
 # 主流 AI 工具自定义 API 兼容性总表
 
-> 最后核验：2026-09-02 · 覆盖 83 款工具、协议、平台与开发框架（含 1 项停运历史资料）
+> 最后核验：2026-10-21 · 覆盖 99 款工具、协议、平台与开发框架（含 1 项停运历史资料）
 
 > [!NOTE]
 > 本文适用于任何符合对应协议的 API。还没有测试 Key 时，可查看 [教程配套 API](https://www.nexotoken.net/?ref=github)。
@@ -10,6 +10,31 @@
 这张表回答三个问题：**该选哪个工具、它需要什么协议、接入后哪些能力还要单独验证。**“支持自定义 API”只代表存在配置入口，不代表聊天、图片、工具调用、知识库和 Agent 全部兼容。
 
 ## 1. 一眼选工具
+
+### 2026 年 10 月新增工具的接入边界
+
+下表将模型服务、数据服务和本地工具分开。配置了同一个 Base URL，不代表所有工具能共用一种 Key。
+
+| 新增工具 | 连接对象 | 需要单独验证 |
+|---|---|---|
+| [REA](../coding-tools/rea.md) | MCP / 本地分析引擎 | Skill、MCP 和原生引擎是否分别就绪 |
+| [Superpowers](../coding-tools/superpowers.md) | 编程客户端插件 / Skills | 客户端安装路径与重复触发 |
+| [agent-browser](../coding-tools/agent-browser.md) | 浏览器 / CLI | 快照引用、会话与最终页面状态 |
+| [Repomix](../coding-tools/repomix.md) | 本地源码目录 | 范围、敏感文件与 Token 预算 |
+| [Context7](../coding-tools/context7.md) | 文档服务 / MCP / CLI | 库 ID、版本与专用 Key |
+| [FastMCP 4](../developer-integration/fastmcp.md) | 自建 MCP Server / Client | 框架主版本、传输与认证 |
+| [Deep Agents](../developer-integration/deepagents.md) | LangChain 模型与工具 | 工具调用、文件后端、持久化 |
+| [Agno](../developer-integration/agno.md) | Provider / AgentOS | 协议、用户与 Session 隔离 |
+| [Mem0](../developer-integration/mem0.md) | LLM、Embedding 与向量存储 | 维度、检索过滤与删除 |
+| [E2B](../developer-integration/e2b.md) | 独立沙箱服务 | 专用 Key、生命周期与网络 |
+| [LightRAG](../self-hosted/lightrag.md) | LLM、Embedding 与图谱 | 索引、认证路由和查询模式 |
+| [MinerU](../document-processing/mineru.md) | 文档 / OCR / 解析后端 | 4.x CLI、模型下载与原页核验 |
+| [Docling](../document-processing/docling.md) | 文档 / 解析 Pipeline | 资产缓存、OCR 和结构 |
+| [MarkItDown](../document-processing/markitdown.md) | 文件转换器及可选服务 | extras、OCR 路径与结果字段 |
+| [Firecrawl](../data-collection/firecrawl.md) | 专用采集 API | 抓取 Key、异步任务和正文 |
+| [Crawl4AI](../data-collection/crawl4ai.md) | 本地浏览器 / 可选服务 | 浏览器依赖、清洗与并发 |
+
+### 按需求选择
 
 | 你的需求 | 优先查看 | 备选 |
 |---|---|---|

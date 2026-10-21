@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=LLM%20API%20Setup%20Guides&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=%E4%B8%80%E6%8A%8A%20Key%EF%BC%8C%E7%8E%A9%E8%BD%AC%E6%89%80%E6%9C%89%20AI%20%E5%B7%A5%E5%85%B7&descSize=18&descAlignY=55" alt="LLM API Setup Guides" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=121+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+⭐" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=139+%E7%AF%87%E4%B8%AD%E6%96%87+AI+%E5%B7%A5%E5%85%B7%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B;%E5%AE%A2%E6%88%B7%E7%AB%AF+%2F+%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%90%86+%2F+%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B+%2F+RAG;%E6%8C%81%E7%BB%AD%E6%A0%B8%E5%AF%B9%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%8C%E6%AC%A2%E8%BF%8E+Star+⭐" alt="Typing SVG" />
 
 <br/>
 
@@ -77,9 +77,34 @@
 
 ---
 
+## 2026 年 10 月更新：18 篇工具与实战教程
+
+从热门项目的安装入手，再完成一次可以核对的操作。下列文章分别标明版本与官方来源；选型指南提供测试方法，未使用虚构的速度、准确率或搜索量排行。
+
+| 教程 | 主要内容 |
+|---|---|
+| [REA：逆向分析](./guides/coding-tools/rea.md) | 安装、MCP、静态分析与证据 |
+| [Superpowers：开发工作流](./guides/coding-tools/superpowers.md) | 安装、设计、实现与验证 |
+| [agent-browser：网页操作](./guides/coding-tools/agent-browser.md) | 快照、定位、截图和会话 |
+| [Repomix：代码上下文](./guides/coding-tools/repomix.md) | 筛选、Token、打包与脱敏 |
+| [Context7：版本文档](./guides/coding-tools/context7.md) | CLI / Skills、MCP 与库版本 |
+| [FastMCP 4](./guides/developer-integration/fastmcp.md) | 工具开发、Client 与 HTTP |
+| [Deep Agents](./guides/developer-integration/deepagents.md) | 规划、文件、委派与上下文 |
+| [Agno 与 AgentOS](./guides/developer-integration/agno.md) | 只读工具、Session 与服务 |
+| [Mem0 长期记忆](./guides/developer-integration/mem0.md) | 新增、检索、删除与隔离 |
+| [E2B 代码沙箱](./guides/developer-integration/e2b.md) | 执行、文件、模板与清理 |
+| [LightRAG](./guides/self-hosted/lightrag.md) | 模型、图谱、索引与查询 |
+| [MinerU 4](./guides/document-processing/mineru.md) | PDF、OCR 与文档库 |
+| [Docling](./guides/document-processing/docling.md) | 统一结构、解析与 Markdown |
+| [MarkItDown](./guides/document-processing/markitdown.md) | Office、PDF 与格式转换 |
+| [PDF 解析工具选型](./guides/document-processing/pdf-parser-comparison.md) | MinerU / Docling / MarkItDown |
+| [Firecrawl](./guides/data-collection/firecrawl.md) | v2 API、Scrape 与 Crawl |
+| [Crawl4AI](./guides/data-collection/crawl4ai.md) | 本地浏览器采集与正文清洗 |
+| [网页采集与交互选型](./guides/data-collection/crawler-comparison.md) | Firecrawl / Crawl4AI / Browser Use |
+
 ## 📖 教程目录
 
-> 当前共 **121 篇中文文档，覆盖 83 款工具、协议、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://docs.nexotoken.net/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
+> 当前共 **139 篇中文文档，覆盖 99 款工具、协议、平台与开发框架**。不知道选哪个？先打开支持站内搜索的 **[在线中文文档站](https://docs.nexotoken.net/)**，或查看 **[GitHub 教程总目录](./guides/教程总目录.md)** 和 **[兼容性总表](./guides/basics/compatibility-matrix.md)**。
 
 ### 💬 聊天客户端 `guides/chat-clients/`
 
