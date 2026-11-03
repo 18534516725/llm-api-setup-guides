@@ -57,6 +57,7 @@
 | API Base URL 是什么、该填哪一段 | [API 接入基础](./guides/basics/api-basics.md) |
 | Codex API Key 配置、Base URL 与 `config.toml` 怎么写 | [Codex CLI 教程](./guides/coding-tools/codex-cli.md) |
 | Claude Code API Key 配置和连接失败排查 | [Claude Code 教程](./guides/coding-tools/claude-code.md) |
+| Claude Code / Codex 换 API 后，怎么验证文件真的写对了 | [工作区验收](./guides/api-testing/agent-workspace-acceptance.md) |
 | Cursor API Key 与 Override Base URL 怎么设置 | [Cursor 教程](./guides/coding-tools/cursor.md) |
 | Cherry Studio API 地址和密钥填在哪里 | [Cherry Studio 教程](./guides/chat-clients/cherry-studio.md) |
 | 401、404、429、5xx 或流式响应异常 | [通用排错手册](./guides/basics/troubleshooting.md) |
