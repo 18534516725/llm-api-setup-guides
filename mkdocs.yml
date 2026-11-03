@@ -239,7 +239,6 @@ nav:
       - 分类说明: api-testing/README.md
       - curl API 冒烟测试: api-testing/curl-openai-compatible-smoke-test.md
       - AI API 契约测试: api-testing/api-contract-smoke-test.md
-      - Claude Code / Codex 工作区验收: api-testing/agent-workspace-acceptance.md
       - OrcaReplay API 回放测试: api-testing/orcareplay.md
       - Apifox / Postman: api-testing/apifox-postman.md
       - MCP Inspector: api-testing/mcp-inspector.md
