@@ -34,11 +34,29 @@ curl -sS "$BASE_URL/models" \
 
 ## 最小 Chat 请求
 
+先在临时目录生成请求文件。Python 从已导出的 `MODEL_ID` 读取真实模型 ID，并安全转义 JSON；不要在单引号 JSON 中写字面量 `MODEL_ID` 期待 shell 替换。文件已存在时停止，避免覆盖。
+
 ```bash
-curl -sS "$BASE_URL/chat/completions" \
+python3 - <<'PYTHON'
+import json, os
+payload = {
+    "model": os.environ["MODEL_ID"],
+    "messages": [{"role": "user", "content": "只回复 OK"}]
+}
+with open("chat-smoke.json", "x", encoding="utf-8") as f:
+    json.dump(payload, f, ensure_ascii=False)
+print("仅生成本地 JSON，尚未发送请求")
+PYTHON
+python3 -m json.tool chat-smoke.json >/dev/null
+```
+
+确认费用后，再手动发送以下一次请求：
+
+```bash
+curl -sS "${BASE_URL%/}/chat/completions" \
   -H "Authorization: Bearer $API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"model":"MODEL_ID","messages":[{"role":"user","content":"只回复 OK"}]}'
+  --data-binary @chat-smoke.json
 ```
 
 ## Responses 流式与工具参数：先生成本地测试文件

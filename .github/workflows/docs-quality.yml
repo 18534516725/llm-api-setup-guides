@@ -32,5 +32,8 @@ jobs:
       - name: 访问统计回归测试
         run: node --test tests/traffic-counter.test.cjs
 
+      - name: 冒烟示例离线回归
+        run: python tests/test_smoke_payload.py
+
       - name: 严格构建文档站
         run: mkdocs build --strict
